@@ -1,0 +1,8 @@
+title=Installation
+type=page
+status=published
+~~~~~~
+
+== Installation
+
+Test

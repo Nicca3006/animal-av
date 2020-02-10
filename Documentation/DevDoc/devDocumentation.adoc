@@ -1,0 +1,16 @@
+= Interne Dokumentation
+
+= Ascii Doc
+
+Damit die Dokumentation mit dem gesamten Code in der Versionsverwaltung eingecheckt werden kann, wird für die Dokumentation Ascii Doc verwendet (https://asciidoctor.org/). +
+Dazu muss in IntellJ das AsciiDoc-Plugin installiert werden, dann kann ein file *.adoc angelegt werden, das jeweils direkt als PDF oder HTML ausgegeben werden kann. +
+AsciiDoc hat eine recht einfache Syntax, so dass ohne großen Aufwand ein Dokument erzeugt werden kann: +
+https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/
+
+== User Dokumentation
+
+Der Nutzer soll über eine Web-Seite über AnimAl informiert werden, dort die Programmdateien und Anleitungen finden. Der HTML-Code für diese Seite kann direkt aus AsciiDoc erzeugt werden, allerdings ist dann noch keine Seite gebaut.
+Eine sehr einfache Seite lässt sich aus dem AsciiDoc mit JBake (https://jbake.org/) erzeugen, was hier vorerst für die abgespeckte Webseite für Schüler erfolgt. +
+Verschiedene Templates zum Bauen der Navigation / Header usw. sind bereits vorhanden und müssen nur angepasst werden.
+Da in der zugrunde gelegten Literatur zum Zusammenspiel von AsciiDoc und JBake (https://www.informatik-aktuell.de/entwicklung/methoden/docs-as-code-alles-unter-einem-dach.html) Gradle als Build Tool genommen wurde, haben wir es auch hier verwendet.
+

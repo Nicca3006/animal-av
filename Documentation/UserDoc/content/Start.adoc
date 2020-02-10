@@ -1,22 +1,29 @@
+:jbake-title: Start
+:jbake-date: 2020-02-09
+:jbake-type: page
+:jbake-status: published
+
 //Webseite fuer Schueler mit Basic Informationen
 // @author Katrin Rabow
 //
-= Willkommen bei AnimAl
+
+= Willkommen bei ANIMAL
 
 Schön, dass du auf unserer Seite gelandet bist! Wir haben ein kleines Programm entwickelt, mit dem du ganz einfach sehen kannst, wie verschiedene Such- und Sortieralgorithmen aus der Informatik funktionieren.
 
-Wenn du das Programm direkt herunterladen willst, dann <<AnimalDownloaden,klick bitte hier>>.
+Wenn du das Programm direkt herunterladen willst, dann <<ANIMAL downloaden,klick bitte hier>>.
 
-Falls du noch weitere Informationen lesen willst, dann schau einfach ins Menü.
+Falls du erst noch Infos brauchst, <<Installation, klick hier für eine Installationsanleitung>> oder hier für eine Kurzanleitung zum Start.
+
+Eine ausführliche Beschreibung darüber, wie du das Programm benutzt, gibt es <<User Guide, hier>>.
 
 Viel Spaß!
 
-[[AnimalDownloaden]]
-= ANIMAL downloaden
+== ANIMAL downloaden
 
 Hier findest du immer die neueste Version von ANIMAL. Du kannst sie direkt herunterladen und starten oder dir erst die Dokumentation dazu durchlesen.
 
-= Installation
+== Installation
 
 Um das Programm auf deinem PC ausführen zu können, brauchst du eine Java-Version 7 oder höher. Hier findest du eine Anleitung, wie du prüfen kannst, ob du das schon installiert hast oder du kannst dir Java über diesen Link installieren, falls es auf deinem PC noch nicht vorhanden ist.
 
@@ -29,15 +36,8 @@ Um endlich loslegen zu können, suchst du jetzt die JAR-Datei, die du als erstes
 
 Wie es weitergeht, findest du auf der Seite Schnellstart.
 
-= Schnellstart
+== Java Überprüfung
 
-Falls du das Programm noch nicht installiert hast, // TODO
+== Datenschutz
 
-Du startest das Programm immer durch Doppelklick auf die animal-.jar -Datei, die du am Anfang gespeichert hast. Es erscheint ein kleines Fenster auf dem Bildschirm, wo du siehst, dass dein PC arbeitet und danach öffnet sich das Hauptfenster des Programms ANIMAL.
-
-Wenn du eine bestehende Animation anschauen willst, klicke bitte auf "Open" und suche den Ordner, in dem du vorher die Dateien aus dem ZIP-File abgelegt hast. Hier klickst du an, welche Animation du sehen willst, bestätigst mit "OK" und siehst nun im Animationsfenster, wie der gewählte Algorithmus funktioniert.
-
-= Java Überprüfung
-
-= Datenschutz
-
+== User Guide

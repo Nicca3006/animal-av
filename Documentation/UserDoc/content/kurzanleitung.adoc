@@ -1,0 +1,12 @@
+:jbake-type: page
+:jbake-status: published
+
+= Schnellstart
+
+//TODO: Link korrekt einfügen
+Falls du das Programm noch nicht installiert hast, findest du <<Installation,hier>> eine kurze Anleitung dazu.
+
+Du startest das Programm immer durch Doppelklick auf die animal-.jar -Datei, die du am heruntergeladen und auf deinem PC gespeichert hast.
+Es erscheint ein kleines Fenster auf dem Bildschirm, wo du siehst, dass dein PC arbeitet und danach öffnet sich das Hauptfenster des Programms ANIMAL.
+
+Wenn du im Programm eine bestehende Animation anschauen willst, klicke bitte auf "Open" und suche den Ordner, in dem du vorher die Dateien aus dem ZIP-File abgelegt hast. Hier klickst du an, welche Animation du sehen willst, bestätigst mit "OK" und siehst nun im Animationsfenster, wie der gewählte Algorithmus funktioniert.

@@ -1,0 +1,75 @@
+:jbake-type: page
+:jbake-status: published
+
+= Datenschutzerklärung
+
+== Anbieter und verantwortliche Stelle im Sinne des Datenschutzgesetzes
+
+Dr. Guido Rößling
+Siegelgrund 5
+64367 Mühltal
+roessling@acm.org
+
+== Geltungsbereich
+
+Nutzer erhalten mit dieser Datenschutzerklärung Information über die Art, den Umfang und Zweck der Erhebung und Verwendung ihrer Daten durch den verantwortlichen Anbieter erhoben und verwendet werden.
+
+Den rechtlichen Rahmen für den Datenschutz bilden das Bundesdatenschutzgesetz (BDSG) und das Telemediengesetz (TMG).
+
+== Erfassung allgemeiner Informationen
+
+Mit jedem Zugriff auf dieses Angebot werden durch uns bzw. den Webspace-Provider automatisch Informationen erfasst. Diese Informationen, auch als Server-Logfiles bezeichnet, sind allgemeiner Natur und erlauben keine Rückschlüsse auf Ihre Person.
+
+Erfasst werden unter anderem: Name der Webseite, Datei, Datum, Datenmenge, Webbrowser und Webbrowser-Version, Betriebssystem, der Domainname Ihres Internet-Providers, die sogenannte Referrer-URL (jene Seite, von der aus Sie auf unser Angebot zugegriffen haben) und die IP-Adresse.
+
+Ohne diese Daten wäre es technisch teils nicht möglich, die Inhalte der Webseite auszuliefern und darzustellen. Insofern ist die Erfassung der Daten zwingend notwendig. Darüber hinaus verwenden wir die anonymen Informationen für statistische Zwecke. Sie helfen uns bei der Optimierung des Angebots und der Technik. Wir behalten uns zudem das Recht vor, die Log-Files bei Verdacht auf eine rechtswidrige Nutzung unseres Angebotes nachträglich zu kontrollieren.
+
+== Umgang mit personenbezogenen Daten
+
+Definition: Als personenbezogene Daten gelten alle Informationen, anhand derer eine Person eindeutig identifizierbar ist. Es handelt sich somit um Daten, die zu einer Person zurückverfolgt werden können.
+
+Zu diesen personenbezogenen Daten zählen der Vorname und der Name, die Telefonnummer sowie die E-Mail-Adresse. Ebenso als personenbezogene Daten gelten Informationen zu Hobbies, Mitgliedschaften und Vorlieben sowie Internetseiten, die aufgerufen wurden.
+
+Diese Daten werden vom Anbieter nur erhoben, genutzt und gegebenenfalls weitergegeben, sofern der Gesetzgeber dies ausdrücklich erlaubt oder aber der Nutzer in die Erhebung, Bearbeitung, Nutzung und Weitergabe der Daten einwilligt.
+
+== Einbindung von Diensten und Inhalten Dritter
+
+Unser Angebot umfasst mitunter Inhalte, Dienste und Leistungen anderer Anbieter. Das sind zum Beispiel Karten, die von Google-Maps zur Verfügung gestellt werden, Videos von YouTube sowie Grafiken und Bilder anderer Webseiten. Damit diese Daten im Browser des Nutzers aufgerufen und dargestellt werden können, ist die Übermittlung der IP-Adresse zwingend notwendig. Die Anbieter (im Folgenden als „Dritt-Anbieter“ bezeichnet) nehmen also die IP-Adresse des jeweiligen Nutzers wahr.
+
+Auch wenn wir bemüht sind, ausschließlich Dritt-Anbieter zu nutzen, welche die IP-Adresse nur benötigen, um Inhalte ausliefern zu können, haben wir keinen Einfluss darauf, ob die IP-Adresse möglicherweise gespeichert wird. Dieser Vorgang dient in dem Fall unter anderem statistischen Zwecken. Sofern wir Kenntnis davon haben, dass die IP-Adresse gespeichert wird, weisen wir unsere Nutzer darauf hin.
+
+== Cookies
+
+Diese Webseite verwendet sogenannte Cookies. Das sind Textdateien, die vom Server aus auf Ihrem Rechner gespeichert werden. Sie enthalten Informationen zum Browser, zur IP-Adresse, dem Betriebssystem und zur Internetverbindung. Diese Daten werden von uns nicht an Dritte weitergegeben oder ohne ihre Zustimmung mit personenbezogenen Daten verknüpft.
+
+Cookies erfüllen vor allem zwei Aufgaben. Sie helfen uns, Ihnen die Navigation durch unser Angebot zu erleichtern, und ermöglichen die korrekte Darstellung der Webseite. Sie werden nicht dazu genutzt, Viren einzuschleusen oder Programme zu starten.
+
+Nutzer haben die Möglichkeit, unser Angebot auch ohne Cookies aufzurufen. Dazu müssen im Browser die entsprechenden Einstellungen geändert werden. Informieren Sie sich bitte über die Hilfsfunktion Ihres Browsers, wie Cookies deaktiviert werden. Wir weisen allerdings darauf hin, dass dadurch einige Funktionen dieser Webseite möglicherweise beeinträchtigt werden und der Nutzungskomfort eingeschränkt wird. Die Seiten http://www.aboutads.info/choices/ (USA) und http://www.youronlinechoices.com/uk/your-ad-choices/ (Europa) erlauben es Ihnen, Online-Anzeigen-Cookies zu verwalten.
+
+== Datenschutzerklärung für die Nutzung von 1&1 WebAnalytics
+
+Diese Webseite benutzt das datenschutzkonforme Analysetool 1&1 WebAnalytics, einen Webanalysedienst der 1&1 Internet AG. 1&1 WebAnalytics verwendet sog. “Cookies”, Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Webseite durch Sie ermöglichen. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieser Webseite werden in der Regel an einen Server der 1&1 Internet AG übertragen und dort gespeichert.
+
+Im Auftrag des Betreibers dieser Webseite wird die 1&1 Internet AG diese Informationen benutzen, um Ihre Nutzung der Webseite auszuwerten, um Reports über die Webseitenaktivitäten zusammenzustellen und um weitere mit der Webseitennutzung und der Internetnutzung verbundene Dienstleistungen gegenüber dem Webseitenbetreiber zu erbringen. Die im Rahmen von 1&1 WebAnalytics von Ihrem Browser übermittelte IP-Adresse wird nicht mit anderen Daten der 1&1 Internet AG zusammengeführt. Sie können die Speicherung der Cookies durch eine entsprechende Einstellung Ihrer Browser-Software verhindern. Wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Webseite vollumfänglich werden nutzen können. Durch die Nutzung dieser Website erklären Sie sich mit der Bearbeitung der über Sie erhobenen Daten durch die 1&1 Internet AG in der zuvor beschriebenen Art und Weise und zu dem zuvor benannten Zweck einverstanden.
+
+== Datensparsamkeit
+
+Personenbezogene Daten speichern wir gemäß den Grundsätzen der Datenvermeidung und Datensparsamkeit nur so lange, wie es erforderlich ist oder vom Gesetzgeber her vorgeschrieben wird (gesetzliche Speicherfrist). Entfällt der Zweck der erhobenen Informationen oder endet die Speicherfrist, sperren oder löschen wir die Daten.
+
+Ihre Rechte auf Auskunft, Berichtigung, Sperre, Löschung und Widerspruch
+
+Sie haben das Recht, auf Antrag unentgeltlich eine Auskunft, über die bei uns gespeicherten personenbezogenen Daten, anzufordern und/oder eine Berichtigung, Sperrung oder Löschung zu verlangen. Ausnahmen: Es handelt sich um die vorgeschriebene Datenspeicherung zur Geschäftsabwicklung oder die Daten unterliegen der gesetzlichen Aufbewahrungspflicht.
+
+Für diese Zwecke kontaktieren Sie bitte unseren Datenschutzbeauftragen (Kontaktdaten: am Ende der Datenschutzerklärung).
+
+Um eine Datensperre jederzeit berücksichtigen zu können, ist es erforderlich, die Daten für Kontrollzwecke in einer Sperrdatei vorzuhalten. Besteht keine gesetzliche Archivierungspflicht, können Sie auch die Löschung der Daten verlangen. Anderenfalls sperren wir die Daten, sofern Sie dies wünschen.
+
+== Änderung unserer Datenschutzerklärung
+
+Um zu gewährleisten, dass unsere Datenschutzerklärung stets den aktuellen gesetzlichen Vorgaben entspricht, behalten wir uns jederzeit Änderungen vor. Das gilt auch für den Fall, dass die Datenschutzerklärung aufgrund neuer oder überarbeiteter Leistungen, zum Beispiel neuer Serviceleistungen, angepasst werden muss. Die neue Datenschutzerklärung greift dann bei Ihrem nächsten Besuch auf unserem Angebot.
+
+Datenschutzbeauftrager: Dr. Guido Rößling, Anschrift wie obenstehend, Email: roessling@acm.org
+
+Quelle: Datenschutz-Konfigurator von mein-datenschutzbeauftragter.de
+
+2018-05-22 at 10:06

@@ -1,0 +1,8 @@
+plugins {
+    id 'org.jbake.site' version '5.0.0'
+}
+jbake {
+    srcDirName = 'Documentation/UserDoc'
+    destDirName = 'docs/html5/site'
+    configuration['asciidoctor.option.requires'] = "asciidoctor-diagram"
+}
