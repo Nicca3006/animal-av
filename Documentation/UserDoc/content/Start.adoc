@@ -6,7 +6,7 @@
 //Webseite fuer Schueler mit Basic Informationen
 // @author Katrin Rabow
 //
-
+//TODO Ganze Seite überarbeiten
 = Willkommen bei ANIMAL
 
 Schön, dass du auf unserer Seite gelandet bist! Wir haben ein kleines Programm entwickelt, mit dem du ganz einfach sehen kannst, wie verschiedene Such- und Sortieralgorithmen aus der Informatik funktionieren.

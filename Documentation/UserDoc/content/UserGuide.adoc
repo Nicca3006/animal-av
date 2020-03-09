@@ -1,0 +1,20 @@
+:jbake-title: UserGuide
+:jbake-date: 2020-03-09
+:jbake-type: page
+:jbake-status: published
+
+= User Guide
+
+== Einführung
+ANIMAL ist ein einfaches und effizientes Tool zur Darstellung von Algorithmen, dessen Entwicklung 1998 an der Universität Siegen begann. +
+ANIMAL steht als Abkürzung für "A New Interactive Modeller For Animations In Lectures", ist also vor allem zum Einsatz im Unterricht gedacht.
+
+ANIMALs Stärken sind vor allem:
+
+* sehr einfach zu benutzende grafische Oberfläche mit Drag and Drop-Funktion
+* Animationen können mit einer eigenen Skriptsprache oder der Animal Generator API automatisch generiert werden
+* Implementierung erfolgt plattformunabhängig in Java
+* sehr flexibel
+
+Zu Beginn erscheint ANIMAL nicht so modern wie manche anderen Programme, die auf den ersten Blick mehr Funktionen bieten.
+Dieser Guide enthält daher vor allem in Part EINFÜGEN!!!! eine genauere Beschreibung der Funktionen und wie sie sinnvoll eingesetzt werden können.

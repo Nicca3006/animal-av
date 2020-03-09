@@ -1,10 +1,19 @@
-:jbake-title: About
-:jbake-date: 2020-02-10
 :jbake-type: page
 :jbake-status: published
 
-ANIMAL war ursprünglich ein Projekt der Parallel Systems Group an der Hochschule Siegen (heute Verteilte Systeme an der Universität Marburg).
+= Über uns
+
+== Wer entwickelt ANIMAL?
+ANIMAL war ursprünglich ein Projekt der Parallel Systems Group an der Hochschule Siegen (heute Verteilte Systeme an der Universität Marburg). +
 Mittlerweile wird es betreut von der Rechnerbetriebsgruppe am Fachbereich Informatik der Technischen Universität Darmstadt in Deutschland.
 
 //TODO: Mailadresse ok?
-Wir freuen uns über eure Meinung und Verbesserungsvorschläge zu dieser Seite. Schreibt einfach an roessling@acm.org
+Wir freuen uns über eure Meinung und Verbesserungsvorschläge zu dieser Seite.
+Schreibt einfach an roessling@acm.org
+
+== Impressum
+Verantwortlich: +
+Dr. Guido Rößling +
+Siegelgrund 5 +
+64367 Mühltal +
+roessling@acm.org
