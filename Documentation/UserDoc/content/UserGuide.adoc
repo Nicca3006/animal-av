@@ -17,4 +17,27 @@ ANIMALs Stärken sind vor allem:
 * sehr flexibel
 
 Zu Beginn erscheint ANIMAL nicht so modern wie manche anderen Programme, die auf den ersten Blick mehr Funktionen bieten.
-Dieser Guide enthält daher vor allem in Part EINFÜGEN!!!! eine genauere Beschreibung der Funktionen und wie sie sinnvoll eingesetzt werden können.
+Dieser Guide enthält daher vor allem in Part
+//TODO EINFÜGEN!!!!
+eine genauere Beschreibung der Funktionen und wie sie sinnvoll eingesetzt werden können.
+
+== Installation
+
+Um das Programm auf deinem PC ausführen zu können, brauchst du eine Java-Version 7 oder höher.
+Wenn du nicht weißt, ob du diese auf deinem Rechner bereits hast, findest du hier eine link:https://java.com/de/download/help/version_manual.xml[Anleitung], wie du das prüfen kannst. +
+Wenn Java auf deinem Rechner noch nicht vorhanden ist, kannst du es link:https://www.java.com/de/download/[mit diesem Link] installieren.
+
+Anschließend klicke bitte link:http://www.algoanim.net/downloads/animal-253.jar[hier], um die aktuelle Version von ANIMAL herunterzuladen.
+In der Regel öffnet sich ein Fenster, in dem du auswählen kannst, in welchen Ordner du die Datei mit der Endung .jar auf deinem PC speichern willst.
+
+Am besten lädst du dir gleich noch das ZIP-File herunter, das ziemlich viele Animationen beinhaltet.
+Damit kannst du dann nach der Installation direkt starten, dir verschiedene Algorithmen anzuschauen.
+Den Download gibt es auf link:http://www.algoanim.net/downloads/currentanims_de.zip[deutsch] oder link:http://www.algoanim.net/downloads/currentanims_en.zip[englisch] - in dieser Sprache sind dann später die Texte in den Animationen, also achte darauf, die richtige Sprache zu wählen.
+Nun musst du das ZIP-File nur noch entpacken (mit der rechten Maustaste anklicken bringt meistens eine Funktion "entpacken" oder "unzip"), am besten in einen eigenen Ordner auf deinem PC.
+
+Um endlich loslegen zu können, suchst du jetzt die JAR-Datei, die du als erstes gespeichert hast und startest durch Doppelklick auf diese Datei das Programm.
+Es erscheint ein kleines Fenster auf dem Bildschirm, wo du siehst, dass dein PC arbeitet und danach öffnet sich das Hauptfenster des Programms ANIMAL (Animal Control Center).
+
+== Programmstart
+
+
