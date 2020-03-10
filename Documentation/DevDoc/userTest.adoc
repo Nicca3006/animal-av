@@ -1,0 +1,13 @@
+:imagesdir: images
+
+= Fehler und Verbesserungsvorschläge
+
+== Mouseover im Hauptfenster
+Nachdem auf Deutsch oder italienisch umgeschaltet wurde, gibt es eine Invalid Message Key beim Mouseover:
+
+image::Mouseover_Fehler.png[]
+
+== Öffnen einer Animation aus dem Repository schlägt fehl
+Internet Connection ist vorhanden - URL changed?
+
+image::Repository_nicht_gefunden.png[]

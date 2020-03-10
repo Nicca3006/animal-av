@@ -1,0 +1,10 @@
+= Konzept für die weitere Entwicklung von ANIMAL
+
+== Installer
+
+Zur Zeit müssen verschiedene Dateien heruntergeladen und gespeichert werden.
+Die Ausführung des Tools erfolgt über die .jar-Datei.
+Für die Zukunft wäre insbesondere im Hinblick auf die Benutzung durch SchülerInnen, die noch nicht so versiert im Umgang mit ihrem Rechner sind, ein Installer wünschenswert.
+Von vielen anderen Anwendungen ist bekannt, nur auf einen "Download"-Button klicken zu müssen, womit sich das Tool installiert.
+Die spätere Ausführung des Tools könnte über den Programmaufruf erfolgen.
+
