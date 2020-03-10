@@ -1,5 +1,8 @@
 package generators.searching;
 
+import java.util.Locale;
+import java.util.Vector;
+
 import generators.framework.Generator;
 import generators.framework.GeneratorBundle;
 import generators.searching.alphabeta.AlphaBeta;
@@ -24,17 +27,15 @@ import generators.searching.kmp.KnuthMorrisPratt;
 import generators.searching.kmp.KnuthMorrisPrattSearch;
 import generators.searching.kmp.KnuthMorrisPrattStringSearchWrapper;
 import generators.searching.minmax.MinMaxGenerator;
-import generators.searching.ElectionOnRings;
+import generators.searching.sss.SSSStar;
 import generators.searching.straightselection.GenericIterativeStraightIntSelection;
 import generators.searching.straightselection.GenericIterativeStraightIntSelectionWithCounter;
 import generators.searching.straightselection.GenericIterativeStraightStringSelection;
 import generators.searching.straightselection.GenericRecursiveStraightIntSelection;
 import generators.searching.straightselection.GenericRecursiveStraightStringSelection;
+import generators.searching.tabusearch.TabuSearchGenerator;
 import generators.searching.topk.FaginsAlgorithm;
 import generators.searching.topk.ThresholdAlgorithm;
-
-import java.util.Locale;
-import java.util.Vector;
 
 public class DummyGenerator implements GeneratorBundle {
 
@@ -254,10 +255,27 @@ public class DummyGenerator implements GeneratorBundle {
     generators.add(new QuickselectGenerator());
     generators.add(new SimpleStringMatching());
 
-    // Generators from the AlgoAnim course in summer term 2016.
+    // Generators from the AlgoAnim course in summer term 2017.
     generators.add(new FibonacciSearch());
     generators.add(new NegaMax("resources/NegaMax", Locale.US));
     generators.add(new NegaMax("resources/NegaMax", Locale.GERMANY));
+
+    
+    // Generators from the AlgoAnim course in summer term 2019.
+    generators.add(new Beweiszahlsuche());
+    generators.add(new Generator_ExponentialSearch());
+    generators.add(new HillClimb(Locale.GERMANY));
+    generators.add(new HillClimb(Locale.US));
+    generators.add(new JumpPointSearch(Locale.GERMANY));
+    generators.add(new JumpPointSearch(Locale.US));
+    generators.add(new QueensAnnealingGenerator(Locale.GERMANY));
+    generators.add(new QueensAnnealingGenerator(Locale.US));
+    generators.add(new SSSStar("resources/SSSStar", Locale.GERMANY));
+    generators.add(new SSSStar("resources/SSSStar", Locale.US));
+    generators.add(new SublistSearchGenerator());
+    generators.add(new TabuSearchGenerator());
+    generators.add(new ZAlgorithmGenerator());
+    
     return generators;
   }
 }

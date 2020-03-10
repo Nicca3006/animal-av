@@ -1,7 +1,11 @@
 package generators.network;
 
+import java.util.Locale;
+import java.util.Vector;
+
 import generators.framework.Generator;
 import generators.framework.GeneratorBundle;
+import generators.misc.FloydsTortoiseAndHare;
 import generators.network.aodv.AODVRoutingGenerator;
 import generators.network.dns.DNSQueryGenerator;
 import generators.network.graph.BellmanFordGenerator;
@@ -13,9 +17,6 @@ import generators.network.routing.DistanceVectorRouting;
 import generators.network.routing.VectorRoutingGenerator;
 import generators.network.routing.impl.dvr.DistanceVectorFactory;
 import generators.network.routing.impl.pvr.PathVectorFactory;
-
-import java.util.Locale;
-import java.util.Vector;
 
 /**
  * @author Marc Werner <mwerner@rbg.informatik.tu-darmstadt.de>
@@ -97,6 +98,18 @@ public class DummyGenerator implements GeneratorBundle {
     generators.add(new TailDrop(Locale.GERMANY));
     generators.add(new TailDrop(Locale.US));
     
+    // Generators from the AlgoAnim course in summer semester 2019.
+    generators.add(new ChandyLamport("resources/ChandyLamport", Locale.US));
+    generators.add(new ChandyLamport("resources/ChandyLamport", Locale.GERMANY));
+    generators.add(new EasyNTP());
+    generators.add(new FloydsTortoiseAndHare(Locale.GERMANY));
+    generators.add(new FloydsTortoiseAndHare(Locale.US));
+    generators.add(new LamportClock("resources/LamportClock", Locale.GERMANY));
+    generators.add(new LamportClock("resources/LamportClock", Locale.US));
+    generators.add(new TCPCongestionControl());
+    generators.add(new VectorClock("resources/VectorClock", Locale.GERMANY));
+    generators.add(new VectorClock("resources/VectorClock", Locale.US));
+
     return generators;
   }
 
