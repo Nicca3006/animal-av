@@ -11,3 +11,10 @@ image::Mouseover_Fehler.png[]
 Internet Connection ist vorhanden - URL changed?
 
 image::Repository_nicht_gefunden.png[]
+
+Hinweis darauf, unter "Bearbeiten" einen Befehl auszuwählen.
+Es gibt keinen Menüpunkt "Bearbeiten", der Befehl "Animationsfenster anzeigen" befindet sich unter "Fenster".
+Zusatzfrage: Was passiert hier?
+
+image::Bearbeiten_auswaehlen.png
+
