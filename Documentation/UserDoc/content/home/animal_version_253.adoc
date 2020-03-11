@@ -1,0 +1,12 @@
+:jbake-type: post
+:jbake-status: published
+:jbake-date: 2020-03-11
+:jbake-title: Aktuelle Version
+
+link:http://www.algoanim.net/downloads/animal-253.jar[Hier] findest du die neueste Version von ANIMAL.
+Du kannst sie direkt herunterladen und starten oder dir erst die Dokumentation dazu durchlesen.
+
+//TODO: am besten Installer einbauen (immer aktuelle Version bauen), alternativ jar erzeugen
+// http://www.algoanim.net/downloads/animal-253.jar[Herunterladen]
+//* <</start.html, Schnellstart>>
+//* <</UserGuide, User Guide>>

@@ -1,11 +1,7 @@
-= Info
-Katrin Rabow
-2020-02-10
-:jbake-type: post
+:jbake-type: page
 :jbake-status: published
-:jbake-tags: start
-
-= Willkommen bei ANIMAL
+:jbake-date: 2020-03-11
+:jbake-title: index
 
 Schön, dass du auf unserer Seite gelandet bist!
 Wir haben ein kleines Programm entwickelt, mit dem du ganz einfach sehen kannst, wie verschiedene Such- und Sortieralgorithmen aus der Informatik funktionieren.
@@ -17,11 +13,5 @@ Eine ausführliche Beschreibung darüber, wie du das Programm benutzt, gibt es <
 
 Viel Spaß!
 
-link:http://www.algoanim.net/downloads/animal-253.jar[Hier] findest du die neueste Version von ANIMAL.
-Du kannst sie direkt herunterladen und starten oder dir erst die Dokumentation dazu durchlesen.
 
-//TODO: am besten Installer einbauen (immer aktuelle Version bauen), alternativ jar erzeugen
-// http://www.algoanim.net/downloads/animal-253.jar[Herunterladen]
-//* <</start.html, Schnellstart>>
-//* <</UserGuide, User Guide>>
 
