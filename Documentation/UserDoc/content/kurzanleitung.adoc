@@ -1,4 +1,3 @@
-:jbake-title: kurzanleitung
 :jbake-type: page
 :jbake-status: published
 

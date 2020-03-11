@@ -13,11 +13,13 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>index.html">Home</a></li>
-            <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>Start.html">Kurzanleitung</a></li>
+            <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>kurzanleitung.html">Kurzanleitung</a></li>
+            <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>installation.html">Installation</a></li>
             <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>about.html">Über uns</a></li>
             <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>datenschutz.html">Datenschutzerklärung</a></li>
-            <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>Installation.html">Installation</a></li>
-            <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>${config.feed_file}">Downloads</a></li>
+            <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>sitemap.xml">Sitemap</a></li>
+            <#-- wieder einkommentieren falls erforderlich
+                <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>${config.feed_file}">Downloads</a></li> -->
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dokumentation<b class="caret"></b></a>
               <ul class="dropdown-menu">

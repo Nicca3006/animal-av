@@ -1,5 +1,5 @@
-:jbake-type:page
-:jbake-status:published
+:jbake-type: page
+:jbake-status: published
 
 
 //TODO: Hier einfach einen Link auf den passenden Abschnitt aus dem User Guide? Funktionert das, das man nur den Absatz Installation sieht?

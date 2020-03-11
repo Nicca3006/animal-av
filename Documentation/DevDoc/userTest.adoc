@@ -1,6 +1,6 @@
 :imagesdir: images
 
-= Fehler und Verbesserungsvorschläge
+= Fehler / unklare Funktionen
 
 == Mouseover im Hauptfenster
 Nachdem auf Deutsch oder italienisch umgeschaltet wurde, gibt es eine Invalid Message Key beim Mouseover:
@@ -13,8 +13,8 @@ Internet Connection ist vorhanden - URL changed?
 image::Repository_nicht_gefunden.png[]
 
 Hinweis darauf, unter "Bearbeiten" einen Befehl auszuwählen.
-Es gibt keinen Menüpunkt "Bearbeiten", der Befehl "Animationsfenster anzeigen" befindet sich unter "Fenster".
+Es gibt keinen Menüpunkt "Bearbeiten", der Befehl "Animationsfenster anzeigen" befindet sich unter "Fenster". +
 Zusatzfrage: Was passiert hier?
 
-image::Bearbeiten_auswaehlen.png
+image::Bearbeiten_auswaehlen.png[]
 

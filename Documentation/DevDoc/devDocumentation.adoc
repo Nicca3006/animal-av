@@ -8,15 +8,20 @@ AsciiDoc hat eine recht einfache Syntax, so dass ohne großen Aufwand ein Dokume
 https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/ +
 Damit es später keine Probleme bei der Versionsverwaltung der AsciiDocs gibt, sollte in jeder Zeile jeweils nur ein Satz stehen.
 
-== Webseite bauen
+== Webseite
 
 Der Nutzer soll über eine Web-Seite über AnimAl informiert werden, dort die Programmdateien und Anleitungen finden.
 Der HTML-Code für diese Seite kann direkt aus AsciiDoc erzeugt werden, allerdings ist dann noch keine Seite gebaut.
 Eine sehr einfache Seite lässt sich aus dem AsciiDoc mit JBake (https://jbake.org/) erzeugen, was hier vorerst für die abgespeckte Webseite für Schüler erfolgt. +
-Verschiedene Templates zum Bauen der Navigation / Header usw. sind bereits vorhanden und müssen nur angepasst werden.
+Verschiedene Templates zum Bauen der Navigation / Header usw. sind bereits vorhanden und können angepasst werden, soweit erforderlich
 Da in der zugrunde gelegten Literatur zum Zusammenspiel von AsciiDoc und JBake (https://www.informatik-aktuell.de/entwicklung/methoden/docs-as-code-alles-unter-einem-dach.html) Gradle als Build Tool genommen wurde, haben wir es auch hier verwendet.
 
-== Einfache Funktionen von JBAke
+== Struktur Webseite
+
+Die index.html wird gebaut aus der Seite index.adoc (type: page) und den Animal-Versionen, die jeweils als neuer (type: post) hinzugefügt werden können.
+Dadurch wird automatisch ein Archiv der alten Versionen aufgebaut.
+
+== Bauen der Seite mit JBAke
 
 Der jeweilige Content einer Seite wird als <<AsciiDoc>> Datei im Ordner content geschrieben.
 Jede Datei muss am Anfang mindestens die Angaben haben, um welchen Typ von Inhalt es sich handelt (z.B. :jbake-type:page) und wie der Status (z.B. :jbake-status:published)ist.
@@ -27,3 +32,4 @@ Der Ordner templates enthält verschiedene Templates, die mit dem JBake-Projekt 
 Im menu.ftl kann die Navigationsleiste der Webseite angepasst werden.
 
 Ausführlichere Infos finden sich auf https://jbake.org/docs/2.6.4/#quickstart_guide
+ 
