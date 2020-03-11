@@ -1,3 +1,6 @@
 /.idea/
 /praktikum.iml
 /target/
+/Documentation/UserDoc/output/
+*.pdf
+*.html
