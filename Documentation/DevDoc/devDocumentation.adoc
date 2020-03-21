@@ -4,9 +4,30 @@
 
 Damit die Dokumentation mit dem gesamten Code in der Versionsverwaltung eingecheckt werden kann, wird für die Dokumentation Ascii Doc verwendet (https://asciidoctor.org/). +
 Dazu muss in IntellJ das AsciiDoc-Plugin installiert werden, dann kann ein file *.adoc angelegt werden, das jeweils direkt als PDF oder HTML ausgegeben werden kann. +
-AsciiDoc hat eine recht einfache Syntax, so dass ohne großen Aufwand ein Dokument erzeugt werden kann: +
+AsciiDoc hat eine recht einfache Syntax, so dass ohne großen Aufwand ein Dokument erzeugt werden kann:
 https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/ +
 Damit es später keine Probleme bei der Versionsverwaltung der AsciiDocs gibt, sollte in jeder Zeile jeweils nur ein Satz stehen.
+
+=== Syntax AsciiDoc aktuell verwendet
+
+* Überschriften haben automatisch einen Anker, d.h. sie können einfach verlinkt werden. +
+Bsp.: <<AsciiDoc>> verweist auf das entsprechende Kapitel +
+Eigene Anker werden gesetzt mit [[Anker]]Text.
+Auf den <<Text>> kann dann wieder verwiesen werden, auch mit einem <<Text,eigenen Namen>> für den Link.
+* Bilder sollten alle in einem Ordner liegen.
+Auf diesen wird zu Beginn des Dokuments verwiesen (Pfadangabe relativ zum aktuellen Ordner) +
+Bsp.: /:imagedir: images (ohne das /) +
+Falls es unterschiedliche imagedir gibt, kann jederzeit im Dokument ein neues Verzeichnis eingefügt, dass *ab diesem Punkt dann für alle Bilder gilt* +
+Das Bild selbst wird eingefügt mit image:NameDesBildes.jpg[] innerhalb einer Zeile oder image::NameDesBildes.png[] alleinstehend.
+Es können Zusatzinfos wie z.B. [align="center] (Bild wird zentriert dargestellt) angegeben werden
+* Absolute Links können einfach in den Text geschrieben werden mit https://meinLink.de
+Soll der Link einen eigenen Namen bekommen und nur dieser angezeigt werde: https://meinLink.de[Name]
+* kursiv setzen mit _Unterstrichen_
+* Fett drucken mit *Stern*
+* Fußnote einfügen mit footnote:[Hier steht der Text] +
+Fußnoten werden derzeit als End Note (also ganz am Ende des Dokuments angezeigt)
+* [.text-center] vor einem Abschnitt lässt diesen zentriert darstellen
+
 
 == Webseite
 
