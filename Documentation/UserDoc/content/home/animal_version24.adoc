@@ -1,0 +1,6 @@
+:jbake-type: post
+:jbake-status: published
+:jbake-date: 2015-07-31
+:jbake-title: Version 2.4
+
+http://www.algoanim.net/downloads/animal.jar[Version 2.4]

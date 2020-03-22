@@ -6,12 +6,11 @@
 Schön, dass du auf unserer Seite gelandet bist!
 Wir haben ein kleines Programm entwickelt, mit dem du ganz einfach sehen kannst, wie verschiedene Such- und Sortieralgorithmen aus der Informatik funktionieren.
 
-Wenn du das Programm direkt herunterladen willst, dann <<ANIMAL downloaden,klick bitte hier>>.
+Falls du erst noch Infos brauchst, <<installation.adoc#installation, klick hier für eine Installationsanleitung>> oder <<kurzanleitung.adoc#Schnellstart,hier für eine Kurzanleitung>>  zum Start. +
+Eine ausführliche Beschreibung darüber, wie du das Programm benutzt, gibt es <<userGuide.adoc#Einleitung, hier>>.
 
-Falls du erst noch Infos brauchst, <<Installation, klick hier für eine Installationsanleitung>> oder hier für eine Kurzanleitung zum Start. +
-Eine ausführliche Beschreibung darüber, wie du das Programm benutzt, gibt es <<User Guide, hier>>.
-
-Viel Spaß!
+Natürlich kannst du auch direkt starten und dir hier die aktuelle Version herunterladen oder im Archiv ältere Versionen finden.
+Du kannst sie auf deinem Rechner speichern und einfach per Doppelklick ausführen.
 
 
 

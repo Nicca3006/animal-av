@@ -10,11 +10,12 @@ Um das Programm auf deinem PC ausführen zu können, brauchst du eine Java-Versi
 Wenn du nicht weißt, ob du diese auf deinem Rechner bereits hast, findest du hier eine link:https://java.com/de/download/help/version_manual.xml[Anleitung], wie du das prüfen kannst. +
 Wenn Java auf deinem Rechner noch nicht vorhanden ist, kannst du es link:https://www.java.com/de/download/[mit diesem Link] installieren.
 
-Anschließend klicke bitte link:http://www.algoanim.net/downloads/animal-253.jar[hier], um die aktuelle Version von ANIMAL herunterzuladen.
+Anschließend klicke bitte <<index.adoc#Aktuelle Version, hier>>, um die aktuelle Version von ANIMAL herunterzuladen.
 In der Regel öffnet sich ein Fenster, in dem du auswählen kannst, in welchen Ordner du die Datei mit der Endung .jar auf deinem PC speichern willst.
 
 Am besten lädst du dir gleich noch das ZIP-File herunter, das ziemlich viele Animationen beinhaltet.
 Damit kannst du dann nach der Installation direkt starten, dir verschiedene Algorithmen anzuschauen.
+//TODO: Absolute Links ersetzen
 Den Download gibt es auf link:http://www.algoanim.net/downloads/currentanims_de.zip[deutsch] oder link:http://www.algoanim.net/downloads/currentanims_en.zip[englisch] - in dieser Sprache sind dann später die Texte in den Animationen, also achte darauf, die richtige Sprache zu wählen.
 Nun musst du das ZIP-File nur noch entpacken (mit der rechten Maustaste anklicken bringt meistens eine Funktion "entpacken" oder "unzip"), am besten in einen eigenen Ordner auf deinem PC.
 
@@ -24,4 +25,4 @@ Es erscheint ein kleines Fenster auf dem Bildschirm, wo du siehst, dass dein PC 
 //TODO Verweis auf Video mit Anleitung
 
 //TODO Wo geht es wirklich weiter?
-Wie es weitergeht, findest du auf der Seite Schnellstart.
+Wie es weitergeht, findest du auf der Seite <<schnellstart.adoc#Schnellstart, Schnellstart>>.
