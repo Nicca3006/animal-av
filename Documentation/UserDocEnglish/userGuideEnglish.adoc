@@ -1,7 +1,7 @@
 :imagesdir: images
 :toc: macro
 :toc-title: Content
-
+:sectnums:
 //Hinweis: Footnotes werden im pdf als Endnotes angezeigt
 
 //TODO: komplett überarbeiten
@@ -68,8 +68,7 @@ mit den toc:: erzeugen wir ein automatisches Inhaltsverzeichnis und brauchen dah
 <<B Animator and object options summary>>
 ////
 
-//TODO: automatische Nummerierung der Kapitel?
-== 1 Introduction
+== Introduction
 ANIMAL is a compact, efficient and easy to use animation tool developed at the University of Siegen starting in 1998.
 The motivation for developing ANIMAL came from a lack of satisfying tools for animations that are both easy to generate and edit and helpful in lectures. +
 ANIMAL is an acronym for A NEW INTERACTIVE MODELLER FOR ANIMATIONS IN LECTURES, which already shows the main area of usage for ANIMAL. +
@@ -85,7 +84,7 @@ Other programs seem to offer a far more operations at first glance. +
 However, a closer look will quick reveal that this impression is not necessarily accurate.
 Some other programs tend to offer the same basic effect not as a configurable effect, but rather as a collection of effects.
 ANIMAL offers highly flexible, adaptable effects that can usually perform the same other animation programs also offer - although the list of “supported effects” at first seems much shorter.
-Check out section <<4 Generating A New Animation>> for an in-depth description of the basic effects available and what operations can be done by using them wisely. +
+Check out section <<Generating A New Animation>> for an in-depth description of the basic effects available and what operations can be done by using them wisely. +
 Finally, the high flexibility mentioned above comes from the simple fact that practically all operations and objects ANIMAL uses are easy to edit and adapt to specific needs.
 Furthermore, the available object or animation effect types are not coded directly into the implementation.
 Thus, developers should find it very easy to add extensions to ANIMAL without having to touch much existing code. +
@@ -93,7 +92,7 @@ Using the new additions to ANIMAL, it is very easy to generate interesting anima
 ANIMAL is freely available on the _World Wide Web_, complete with a extensive collection of animations including screen shots and description.
 Check out the official ANIMAL Home page at http://www.informatik.uni-siegen.de/˜roesslin/Animal/index.html for more information.
 
-== 2 Requirements
+== Requirements
 ANIMAL is implemented completely in Java.
 This means several things, one of which being that the performance is - alas - at times somewhat slower than one might wish. +
 It also means, however, that the _hardware / software_ requirements for using ANIMAL are very easy to specify: your computer must be able to run Java.
@@ -108,7 +107,7 @@ It has also been tested on an Apple Powerbook and thus underscores Java’s clai
 Note that changes in the class libraries, especially the renaming of the Swing packages, prevents us from providing support for both _JDK 1.1.5+_ and _JDK 1.2 / 2.0_ with the same *source* code.
 The binary Java code for JDK 1.1.5+ will run under JDK 1.2, so this is the main release we support.
 
-== 3 Starting and Playing ANIMAL Animations
+== Starting and Playing ANIMAL Animations
 
 ANIMAL’s animation player is included in ANIMAL and is also useful for checking the animation currently under development. +
 To start the player, simply type the following command:
@@ -166,7 +165,7 @@ Due to scaling anomalities, only the following “sane” scaling factors are su
 * 141%,
 * 200%
 
-== 4 Generating A New Animation
+== Generating A New Animation
 
 In this example, you will use a few simple steps to generate a short but interesting animation about the behavior of the data structure _singly-linked list_.
 This animation will illustrate how to use ANIMAL to easily visually build animations. +
@@ -178,7 +177,7 @@ image::Figure 2 Final result of the tutorial animation.jpg[align="center"]
 
 Don’t worry, reaching this result is really not difficult. But now, let’s get going!
 
-=== 4.1 Preparation for the new Animation
+=== Preparation for the new Animation
 
 First of all, you must start ANIMAL as described in <<3 Starting and Playing ANIMAL Animations, chapter 3>>.
 After a while spent on initialization and loading the initial animation, (at least) ANIMAL’s main window is shown:
@@ -199,7 +198,7 @@ If not, you probably have to replace ALT by CTRL.
 If this does not work either, ask your system administrator for the local configuration details. +
 After the menu is shown, pressing N – the letter shown after the entry New – is the same as clicking on New.
 
-=== 4.2 ANIMAL’s Draw Window
+=== ANIMAL’s Draw Window
 
 First of all, you are going to draw a simple object: the _rectangle_ underlining the title.
 To do so, you have to open ANIMAL’s _Draw Window_.
@@ -213,7 +212,7 @@ Tables 1 on page 11 and 2 on page 12 summarize the buttons shown. +
 The main part of the window is taken up by the _drawing area_ – here showing a snapshot of the _Quicksort_ animation.
 This is the place where all objects are drawn.
 
-=== 4.3 Activating Grid Support
+=== Activating Grid Support
 
 First, you should activate a _grid_ for easier and more precise drawing.
 Referring to <<F5,figure 5>>, click on the _pop-down menu_ labeled Grid and set the value to 20.
@@ -230,7 +229,7 @@ The _grid_ is helpful for precise drawing, as it adds a line every _n_ pixels in
 The exact value of _n_ depends on your selection; in this case, the distance between two lines is _n=20 pixels_.
 By activating _Grid Snap_, you can only draw points falling exactly on those points where two such grid lines meet, and not “in between”.
 
-=== 4.4 Drawing the Header Rectangle
+=== Drawing the Header Rectangle
 
 As the first thing you should draw is the _title highlight rectangle_, click on the symbol for _polyline / polygon_ showing a short line: image:polyline.png[] +
 This will cause a window labeled Polyline Options to pop up showing one of the displays given in <<F6,figure 6>>.
@@ -269,7 +268,7 @@ image::Figure 5 ANIMAL’s Drawing Window.jpg[]
 |Button for generating a new Arc, Ellipse, Circle or Ellipse / Circle segment object
 |===
 
-=== 4.5 Setting Object Attributes and Color
+=== Setting Object Attributes and Color
 
 Go to the Polyline Options window shown in <<F6,figure 6>> and click on the entry _Attributes_ to bring up _Object Attribute Selection Pane_. +
 Here, you can set some options for the component.
@@ -313,7 +312,7 @@ image::Figure 6 Polyline Options Editor for setting color, attributes and depth.
 [.text-center]
 [[F6]]Figure 6: Polyline Options Editor for setting _color, attributes_ and _depth_
 
-=== 4.6 Drawing A Text Component
+=== Drawing A Text Component
 
 Now you can add the header text “List element demo” to your current animation.
 To do so, first click on the symbol for text showing the capital letter A:
@@ -342,7 +341,7 @@ This is not a problem caused within ANIMAL’s ability to handle, but reflects t
 Before continuing, make sure you have set the entries back to _SansSerif_ size 24 with neither _italics_ nor _bold_. +
 When you’re done, press the _OK_ button in the _Text Editor_ to close the window.
 
-=== 4.7 Adjusting Object Placement
+=== Adjusting Object Placement
 
 The current display is not very attractive, as the header text has some free space to the left, but none to the right.
 To change this, you have to _turn off Grid Snap_, since moving the text to the left would only invert the situation: no space to the left, but free space to the right.
@@ -365,7 +364,7 @@ Now, turn _Grid Snap_ back on as described above.
 Then, set the Grid width to *5* as described in section <<4.3 Activating Grid Support,4.3>> and repeat the moving process by clicking on the text and dragging it using one of the _drag points_.
 You should find it easy to (roughly) center the text now.
 
-=== 4.8 Generating A New Animation Step
+=== Generating A New Animation Step
 
 The current display containing the centered heading shall be enough for the animation start.
 Therefore, we need to add a _new animation step_ for the next display.
@@ -401,7 +400,7 @@ Of course, a dialog will ask for confirmation before such an operation is actual
 As we want to add a new animation step _after_ the current first animation step, click once on the _Append Step_ button image:append.png[].
 This will lead to the addition of the new animation step *2* and will also directly set this as the current animation step.
 
-=== 4.9 Entering Several Lines Of Text
+=== Entering Several Lines Of Text
 
 Now, we are going to enter the documentation for this animation.
 This consists of the following text entries:
@@ -433,7 +432,7 @@ If you have made some typing mistake, you can fix it either
 * _after_ you placed another object: _close_ the _Editor_ window after placing the current object, then click on the object in question.
 If the _Text Editor_ does not open, you have to click on the _Editor button_ on the left border of the _Draw Window_: image:useEditors.png[]
 
-=== 4.10 Storing An Animation
+=== Storing An Animation
 
 This is a good time for storing the animation!
 Animations are stored in one of the following ways:
@@ -459,7 +458,7 @@ The possible file format selections are shown at the bottom.
 Normally, you will want to store the file in _compressed ASCII_ format.
 Note that this is the first entry in the list and is clearly marked as _preferred_.
 
-=== 4.11 Generating A List Element
+=== Generating A List Element
 
 Before you generate the first list element, please insert a new step by pressing the _append_ button in ANIMAL’s _Animation Overview_ window as described in section <<4.8 Generating A New Animation Step,4.8>>.
 This should be _step 3_.
@@ -479,7 +478,7 @@ image::Figure 11 State of the animation after adding the first element.png[]
 [.text-center]
 [[F11]]Figure 11: State of the animation after adding the first element
 
-=== 4.12 Highlighting Elements By Color Changing
+=== Highlighting Elements By Color Changing
 
 In order to make sure users understand the connection between the new list element and the first instruction, you can change this line to _red_.
 However, if you do so using the _Text Editor_, you actually change the color of the object _for the whole animation_, which is unwanted in this case. +
@@ -527,7 +526,7 @@ You should now have two red texts, which is somewhat unfortunate. +
 Therefore, you might want to mark the first line of text as “done”.
 To do so, repeat the steps of the last section to enter a new _Color Change_ animation effect that sets the color of the _first_ line to _blue_.
 
-=== 4.13 Moving Elements
+=== Moving Elements
 
 The next operation calls for changing the _tip_ (arrow) of the current list element to be set to _null_.
 _Without_ changing the step, click on the _Move Editor_ button image:Move.png[] in ANIMAL’s _Animation Overview_.
@@ -610,7 +609,7 @@ The next few steps call for a repetition of the same steps.
 Place the _third_ list element with text Elem 3 _between_ the two list elements, but _below_ them. +
 Repeat these steps until you reach the following rough step:
 
-=== 4.14 Using Arc Elements
+=== Using Arc Elements
 For linking the _first_ and _third_ list element, we will now use a _arc_ component. +
 Begin with the usual operations, that is, adding a _new_ step, changing the color of text lines _six_ and _seven_ and generating a new _Move_ animator in which you select the _first_ list element and the method setTip.
 Then, select the _Move via:_ button “Select Objects:”. +
@@ -636,7 +635,7 @@ image::Figure 18 Linking elements using an arc component.png[align="center"]
 Test and optimize this animation step as usual.
 The next few steps are a simple of the last few actions: setting the link from the _new_ element to the second list element and adapting the colors.
 
-=== 4.15 Diverse Options for Moving List Elements
+=== Diverse Options for Moving List Elements
 
 For the last step, we want to reach a “nice” list structure in which all elements are at the same height. +
 To do so, you could use the _translate_ method of the _Move_ animation effect.

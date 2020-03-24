@@ -27,7 +27,8 @@ Soll der Link einen eigenen Namen bekommen und nur dieser angezeigt werde: https
 * Fußnote einfügen mit footnote:[Hier steht der Text] +
 Fußnoten werden derzeit als End Note (also ganz am Ende des Dokuments angezeigt)
 * [.text-center] vor einem Abschnitt lässt diesen zentriert darstellen
-
+* Einzeilige Code-Snippets können dadurch gekennzeichnet werden, dass sie einen space eingerückt sind (davor eine Leerzeile!)
+* Ein Code-Block wird mit .... umklammert (also davor und danach jeweils als eigene Zeile)
 
 == Webseite
 
