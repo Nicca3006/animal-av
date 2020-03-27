@@ -1,0 +1,424 @@
+:jbake-title: animalScript
+:jbake-date: 2020-03-26
+:jbake-type: page
+:jbake-status: published
+:imagesdir: images
+:icons: font
+:toc: macro
+:toc-title: Content
+:sectnums:
+
+//Hinweis: Footnotes werden im pdf als Endnotes angezeigt
+= ANIMALScript Tutorial
+
+//TODO: Bilder neu erstellen? (GUI neu?)
+[.text-center]
+Animationen erzeugen mit ANIMALScript
+ANIMAL Version 2.5.3
+
+ANIMALScript eignet sich gut, wenn du gerne in einem Texteditor programmierst und weniger Wert auf eine grafische Oberfläche legst.
+Das klingt im ersten Moment vielleicht ungewohnt, aber probier es einfach mal aus!
+////
+TODO: Adresse?
+[.text-center]
+Dipl.-Inform. Guido Rößling +
+FB 12, Parallel Systems +
+University of Siegen +
+Hölderlinstr. 3 +
+D-57080 Siegen
+
+[.text-center]
+EMail: roessling@acm.org
+
+[.text-center]
+April 6, 2000
+////
+toc::[]
+
+== Einführung
+Kennst du schon das ANIMAL Tutorial? Dann kannst du den Anfang überspringen und direkt bei <<Erstellen einer neuen Animation mit ANIMALScript>> weiterlesen.
+
+ANIMAL ist ein einfaches Tool, mit dem sich Algorithmen grafisch darstellen lassen.
+Es gibt bereits sehr viele fertige Animationen, aber es können auch ganz einfach eigene Animationen erstellt werden. +
+ANIMAL steht als Abkürzung für "A New Interactive Modeller For Animations In Lectures", weil es vor allem für den Einsatz im Unterricht gedacht ist.
+Die Stärken sind vor allem:
+
+* eine sehr einfach zu benutzende grafische Oberfläche mit Drag and Drop-Funktion
+* Animationen können automatisch generiert werden
+* Umsetzung erfolgt in Java, unabhängig vom jeweiligen Betriebssystem
+* sehr flexibel
+
+Zu Beginn erscheint ANIMAL nicht so modern wie manche anderen Programme, die auf den ersten Blick mehr Funktionen bieten.
+In der Anwendung zeigen sich dann jedoch die umfangreichen Möglichkeiten.
+Eine genaue Beschreibung der Funktionen und wie sie sinnvoll eingesetzt werden können, steht in <<Erstellen einer neuen Animation mit ANIMALScript>>.
+Wenn ANIMAL schon installiert und gestartet ist, kannst du direkt dort hinspringen, sonst lies einfach weiter. +
+
+== Installation
+//TODO: Absolute Links ersetzen? Regelmäßig prüfen, wenn Seite gebaut wird
+Um das Programm auf deinem PC ausführen zu können, brauchst du eine Java-Version 7 oder höher.
+Wenn du nicht weißt, ob du diese auf deinem Rechner bereits hast, findest du hier eine link:https://java.com/de/download/help/version_manual.xml[Anleitung], wie du das prüfen kannst. +
+Wenn Java auf deinem Rechner noch nicht vorhanden ist, kannst du es link:https://www.java.com/de/download/[mit diesem Link] installieren.
+
+Anschließend klicke bitte <<index.adoc#Aktuelle Version, hier>>, um die aktuelle Version von ANIMAL herunterzuladen.
+In der Regel öffnet sich ein Fenster, in dem du auswählen kannst, in welchen Ordner du die Datei mit der Endung .jar auf deinem PC speichern willst.
+
+Am besten lädst du dir gleich noch das ZIP-File herunter, das ziemlich viele Animationen beinhaltet.
+Damit kannst du dann nach der Installation direkt starten, dir verschiedene Algorithmen anzuschauen.
+//TODO: Absolute Links ersetzen
+Den Download gibt es auf link:http://www.algoanim.net/downloads/currentanims_de.zip[deutsch] oder link:http://www.algoanim.net/downloads/currentanims_en.zip[englisch] - in dieser Sprache sind dann später die Texte in den Animationen, also achte darauf, die richtige Sprache zu wählen.
+Nun musst du das ZIP-File nur noch entpacken (mit der rechten Maustaste anklicken bringt meistens eine Funktion "entpacken" oder "unzip"), am besten in einen eigenen Ordner auf deinem PC.
+
+== Programmstart
+Um endlich loslegen zu können, suchst du die JAR-Datei, die du gespeichert hast und startest durch Doppelklick auf diese Datei das Programm.
+Es erscheint ein Fenster auf dem Bildschirm, wo du siehst, dass dein PC arbeitet und danach öffnet sich das Hauptfenster des Programms ANIMAL (Animal Control Center).
+
+image::Animal_Control_Center_V253_english.PNG[align="center"]
+
+Wenn du möchstest, stell die Sprache unter _Language_ um auf *Deutsch*.
+In dieser Anleitung zeigen wir (fast) immer die deutsche Version. +
+Wenn du im Programm eine bestehende Animation anschauen willst, klicke bitte auf _Datei - Öffnen_ und suche den Ordner, in dem du vorher die Dateien aus dem ZIP-File abgelegt hast.
+Bitte achte darauf, dass beim *Dateityp* ausgewählt sein muss _animation/animal-ascii-compressed(.aml)_.
+Nun such dir eine Animation aus, die du sehen möchtest und klicke auf _Öffnen_.
+Im Beispiel schauen wir uns den Dijkstra-Algorithmus an. +
+
+image::BeispielAnimation_Dijkstra.PNG[align="center"]
+Im unteren Bereich finden sich verschiedene Schaltflächen zum Abspielen der Animation:
+
+* Animation _starten_ image:Animation_starten.PNG[]
+* Animation _anhalten_ (Pause) image:Animation_Pause.PNG[]
+* _zurück zum Anfang_ der Animation image:Animation_Beginn.PNG[]
+* einen _Schritt zurück_ image:Animation_SchrittZurueck.PNG[]
+* einen _Schritt vor_ image:Animation_SchrittVor.PNG[]
+* _ans Ende_ der Animation springen image:Animation_Ende.PNG[]
+* Animation _rückwärts_ zeigen image:Animaion_rueckwaerts.PNG[]
+
+Während der *Erstellung* einer Animation kann es passieren, dass das Springen zu bestimmten Schritten nicht richtig funktioniert.
+Bitte speichere deine Animation dann einmal und lade sie neu - nun sollte alles wieder funktionieren. +
+Du kannst auch direkt die Nummer des Schritts eingeben, den du dir anzeigen lassen möchtest: image:Animation_Schritt_Eingabe.PNG[] +
+Mit dem _Schieberegler_ lässt sich die Geschwindigkeit einstellen, in der die Animation abläuft.
+Ganz oben kannst du außerdem einen Zoom einstellen.
+Das ist besonders sinnvoll bei sehr breiten oder hohen Animationen, um Screenshots zu erstellen oder um die Größe von der _Anzeige auf dem Computer_ an die _Anzeige auf einem Beamer_ anzupassen. +
+
+== Erstellen einer neuen Animation mit ANIMALScript
+Vielleicht willst (oder sollst) du die Funktionsweise eines Algorithmus mit eigenen Zahlen erklären oder es gibt noch kein Beispiel zu dem Algorithmus.
+Dann kannst du ganz einfach eine eigene Animation erstellen.
+Im folgenden zeigen wir am Beispiel einer _einfach verketteten Liste_, wie das funktioniert. +
+Das Ergebnis wird etwa so aussehen (hier in englisch):
+
+image::Figure 2 Final result of the tutorial animation.JPG[align="center"]
+
+=== Vorbereitung der neuen Animation
+Animationen mit ANIMALScript werden in einem beliebigen _Text Editor_ geschrieben.
+In _Windows_ kannst du zum Beispiel den _Editor_ benutzen, auf dem Mac _TextEdit_.
+Bitte lege dir dort eine (erstmal leere) Datei z.B. unter dem Namen _demo.asu_ an.
+ANIMALScript Dateien starten immer mit der folgenden Kopfzeile:
+
+ %Animal 2 . 5 . 3
+
+Beginne also mit dieser Zeile und bestätige sie mit _Enter_.
+Bitte beachte, dass sich die _2.5.3_ auf die aktuelle Version bezieht, sich also in Zukunft ändern kann. +
+Nun kannst du ein paar Informationen zu dir als Autor eingeben, z.B.
+....
+title "AnimalScript Tutorial Animation"
+author "Guido Roessling <roessling@acm.org>"
+....
+Parallel kannst du schon mal ANIMAL starten (s.<<Programmstart>>) und deine Datei öffnen.
+
+image::Animal_Control_Center_V253_english.PNG[]
+
+Klicke dazu auf image:Open.PNG[] oder _Datei - Öffnen_ (_File - Open_). +
+
+=== Überschrift erzeugen
+Als erstes wollen wir einen _Überschrift_ in unserer Animation haben.
+Da es sich dabei einfach um Text handelt, schreib in deine Datei im Editor
+
+ text "header" "List element demo" at (20, 30)
+
+und speichere die Datei (ohne sie zu schließen). +
+Wenn du in ANIMAL nun das Animationsfenster (image:animWindow2.png[]) und das Zeichenfenster (image:Draw.PNG[]) öffnest, siehst du dort deine Eingabe.
+Falls der Text noch nicht sichtbar ist, musst du noch einmal die Animation _refreshen_ (image:Reload.PNG[] im _Animation Control Center_).
+Nun sollte es so aussehen:
+
+//TODO: Bilder kleiner?
+image:DrawingWindow_AnimScript_Title.PNG[] image:AnimWindowAnimalScript_Title.PNG[]
+
+Nun wollen wir die Schrift noch etwas anpassen auf SansSerif, size 24, *bold* und ändern dafür nochmal den Code im Editor:
+
+ text "header" "List element demo" at (20, 30) font SansSerif size 24 bold
+
+WARNING: Achte darauf, *keine Zeilenumbrüche* in deinem Code im Editor zu haben.
+Jeder Befehl muss in einer eigenen Zeile stehen.
+
+Je nach Bildschirmgröße kann es sein, dass die Zeile hier erscheint, als habe sie einen Umbruch.
+Im Text Editor kannst du sie aber immer als eine einzige Zeile eingeben.
+
+IMPORTANT: Wenn du nicht explizit etwas anderes bestimmst, ist die Schriftfarbe in ANIMAL immer _schwarz_.
+
+Wir wollen die Überschrift in unserer Animation jetzt in einem _Rechteck_ darstellen. +
+Dafür können wir den Befehl _rectangle_ benutzen.
+Allerdings haben wir ein kleines Problem:
+Wir wissen nicht genau, wie hoch und wie breit unser Text ist. +
+Wir könnten natürlich mit verschiedenen Einstellungen experimentieren, aber das erscheint doch recht mühsam... +
+Zum Glück gibt es in ANIMALScript eine einfache Lösung durch sogenannte _relative Platzierung_ (_relative placement_).
+Wir ersetzen die _absoluten Koordinaten_ der Punkte des Rechtecks durch _offsets_ ausgehend von einem anderen Objekt. +
+In diesem Fall wollen wir das Rechteck mit etwas Abstand um unseren Text herum darstellen, also sollte es etwas _links oben_ vom Text beginnen und _rechts unten_ enden.
+Ergänze deinen Code wie folgt und schaue, was passiert, wenn du die Animation aktualisierst.
+
+ rectangle "hRect" offset (-5, -5) from "header" NW offset (5, 5) from "header" SE
+
+Hast du bemerkt, dass es jetzt _zwei_ Animationsschritte gibt?
+Das liegt daran, dass generell jeder ANIMALScript Befehl einen _neuen Animationsschritt_ erzeugt.
+Um zu erreichen, dass unser _text_ und _rectangel_ Befehl im gleichen Schritt ausgeführt werden, umgeben wir diese mit _geschweiften Klammern_).
+Die öffnende { muss dabei _vor_ dem _text_ Befehl in einer *separaten Codezeile* stehen, die schließende } _nach_ dem _rectangle_ Befehl ebenfalls in einer *separaten Zeile*. +
+Nun aktualisiere deine Animation und schau, was passiert. +
+Eventuell verbirgt das Rechteck nun den Text, weil es als zweites Objekt gezeichnet wurde.
+Wir können es aber nicht als erstes Objekt zeichnen, weil wir dann noch keine Referenz zu unserem Text hätten. +
+In so einem Fall können wir die _Tiefe_ der Objekte bestimmen.
+Je *tiefer* ein Objekt ist, umso weiter im Hintergrund liegt es, während ein Objekt mit _geringerer Tiefe_ praktisch *auf* dem unteren Objekt liegt, also sichtbar ist.
+Wir können unseren Code also wieder ergänzen um die _Tiefenangabe_:
+
+....
+{
+text "header" "List element demo" at(20, 30) depth 1 font SansSerif size 24 bold
+rectangle "hRect" offset (-5, -5) from "header" NW offset (5, 5) from "header" SE depth 2 filled fillColor white
+}
+....
+
+=== Textzeilen einbetten
+Wir wollen in unserer Animation dokumentieren, was alles passiert.
+Dazu wollen wir folgende Textzeilen erfassen:
+
+* 1. Generate first list element
+* 2. Set link of first list element to null
+* 3. Generate new list element
+* 4. Clear link of second list element
+* 5. Link first with second list element
+* 6. Generate new list element
+* 7. Link new with second list element
+* 8. Link first with new element
+* 9. Transform into ’nice’ list structure
+
+Natürlich könnten wir wieder den _Text_ Befehl benutzen wie bei der Überschrift.
+Alternativ bietet ANIMALScript die Möglichkeit, einen Textblock zusammenhängender Codezeilen (hier Pseudocode!) mit der Option zur _Einrückung_ oder _Hervorhebung_ einzugeben.
+Der erste Befehl dazu lautet
+
+ codeGroup "listSource" at (10, 200) color black highlightColor red
+
+Dieser Befehl erzeugt _kein grafisches Objekt_, sondern bereitet ANIMAL darauf vor, den folgenden Text korrekt zu behandeln.
+Die Koordinaten (10, 200) definieren die _linke obere Ecke_ des Textblocks.
+Statt der absoluten Koordinaten könntest du auch _relative placement_ benutzen, z.B.
+
+ codeGroup "listSource" offset (0, 80) from "hRect" SW color black
+
+Damit die Codezeilen später alle gleichzeitig erscheinen, solltest du sie in einen _einzelnen Animationsschritt_ packen, indem du wieder in die Zeile _vor_ und _nach_ dem *codeGroup* Befehl geschweifte Klammern schreibst.
+Text zu einer *CodeGroup* hinzuzufügen, ist denkbar einfach.
+Du gibst einfach ein:
+
+ addCodeLine "text" to "codeGroupID"
+
+Für unser Beispiel geben wir folgenden Code ein:
+
+....
+{
+codeGroup "listSource" at (10, 200) color black highlightColor red
+addCodeLine "1. Generate first list element" to "listSource"
+addCodeLine "2. Set link of first list element to null" to "listSource"
+addCodeLine "3. Generate new list element" to "listSource"
+addCodeLine "4. Clear link of second list element" to "listSource"
+addCodeLine "5. Link first with second list element" to "listSource"
+addCodeLine "6. Generate new list element" to "listSource"
+addCodeLine "7. Link new with second element" to "listSource"
+addCodeLine "8. Link first with new element" to "listSource"
+addCodeLine "9. Transform into 'nice' list structure" to "listSource"
+}
+....
+
+=== Code Hervorhebung
+Nun sind alle Vorbereitungen abgeschlossen und wir können damit beginnen, den eigentlichen Inhalt unserer Animation zu schreiben.
+Wir wollen die erste Zeile unseres (Pseudo-)Codes hervorheben.
+Dafür geben wir folgenden Code ein:
+
+ highlightCode on "listSource" line 0
+
+IMPORTANT: Wie in *Java* üblich, beginnt ANIMALScript immer bei 0 zu zählen, daher hat die erste Codezeile die Nummer 0. +
+
+Den Effekt des Befehls siehst du nach Aktualisierung deiner Animation:
+Die erste Textzeile wir nun _rot_ hervorgehoben.
+Wie du siehst, hatten wir _rot_ in der Zeile mit dem *CodeGroup* Befehl explizit als _Hervorhebungsfarbe_ bestimmt.
+Wenn du lieber eine andere Farbe haben möchtest, kannst du das natürlich jederzeit ändern.
+
+=== Erzeugen eines Listenelements
+Jetzt wollen wir unser erstes Listenelement erzeugen, indem wir den *listelement* Befehl benutzen:
+
+ listelement "firstListElem" (100, 80) pointers 1
+
+Allerdings hat das Listenelement jetzt noch keine Bezeichnung, weswegen wir unseren Code nochmal ändern.
+Gleichzeitig wollen wir auch eine kleine _Verzögerung_ haben zwischen der Hervorhebung des _roten_ Texts und der Darstellung des _Listenelements_. +
+So sieht unser Code jetzt aus:
+
+ listelement "elemA" (100, 80) text "Elem1" pointers 1 after 200 ticks
+
+Der Befehl *after* bestimmt eine Zeitspanne, *nach der* die Aktion ausgeführt wird - in diesem Fall wird das Listenelement nach 200 _Ticks_ angezeigt.
+*Ticks* sind eine ANIMAL-interne Zeiteinheit, mit denen Effekte besser zu steuern sind als mit Millisekunden. +
+Wenn du die Animation jetzt ausführst, wirst du bemerken, dass _Hervorhebung_ und _Erscheinen des Listenelements_ wieder in unterschiedlichen _Animationsschritten_ ausgeführt werden.
+Um das zu ändern, setze die beiden Zeilen wieder in _geschweifte Klammern_.
+
+=== Hervorheben und nicht mehr hervorheben des Codes
+Jetzt wollen wir die zweite Zeile unserer Pseudocodes _hervorheben_, gleichzeitig soll die erste Zeile _nicht mehr hervorgehoben_ erscheinen.
+Dafür brauchen wir wieder mehrere Aktionen in _einem_ Schritt:
+
+* die erste Zeile nicht mehr hervorheben (*line 0*)
+* die zweite Zeile hervorheben (*line 1*)
+* denk Link des ersten Listenelements löschen
+
+Das sollte mittlerweile kein Problem mehr für dich darstellen.
+Nicht sehr überraschend heißt der Befehl, um etwas _nicht mehr hervorzuheben_ *unhighlightCode*. +
+Der Befehl um einen Link zu _löschen_ heißt *clearLink* und du musst dazu angeben, auf welches Objekt sich der Befehl bezieht. +
+Die nächsten Zeilen Code im Editor sehen also so aus:
+....
+{
+unhighlightCode on "listSource" line 0
+highlightCode on "listSource" line 1
+clearLink "elemA"
+}
+....
+Diese Aktionen wiederholen wir jetzt, um das nächste Listenelement zu erzeugen, den Link zu löschen und die Hervorhebungen zu setzen.
+Das zweite Element soll rechts vom ersten Element angeordnet werden, sagen wir *(130, 0)* entfernt von der rechten oberen Ecke (*NE* = north-east) des ersten Elements.
+So sieht also unser Code aus:
+....
+{
+unhighlightCode on "listSource" line 1
+highlightCode on "listSource" line 2
+listelement "elemB" offset (130, 0) from "elemA" NE text "Elem2" pointers 1
+}
+{
+unhighlightCode on "listSource" line 2
+highlightCode on "listSource" line 3
+clearLink "elemB"
+}
+....
+
+=== Listenelemente verbinden
+Als nächstes wollen wir die beiden Listenelemente verbinden.
+Das geht ganz einfach mit dem *setLink* Befehl und der Eingabe des _Basis Listenelements_, des Schlüsselwortes *to* und des _Ziel Listenelements_.
+Wir wollen auch wieder eine kleine Verzögerung einbauen, z.B. *200 ticks*.
+Wir ergänzen dafür folgenden Code:
+....
+{
+unhighlightCode on "listSource" line 3
+highlightCode on "listSource" line 4
+setLink "elemA" to "elemB" within 200 ticks
+}
+....
+IMPORTANT: Beachte, dass *within* die _Dauer_ einer Aktion definiert, während *after* das _offset_ festlegt.
+Werden *beide* benutzt, muss du *zuerst* das _offset_ festlegen.
+
+Die nächsten Schritte kannst du als kleine Übung alleine machen.
+Mit den gleichen Befehlen, die du bereits benutzt hast, sollte es kein großes Problem sein, das _Code Highlighting_ für die weiteren Elemente zu hinterlegen und ein drittes Listenelement *elemC* einzufügen.
+Setze bitte auch einen Link zu dem neuen Element.
+Das Element selbst sollte ungefähr in der Mitte der bisherigen Elemente liegen, aber etwas tiefer, z.B. offset *(80,50)* von *NW* des ersten Elements. +
+Am Ende dieser Anleitung findest du nochmal den gesamten Code, falls du hier nicht weiterkommst.
+
+=== Bewegen von Objekten
+Der letzte Schritt soll die Liste in eine _schöne_ Struktur verwandeln.
+Dafür brauchen wir die folgenden Aktionen:
+
+* Hervorhebung der letzten Codezeilen (können wir schon, wird hier nicht beschrieben)
+* Das _neue_ Element elemC zwischen die beiden Listenelementen elemA und elemB bewegen, dabei die Zeiger sinnvoll verändern
+* Den Zeiger des ersten Elements ohne den Rest des Elements bewegen
+
+Die beiden letzten Aktionen brauchen den *move* Befehl, dessen Anwendung ein bisschen tricky ist, der aber gleichzeitig zeigt, was ANIMALScript alles kann. +
+Dazu solltest du wissen, dass jedes Objekt eine sogenannte _bounding box_ hat, daie _alle_ Komponenten des Objekts beinhaltet.
+Von daher enthält die Bounding Box des _mittleren_ Listenelements (elemC) auch den _Zeiger_ auf das letzte Listenelement elemB.
+Zur Veranschaulichung hier mal eine ungefähre Grafik der Elemente mit ihren Boundig Boxes:
+
+image::Image_Elem1_2_3.PNG[align="center"]
+Wenn du die Positionen wie vorgeschlagen genutzt hast, wirst du sehen, dass der Zeiger über die Grenzen nach oben und rechts hinausgeht. +
+Jetzt wollen wir das Listenelement _elemC_ und den _Zeiger_ des Listenelement elemA bewegen. +
+Dazu müssen wir erstmal überlegen, wie wir die Elemente bewegen müssen.
+Bei genauem Hinsehen erkennst du, dass du bestimmte Punkte im Zusammenhang mit den Bounding Boxes nutzen kannst, um die Platzierung der Objekte zu bestimmen:
+
+* die *SE* Ecke des mittleren Elements, denn diese enthält die untere Linie des Objekts _und_ den Zeiger
+* die *SW* Ecke des letzten Elements, denn dieses gibt die untere Zielline _und_ die Zielkoordinaten für den Zeiger vor
+
+Als ersten werden wir ein verstecktes Linien-Objekt erzeugen:
+
+ line "moveLine1" offset (0, 0) from "elemC" SE offset (0, 0) from "elemB" SW hidden
+
+Diese Linie können wir benutzen (auch wenn wir sie nicht sehen), um die Objekte daran entlang zu bewegen.
+Dazu müssen wir zwei _spezielle Untertypen_ des *move* Befehls benutzen, wie man im folgenden Code sieht:
+....
+move "elemC" type "translateWithFixedTip" via "moveLine1" after 20 ticks within 20 ticks
+move "elemA" type "setTip #1" via "moveLine1" after 50 ms within 200 ticks
+....
+*Und jetzt?*
+Jetzt hast du es geschafft, die Animation ist fertig! +
+Hier ist noch einmal der komplette Code:
+....
+%Animal 1 . 4
+title "AnimalScript Tutorial Animation"
+author "Guido Roessling <roessling@acm.org>"
+text "header" "List element demo" at (20, 30) font SansSerif size 24 bold
+rectangle "hRect" offset (-5, -5) from "header" NW offset (5, 5) from "header" SE filled fillColor white
+{
+text "header" "Listelement demo" at(2 y0, 30) depth 1 font SansSerif size 24 bold
+rectangle "hRect" offset (-5, -5) from "header" NW offset (5, 5) from "header" SE depth 2 filled fillColor white
+}
+{
+codeGroup "listSource" at (10, 200) color black highlightColor red
+addCodeLine "1. Generate first list element" to "listSource"
+addCodeLine "2. Set link of first list element to null" to "listSource"
+addCodeLine "3. Generate new list element" to "listSource"
+addCodeLine "4. Clear link of second list element" to "listSource"
+addCodeLine "5. Link first with second list element" to "listSource"
+addCodeLine "6. Generate new list element" to "listSource"
+addCodeLine "7. Link new with second element" to "listSource"
+addCodeLine "8. Link first with new element" to "listSource"
+addCodeLine "9. Transform into 'nice' list structure" to "listSource"
+}
+{
+highlightCode on "listSource" line 0
+listelement "elemA" (100, 80) text "Elem1" pointers 1 after 200 ticks
+}
+unhighlightCode on "listSource" line 0
+highlightCode on "listSource" line 1
+clearLink "elemA"
+}
+{
+unhighlightCode on "listSource" line 1
+highlightCode on "listSource" line 2
+listelement "elemB" offset (130, 0) from "elemA" NE text "Elem2" pointers 1
+}
+{
+unhighlightCode on "listSource" line 2
+highlightCode on "listSource" line 3
+clearLink "elemB"
+}
+{
+unhighlightCode on "listSource" line 3
+highlightCode on "listSource" line 4
+setLink "elemA" to "elemB" within 200 ticks
+}
+{
+unhighlightCode on "listSource" line 4
+highlightCode on "listSource" line 5
+listelement "elemC" offset (80, 50) from "ElemA" NW text "elem3" pointers 1
+}
+{
+unhighlightCode on "listSource" line 5
+highlightCode on "listSource" line 6
+setLink "elemA" link 1 to "elemC"
+}
+{
+unhighlightCode on "listSource" line 6
+highlightCode on "listSource" line 7
+setLink "elemC" link 1 to "elemB"
+}
+{
+unhighlightCode on "listSource" line 7
+highlightCode on "listSource" line 8
+line "moveLine1" offset (0, 0) from "elemC" SE offset (0, 0) from "elemB" SW hidden
+move "elemC" type "translateWithFixedTip" via "moveLine1" after 20 ticks within 200 ticks
+move "elemA" type "setTip #1" via "moveLine1" after 50 ms within 200 ticks
+}
+....

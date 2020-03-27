@@ -137,12 +137,12 @@ Most of the player is taken up by the _animation canvas_ in which the actual ani
 Below this are the controls for the current animation.
 These consist of a series of buttons which are used to
 
-* jump to the animation’s first step <|;
+* jump to the animation’s first step |<;
 * go to the previous step _without_ playing out the animators contained in the step <<;
 * _pause_ before changing the to the next step ||; +
 Note that this is only useful if there is a _timed link_ between the current step and the next step.
 * _play_ the current step, ie. activate all animators >;
-* go to the next step _without_ playing out the animators contained in the step ensuremath¿¿;
+* go to the next step _without_ playing out the animators contained in the >>;
 * jump to the animation’s last step >|.
 
 The next component is a _slider_ showing how far the animation has progressed.
@@ -175,7 +175,8 @@ image::Figure 2 Final result of the tutorial animation.jpg[align="center"]
 [.text-center]
 [[F2]]Figure 2: Final result of the tutorial animation
 
-Don’t worry, reaching this result is really not difficult. But now, let’s get going!
+Don’t worry, reaching this result is really not difficult.
+But now, let’s get going!
 
 === Preparation for the new Animation
 
@@ -334,8 +335,7 @@ Place the text inside the _header rectangle_ by clicking on the first point at t
 Your text should now have 20 pixels space to both the left and right side, and touch the bottom line of the header rectangle as follows:
 
 image::Image_ListElementDemo.jpg[align="center"]
-You can also experiment with the _Font_ settings after the text has been placed - just
-change back to the _Font_ tab and see what happens when you click on the _italics_ or _bold_ check boxes
+You can also experiment with the _Font_ settings after the text has been placed - just change back to the _Font_ tab and see what happens when you click on the _italics_ or _bold_ check boxes
 footnote:[Note that some systems may not support SansSerif fonts which are italics, bold or bold italics.
 This is not a problem caused within ANIMAL’s ability to handle, but reflects the Java installation settings.].
 Before continuing, make sure you have set the entries back to _SansSerif_ size 24 with neither _italics_ nor _bold_. +
@@ -495,7 +495,8 @@ Go to the _DrawWindow_ and click _once_ on the first text line.
 Notice how the entry in the Color Changer Editor changes.
 The editor allows you to select as many objects for simultaneous animation as you want; for now, the text line is sufficient, though.
 Click again on the _Select Objects_ button, which should now no longer be dark, but display a message like Selected Objects: 3. +
-Next, choose the _animation method_ from the list. For a _text_ component, this is limited to the default entry _color_, so you do not really have to do anything here. +
+Next, choose the _animation method_ from the list.
+For a _text_ component, this is limited to the default entry _color_, so you do not really have to do anything here. +
 Finally, you can decide whether you want to use a _delay_ before the object changes color.
 The _duration_ is ineffectual for color changes.
 Note that you can decide between _ticks_ or _ms (milliseconds)_.

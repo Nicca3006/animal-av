@@ -29,6 +29,9 @@ Fußnoten werden derzeit als End Note (also ganz am Ende des Dokuments angezeigt
 * [.text-center] vor einem Abschnitt lässt diesen zentriert darstellen
 * Einzeilige Code-Snippets können dadurch gekennzeichnet werden, dass sie einen space eingerückt sind (davor eine Leerzeile!)
 * Ein Code-Block wird mit .... umklammert (also davor und danach jeweils als eigene Zeile)
+* Tabellen können eine Überschrift und/oder einen Header haben [cols="1,2", options="header] wird die erste Zeile als Header darstellen +
+Darunter wird die Tabelle ein- und ausgeleitet mit |=== und die einzelnen Zeilen werden dargestellt als |1.Spalte |2.Spalte
+
 
 == Webseite
 

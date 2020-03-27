@@ -29,3 +29,9 @@ Zwei schwarze Rechtecke, lassen sich zoomen.
 Unten scheint es vier Schritte in der Auswahl zu geben, bei Schritt 3 springt das rechte Rechteck weiter nach rechts.
 
 image::Animal_Animation_Fenster_Fehler.png[]
+
+== Shortcuts führen zum falschen Ziel
+
+In der Spracheinstellung Deutsch öffnet _ALT-D_ den Drucker statt _Datei_.
+_ALT-T_ verweist auf Repository (mit oben dargestelltem Fehler) statt auf _Fenster_.
+

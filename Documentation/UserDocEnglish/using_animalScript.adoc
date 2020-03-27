@@ -225,8 +225,7 @@ Instead of giving the _absolute coordinates_ for the rectangle points, you can s
 In this case, we know that the rectangle should cover the whole text, so it should start a bit to the upper left of the text and extend to the text’s lower right. +
 Try the following line and see what happens when you reload the animation:
 
-//TODO: Code prüfen
- font SansSerif size 24 bold rectangle "hRect" offset (-5, -5) from "header" NW\
+ rectangle "hRect" offset (-5, -5) from "header" NW offset (5, 5) from "header" SE
 
 You will now see _two_ different animation steps, as each ANIMALSCRIPTcommand normally starts a new animation step.
 To make sure both commands are executed in the _same_ step, put an opening curly brace { in a _single_ line before the *text* command, and a matching closing brace } in a separate line after the *rectangle* command.
@@ -240,7 +239,7 @@ Therefore, change your lines to the following:
 
 ....
 {
-text "header" "Listelement demo" at(2 y0, 30) depth 1 font SansSerif size 24 bold
+text "header" "List element demo" at(20, 30) depth 1 font SansSerif size 24 bold
 rectangle "hRect" offset (-5, -5) from "header" NW offset (5, 5) from "header" SE depth 2 filled fillColor white
 }
 ....
@@ -321,7 +320,7 @@ If you prefer other colors, feel free to change this entry.
 Now that the command has been highlighted, you can generate the first list element.
 This is done using the *listElement* command as follows:
 
- listelement ” firstListElem ” (100, 80) pointers 1
+ listelement "firstListElem" (100, 80) pointers 1
 
 However, this leaves the element without a text entry.
 Therefore, insert a *text "Elem 1"* between the coordinates and the *pointers* command.
@@ -330,7 +329,7 @@ Therefore, use the command as follows:
 
  listelement "elemA" (100, 80) text "Elem1" pointers 1 after 20 ticks
 
-The a*fter* command determines the amount of time to wait until the action is performed - in this case, 20 ticks will take place before the element is shown.
+The *after* command determines the amount of time to wait until the action is performed - in this case, 20 ticks will take place before the element is shown.
 *Ticks* are an ANIMAL-internal time unit that allows for smoother effects than precise timing on a millisecond base does :footprint:[
 If you are wondering about this, note that statements like after 200 ms require the computer to act at a precise point of time, or perform all operations within a presice amount of time.
 If the computer is busy or the actions are time-consuming to perform, it may fall behind the schedule and try to catch up by skipping intermediate animation frames.
