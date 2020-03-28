@@ -6,10 +6,12 @@
 
 = Installation
 
+== Voraussetzungen
 Um das Programm auf deinem PC ausführen zu können, brauchst du eine Java-Version 7 oder höher.
 Wenn du nicht weißt, ob du diese auf deinem Rechner bereits hast, findest du hier eine link:https://java.com/de/download/help/version_manual.xml[Anleitung], wie du das prüfen kannst. +
 Wenn Java auf deinem Rechner noch nicht vorhanden ist, kannst du es link:https://www.java.com/de/download/[mit diesem Link] installieren.
 
+== Download
 Anschließend klicke bitte <<index.adoc#Aktuelle Version, hier>>, um die aktuelle Version von ANIMAL herunterzuladen.
 In der Regel öffnet sich ein Fenster, in dem du auswählen kannst, in welchen Ordner du die Datei mit der Endung .jar auf deinem PC speichern willst.
 

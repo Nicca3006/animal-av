@@ -1,5 +1,3 @@
-:jbake-title: UserGuide
-:jbake-date: 2020-03-09
 :jbake-type: page
 :jbake-status: published
 :imagesdir: images

@@ -1,3 +1,5 @@
+:icons: font
+
 = Interne Dokumentation
 
 == AsciiDoc
@@ -52,9 +54,16 @@ Der jeweilige Content einer Seite wird als <<AsciiDoc>> Datei im Ordner content 
 Jede Datei muss am Anfang mindestens die Angaben haben, um welchen Typ von Inhalt es sich handelt (z.B. :jbake-type:page) und wie der Status (z.B. :jbake-status:published)ist.
 Weitere Attribute wie Datum oder Tags können optional hinzugefügt werden.
 Durch Eingabe von jbake -b werden daraus die html-Seiten im Ordner output erzeugt.
+
+CAUTION: Wenn eine "normale" HTML-Seite aus dem AsciiDoc erstellt wurde, liegt diese im Content-Ordner.
+Es wird dann jedoch keine HTML-Seite dazu mehr im Output erzeugt, bzw. falls eine vorhanden ist, wird sie nicht mehr aktualisiert.
+Deshalb sollten ausschließlich im output Ordner HTML Seiten liegen.
+
 Mit jbake -s wird direkt im Browser das Ergebnis daraus angezeigt.
 Der Ordner templates enthält verschiedene Templates, die mit dem JBake-Projekt angelegt wurden.
 Im menu.ftl kann die Navigationsleiste der Webseite angepasst werden.
+
+IMPORTANT: Das Verzeichnis der Bilder, die auf den Webseiten verwendet werden und das über :imagesdir: in Asciidoc eingebunden wird, muss im Content Ordner liegen
 
 Ausführlichere Infos finden sich auf https://jbake.org/docs/2.6.4/#quickstart_guide
  

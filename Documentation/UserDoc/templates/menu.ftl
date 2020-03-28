@@ -15,7 +15,16 @@
             <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>index.html">Home</a></li>
             <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>installation.html">Installation</a></li>
             <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>schnellstart.html">Schnellstart</a></li>
-            <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>userGuide.html">Tutorial</a></li>
+            <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>vols.html">Listen bauen mit VOLS</a></li>
+            <li class="dropdown">
+                          <a href="" class="dropdown-toggle" data-toggle="dropdown">Tutorials<b class="caret"></b></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>tutorials.html">Überblick</a></li>
+                            <li class="divider"></li>
+                            <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>userGuide.html">ANIMAL Tutorial</a></li>
+                            <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>animalScript.html">ANIMALScriptTutorial</a></li>
+                           </ul>
+                           </li>
             <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>about.html">Über uns</a></li>
             <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>datenschutz.html">Datenschutzerklärung</a></li>
 

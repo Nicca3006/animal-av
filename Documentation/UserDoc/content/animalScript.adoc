@@ -1,18 +1,14 @@
-:jbake-title: animalScript
-:jbake-date: 2020-03-26
 :jbake-type: page
 :jbake-status: published
 :imagesdir: images
 :icons: font
 :toc: macro
-:toc-title: Content
 :sectnums:
 
 //Hinweis: Footnotes werden im pdf als Endnotes angezeigt
 = ANIMALScript Tutorial
 
 //TODO: Bilder neu erstellen? (GUI neu?)
-[.text-center]
 Animationen erzeugen mit ANIMALScript
 ANIMAL Version 2.5.3
 

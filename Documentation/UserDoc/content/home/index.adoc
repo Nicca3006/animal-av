@@ -4,7 +4,7 @@
 :jbake-title: index
 
 Schön, dass du auf unserer Seite gelandet bist!
-Wir haben ein kleines Programm entwickelt, mit dem du ganz einfach sehen kannst, wie verschiedene Such- und Sortieralgorithmen aus der Informatik funktionieren.
+Wir haben ein kleines Tool entwickelt (ANIMAL), mit dem du ganz einfach sehen kannst, wie verschiedene Such- und Sortieralgorithmen aus der Informatik funktionieren.
 
 Falls du erst noch Infos brauchst, <<installation.adoc#installation, klick hier für eine Installationsanleitung>> oder <<kurzanleitung.adoc#Schnellstart,hier für eine Kurzanleitung>>  zum Start. +
 Eine ausführliche Beschreibung darüber, wie du das Programm benutzt, gibt es <<userGuide.adoc#Einleitung, hier>>.
@@ -12,5 +12,6 @@ Eine ausführliche Beschreibung darüber, wie du das Programm benutzt, gibt es <
 Natürlich kannst du auch direkt starten und dir hier die aktuelle Version herunterladen oder im Archiv ältere Versionen finden.
 Du kannst sie auf deinem Rechner speichern und einfach per Doppelklick ausführen.
 
+Wenn du lieber ganz einfach eigene Listen erstellen und dabei gleich sehen willst, wie der Programmcode dazu aussieht, dann probier doch mal unsere <<vols.html#VOLS, App VOLS>> aus.
 
 

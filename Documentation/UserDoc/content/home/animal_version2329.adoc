@@ -1,0 +1,6 @@
+:jbake-type: post
+:jbake-status: published
+:jbake-date: 2012-01-27
+:jbake-title: Version 2.3.29
+
+link:http://www.algoanim.net/downloads/animal-2329-2.jar[Version 2.3.29].
