@@ -3,7 +3,6 @@
 = Interne Dokumentation
 
 == AsciiDoc
-
 Damit die Dokumentation mit dem gesamten Code in der Versionsverwaltung eingecheckt werden kann, wird für die Dokumentation Ascii Doc verwendet (https://asciidoctor.org/). +
 Dazu muss in IntellJ das AsciiDoc-Plugin installiert werden, dann kann ein file *.adoc angelegt werden, das jeweils direkt als PDF oder HTML ausgegeben werden kann. +
 AsciiDoc hat eine recht einfache Syntax, so dass ohne großen Aufwand ein Dokument erzeugt werden kann:
@@ -13,7 +12,8 @@ Damit es später keine Probleme bei der Versionsverwaltung der AsciiDocs gibt, s
 === Syntax AsciiDoc aktuell verwendet
 
 * Überschriften haben automatisch einen Anker, d.h. sie können einfach verlinkt werden. +
-Bsp.: <<AsciiDoc>> verweist auf das entsprechende Kapitel +
+Bsp.: <<AsciiDoc>> verweist auf das entsprechende Kapitel.
+Befindet sich das Ziel in einem anderen Dokument, muss der Link gesetzt werden mit <<dokumentname.adoc#Überschrift>> oder <<dokumentname.adoc#Überschrift, eigenerText>>.
 Eigene Anker werden gesetzt mit [[Anker]]Text.
 Auf den <<Text>> kann dann wieder verwiesen werden, auch mit einem <<Text,eigenen Namen>> für den Link.
 * Bilder sollten alle in einem Ordner liegen.
@@ -21,7 +21,7 @@ Auf diesen wird zu Beginn des Dokuments verwiesen (Pfadangabe relativ zum aktuel
 Bsp.: /:imagedir: images (ohne das /) +
 Falls es unterschiedliche imagedir gibt, kann jederzeit im Dokument ein neues Verzeichnis eingefügt, dass *ab diesem Punkt dann für alle Bilder gilt* +
 Das Bild selbst wird eingefügt mit image:NameDesBildes.jpg[] innerhalb einer Zeile oder image::NameDesBildes.png[] alleinstehend.
-Es können Zusatzinfos wie z.B. [align="center] (Bild wird zentriert dargestellt) angegeben werden
+Es können Zusatzinfos wie z.B. [align="center", width = 100] (Bild wird zentriert mit einer Breite von 100 dargestellt) angegeben werden
 * Absolute Links können einfach in den Text geschrieben werden mit https://meinLink.de
 Soll der Link einen eigenen Namen bekommen und nur dieser angezeigt werde: https://meinLink.de[Name]
 * kursiv setzen mit _Unterstrichen_
@@ -35,21 +35,22 @@ Fußnoten werden derzeit als End Note (also ganz am Ende des Dokuments angezeigt
 Darunter wird die Tabelle ein- und ausgeleitet mit |=== und die einzelnen Zeilen werden dargestellt als |1.Spalte |2.Spalte
 
 
-== Webseite
-
-Der Nutzer soll über eine Web-Seite über AnimAl informiert werden, dort die Programmdateien und Anleitungen finden.
-Der HTML-Code für diese Seite kann direkt aus AsciiDoc erzeugt werden, allerdings ist dann noch keine Seite gebaut.
-Eine sehr einfache Seite lässt sich aus dem AsciiDoc mit JBake (https://jbake.org/) erzeugen, was hier vorerst für die abgespeckte Webseite für Schüler erfolgt. +
+== Webseite für SchülerInnen
+Unter Documentation/UserDoc wurden alle Inhalte angelegt, die sich vor allem an SchülerInnen der Q-Phase richten.
+Aus diesen Docs kann direkt eine Webseite gebaut werden (s. <<Bauen der Seite mit JBake>>)
+Die SchülerInnen finden dort Informationen über ANIMAL, die Programmdateien und Anleitungen.
 Verschiedene Templates zum Bauen der Navigation / Header usw. sind bereits vorhanden und können angepasst werden, soweit erforderlich
 Da in der zugrunde gelegten Literatur zum Zusammenspiel von AsciiDoc und JBake (https://www.informatik-aktuell.de/entwicklung/methoden/docs-as-code-alles-unter-einem-dach.html) Gradle als Build Tool genommen wurde, haben wir es auch hier verwendet.
 
-== Struktur Webseite
-
-Die index.html wird gebaut aus der Seite index.adoc (type: page) und den Animal-Versionen, die jeweils als neuer (type: post) hinzugefügt werden können.
+=== Struktur Webseite
+Die index.html wird gebaut aus der Seite index.adoc (type: page) und den ANIMAL-Versionen, die jeweils als neuer (type: post) hinzugefügt werden können.
 Dadurch wird automatisch ein Archiv der alten Versionen aufgebaut.
+Damit auf der _Home_ Seite immer nur die aktuellste Version von ANIMAL zum Download angezeigt wird, ist folgendes zu beachten:
+* adoc für neue Version kann kopiert werden von der vorherigen Version ins gleiche Verzeichnis (content/home)
+* Link, Versionsnummer, Datum ändern
+* in der vorherigen Version das Tag _actual_ löschen
 
-== Bauen der Seite mit JBAke
-
+=== Bauen der Seite mit JBAke
 Der jeweilige Content einer Seite wird als <<AsciiDoc>> Datei im Ordner content geschrieben.
 Jede Datei muss am Anfang mindestens die Angaben haben, um welchen Typ von Inhalt es sich handelt (z.B. :jbake-type:page) und wie der Status (z.B. :jbake-status:published)ist.
 Weitere Attribute wie Datum oder Tags können optional hinzugefügt werden.
@@ -66,4 +67,3 @@ Im menu.ftl kann die Navigationsleiste der Webseite angepasst werden.
 IMPORTANT: Das Verzeichnis der Bilder, die auf den Webseiten verwendet werden und das über :imagesdir: in Asciidoc eingebunden wird, muss im Content Ordner liegen
 
 Ausführlichere Infos finden sich auf https://jbake.org/docs/2.6.4/#quickstart_guide
- 

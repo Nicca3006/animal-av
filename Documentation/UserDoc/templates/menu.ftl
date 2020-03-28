@@ -13,8 +13,8 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>index.html">Home</a></li>
-            <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>installation.html">Installation</a></li>
-            <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>schnellstart.html">Schnellstart</a></li>
+            <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>installation.html">Installation ANIMAL</a></li>
+            <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>schnellstart.html">Schnellstart ANIMAL</a></li>
             <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>vols.html">Listen bauen mit VOLS</a></li>
             <li class="dropdown">
                           <a href="" class="dropdown-toggle" data-toggle="dropdown">Tutorials<b class="caret"></b></a>

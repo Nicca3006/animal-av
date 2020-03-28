@@ -8,7 +8,7 @@ ANIMAL war ursprünglich ein Projekt der Parallel Systems Group an der Hochschul
 Mittlerweile wird es betreut von der Rechnerbetriebsgruppe am Fachbereich Informatik der Technischen Universität Darmstadt in Deutschland.
 
 //TODO: Mailadresse ok?
-Wir freuen uns über eure Meinung und Verbesserungsvorschläge zu dieser Seite.
+Wir freuen uns über deine Meinung und Verbesserungsvorschläge zu dieser Seite.
 Schreibt einfach an roessling@acm.org
 
 == Impressum

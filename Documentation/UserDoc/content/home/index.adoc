@@ -6,12 +6,12 @@
 Schön, dass du auf unserer Seite gelandet bist!
 Wir haben ein kleines Tool entwickelt (ANIMAL), mit dem du ganz einfach sehen kannst, wie verschiedene Such- und Sortieralgorithmen aus der Informatik funktionieren.
 
-Falls du erst noch Infos brauchst, <<installation.adoc#installation, klick hier für eine Installationsanleitung>> oder <<kurzanleitung.adoc#Schnellstart,hier für eine Kurzanleitung>>  zum Start. +
-Eine ausführliche Beschreibung darüber, wie du das Programm benutzt, gibt es <<userGuide.adoc#Einleitung, hier>>.
+Falls du erst noch Infos darüber brauchst, was du für die Installation beachten musst, dann <<installation.adoc#installation, klick hier für eine Anleitung>>. +
+Du kannst dir auch direkt weiter unten die aktuelle Version herunterladen, auf deinem Rechner speichern und dann per Doppelklick ausführen.
+Hier findest du <<schnellstart.adoc#Schnellstart, eine Kurzanleitung>>, um die wichtigsten Funktionen kennenzulernen. +
 
-Natürlich kannst du auch direkt starten und dir hier die aktuelle Version herunterladen oder im Archiv ältere Versionen finden.
-Du kannst sie auf deinem Rechner speichern und einfach per Doppelklick ausführen.
+Wenn du lieber eine ausführliche Beschreibung dazu lesen willst, wie du ANIMAL für eigene Beispiele nutzen kannst, findest du im <<userGuide.adoc#Einleitung, ANIMAL Tutorial>> eine genaue Anleitung, wie du eine Animation erstellen kannst.
+Die Animationen sind dafür gedacht, anderen Leuten mit Hilfe einer grafischen Darstellung zu zeigen, wie ein bestimmter Algorithmus funktioniert.
 
-Wenn du lieber ganz einfach eigene Listen erstellen und dabei gleich sehen willst, wie der Programmcode dazu aussieht, dann probier doch mal unsere <<vols.html#VOLS, App VOLS>> aus.
-
-
+Du willst stattdessen lieber eigene Listen erstellen und dabei gleich sehen , wie der Programmcode dazu aussieht?
+Dann probier doch mal unsere <<vols.html#VOLS, App VOLS>> aus.
