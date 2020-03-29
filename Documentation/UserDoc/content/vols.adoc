@@ -35,9 +35,10 @@ Dieses wird später nochmal unterteilt und zeigt dann
 ** oben die Visualisierung der Liste,
 ** darunter den zugehörigen Programm-Code, in dem jeweils _rot hervorgehoben_ ist, welche Codezeile gerade ausgeführt wird.
 
-+
+image::VOLS_MainWindow_Splitted.PNG[width = 600]
 Du kannst die Schriftgröße in den beiden Fenstern unabhängig voneinander vergößern und verkleinern.
 Die _Zoom_ Bereiche findest du ganz oben im _Player_.
+
 * Im unteren Bereich befindet sich die _Navigation_, mit der du eine Animation komplett abspielen oder schrittweise ansehen kannst.
 * Ganz unten siehst du die _Console_, in der du nachverfolgen kannst, welche Befehle ausgeführt wurden. +
 Falls dich das nicht interessiert, kannst du sie über den Menüpunkt _Window - Switch Visibility_ ausblenden (und natürlich auch wieder einblenden).

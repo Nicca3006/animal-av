@@ -5,10 +5,9 @@
 
 //Hinweis: Footnotes werden im pdf als Endnotes angezeigt
 
-//TODO: komplett überarbeiten
-//TODO: Bilder neu erstellen? (GUI neu?)
 [.text-center]
-Using ANIMALSCRIPT to Generate Animations
+= Using ANIMALSCRIPT to Generate Animations
+
 Covers ANIMAL Release 1.4
 
 [.text-center]

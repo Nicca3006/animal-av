@@ -13,9 +13,9 @@ Damit es später keine Probleme bei der Versionsverwaltung der AsciiDocs gibt, s
 
 * Überschriften haben automatisch einen Anker, d.h. sie können einfach verlinkt werden. +
 Bsp.: <<AsciiDoc>> verweist auf das entsprechende Kapitel.
-Befindet sich das Ziel in einem anderen Dokument, muss der Link gesetzt werden mit <<dokumentname.adoc#Überschrift>> oder <<dokumentname.adoc#Überschrift, eigenerText>>.
+Befindet sich das Ziel in einem anderen Dokument, muss der Link gesetzt werden mit <<dokumentname.adoc#_kapitel_>> oder <<dokumentname.adoc#_kapitel, eigenerText>>.
 Eigene Anker werden gesetzt mit [[Anker]]Text.
-Auf den <<Text>> kann dann wieder verwiesen werden, auch mit einem <<Text,eigenen Namen>> für den Link.
+Auf den <<Text>> kann dann wieder verwiesen werden, auch mit einem <<Text, eigenen Namen>> für den Link.
 * Bilder sollten alle in einem Ordner liegen.
 Auf diesen wird zu Beginn des Dokuments verwiesen (Pfadangabe relativ zum aktuellen Ordner) +
 Bsp.: /:imagedir: images (ohne das /) +
@@ -24,7 +24,7 @@ Das Bild selbst wird eingefügt mit image:NameDesBildes.jpg[] innerhalb einer Ze
 Es können Zusatzinfos wie z.B. [align="center", width = 100] (Bild wird zentriert mit einer Breite von 100 dargestellt) angegeben werden
 * Absolute Links können einfach in den Text geschrieben werden mit https://meinLink.de
 Soll der Link einen eigenen Namen bekommen und nur dieser angezeigt werde: https://meinLink.de[Name]
-Um den Link in einem neuen Tab zu öffnen: https://meinLink.de[window= _blank]
+Um den Link in einem neuen Tab zu öffnen: https://meinLink.de[window=_blank]
 * kursiv setzen mit _Unterstrichen_
 * Fett drucken mit *Stern*
 * Fußnote einfügen mit footnote:[Hier steht der Text] +

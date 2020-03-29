@@ -4,10 +4,9 @@
 :sectnums:
 //Hinweis: Footnotes werden im pdf als Endnotes angezeigt
 
-//TODO: komplett überarbeiten
-//TODO: Bilder neu erstellen? (GUI neu?)
 [.text-center]
-ANIMAL User Guide +
+= ANIMAL User Guide +
+
 Covers ANIMAL Release 1.4
 
 [.text-center]
@@ -261,7 +260,6 @@ image::Figure 5 ANIMAL’s Drawing Window.jpg[]
 |image:Text.png[]
 |Button for generating a new Text object
 
-//TODO: png aus src/graphics?
 |image:Button_newList.JPG[]
 |Button for generating a new list element object
 

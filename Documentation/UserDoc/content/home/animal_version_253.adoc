@@ -3,5 +3,4 @@
 :jbake-date: 2018-02-19
 :jbake-title: Version 2.5.3
 
-//TODO: am besten Installer einbauen (immer aktuelle Version bauen), alternativ jar erzeugen
 link:http://www.algoanim.net/downloads/animal-253.jar[Version 2.5.3]

@@ -65,7 +65,7 @@ Nutzer haben die Möglichkeit, unser Angebot auch ohne Cookies aufzurufen.
 Dazu müssen im Browser die entsprechenden Einstellungen geändert werden.
 Informieren Sie sich bitte über die Hilfsfunktion Ihres Browsers, wie Cookies deaktiviert werden.
 Wir weisen allerdings darauf hin, dass dadurch einige Funktionen dieser Webseite möglicherweise beeinträchtigt werden und der Nutzungskomfort eingeschränkt wird.
-Die Seiten http://www.aboutads.info/choices/ (USA) und http://www.youronlinechoices.com/uk/your-ad-choices/ (Europa) erlauben es Ihnen, Online-Anzeigen-Cookies zu verwalten.
+Die Seiten http://www.aboutads.info/choices/[window=_blank] (USA) und http://www.youronlinechoices.com/uk/your-ad-choices/[window=_blank] (Europa) erlauben es Ihnen, Online-Anzeigen-Cookies zu verwalten.
 
 == Datenschutzerklärung für die Nutzung von 1&1 WebAnalytics
 

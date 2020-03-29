@@ -1,6 +1,5 @@
 :jbake-type: page
 :jbake-status: published
-:imagesdir: images
 
 = Tutorials
 

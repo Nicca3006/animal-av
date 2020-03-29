@@ -1,6 +1,7 @@
 :jbake-type: page
 :jbake-status: published
 :imagesdir: images
+:icons: font
 :toc: macro
 :toc-title: Inhalt
 //Nummerierung des Inhaltsverzeichnis
@@ -38,7 +39,7 @@ Dann kannst du ganz einfach eine eigene Animation erstellen.
 Im folgenden zeigen wir am Beispiel einer _einfach verketteten Liste_, wie das funktioniert. +
 Das Ergebnis wird etwa so aussehen (hier in englisch):
 
-image::Figure 2 Final result of the tutorial animation.JPG[align="center"]
+image::Figure2_ Final_result_of_the_tutorial_animation.JPG[align="center"]
 
 === Vorbereitung der neuen Animation
 Nachdem du ANIMAL gestartet hast, kannst du
@@ -71,7 +72,7 @@ Die folgenden Tabelle gibt eine Übersicht über die Bedeutung der Buttons:
 |image:Snap.png[] |Einrastfunktion des Gitters an/aus
 |image:Move.png[] |Anzeige der temporären Objekte an/aus
 |image:repaint.png[] |Display übermalen
-//|image:Selection.png[] |Switch to object selection mode
+|image:Selection.png[] |Objektauswahl-Modus ein/aus
 |image:Undo.png[] |Letzte Aktion rückgängig machen
 |image:Redo.png[] |Wiederherstellen der rückgängig gemachten Aktion
 |image:delete.png[] |Ausgewählte(s) Objekt(e) löschen
@@ -208,7 +209,7 @@ Das _Text Options_ Fenster sollte sich nun eigentlich wieder öffnen und du kann
 Falls das Bearbeitungsfenster sich nicht geöffnet hat, klick bitte einmal auf den _Editor Button_ an der linken Seite: image:useEditors.png[] +
 Am Ende sollte dein aktueller Stand so aussehen und du kannst den _Text Editor_ mit *OK* schließen:
 
-image::Animationsfenster_Rechteck_Textzeilen.PNG[]
+image::Animationsfenster_Rechteck_Textzeilen.PNG[width = 600]
 
 === Speichern einer Animation
 Jetzt ist ein guter Moment die Animation auf eine der folgenden Arten zu speichern:
@@ -219,22 +220,21 @@ Jetzt ist ein guter Moment die Animation auf eine der folgenden Arten zu speiche
 * Im _Animal Control Center_ den Menüpunkt _Datei - Speichern unter_ auswählen
 
 Am besten wählst du _Speichern unter_ und vergibst einen eigenen Namen für die Animation.
-Der Dateityp, in dem du speicherst, sollte _animation/animal-ascci-compressed(.aml)_ sein:
+Der Dateityp, in dem du speicherst, sollte _animation/animal-ascii-compressed(.aml)_ sein:
 
 image::Speichern_Dialog.PNG[align="center"]
-
-//TODO: Es öffnet sich ein weiteres Fenster mit Optionen zum speichern - einfach bestätigen?
 
 === Erzeugen eines Listenelements
 Bevor du jetzt das erste Listenelement erzeugst, füge bitte einen neuen Animationsschritt ein, indem du in der Animationsübersicht _Animation Overview_ einen neuen Schritt _nach_ dem aktuellen Schritt einfügst (s. <<Erstellen eines Animations-Schritts>>).
 Das sollte jetzt _Schritt 3_ sein.
-Nun klicke im _Zeichenfenster_ bitte auf den _Boxpointer_ (image:BoxPointer.PNG[]).
-Wie du es schon kennst, öffnet sich ein Fenster mit den _Box Pointer Options_. +
+Nun klicke im _Zeichenfenster_ bitte auf den _BoxPointer_ (image:BoxPointer.PNG[]).
+Wie du es schon kennst, öffnet sich ein Fenster mit den _BoxPointer Options_. +
 Das neue Element soll _Elem1_ heißen, das schreibe wie gewohnt in das Feld _Text_.
 Die _Zeigerposition_ stelle bitte auf _bottom_ und die _Anzahl Zeiger_ auf _1_.
 Dann kannst du wie immer *ohne OK oder Appply zu drücken* das Element einfach im Zeichenfenster platzieren, ein Kästchen nach unten und zwei nach rechts versetzt von unserem Rechteck.
 Der erste Klick platziert das Element, der zweite lässt es dort einrasten und der dritte Klick lässt dich den Zeiger definieren. +
-Hast du eigentlich schon bemerkt, dass ganz unten im Fenster auch immer angezeigt wird, wofür die verschiedenen Maustasten benutzt werden können?
+
+TIP: Hast du eigentlich schon bemerkt, dass ganz unten im Fenster auch immer angezeigt wird, wofür die verschiedenen Maustasten benutzt werden können?
 Das ist oft ziemlich hilfreich.
 
 Wenn du das Element platziert hast, sollte dein Zeichenfenster so aussehen:
@@ -275,8 +275,8 @@ Deswegen markieren wir die erste Zeile als _erledigt_, indem wir die gleichen Sc
 
 === Bewegliche Elemente
 Wir wollen jetzt den _Link_ (Pfeil) des ersten Listenelements auf null setzen, also nicht mehr anzeigen.
-Dafür bleiben wir _bleiben im gleichen Step_ und klicken den _Move_ button image:Move.png[] in der _Animationsübersicht_ an.
-Das Fenster, das sich jetzt öffnet, sieht ziemlich ähnlich wie das _ColoChanger_ Fenster aus, allerdings gibt es eine zweite _Objektauswahl_ statt der Farbauswahl. +
+Dafür bleiben wir _im gleichen Step_ und klicken den _Move_ button image:Move.png[] in der _Animationsübersicht_ an.
+Das Fenster, das sich jetzt öffnet, sieht ziemlich ähnlich wie das _ColorChanger_ Fenster aus, allerdings gibt es eine zweite _Objektauswahl_ statt der Farbauswahl. +
 Klicke das *obere* _Objekt/e wählen_ an und klicke dann das Listenelement _Elem1_ im _Zeichenfenster_ an.
 Nun brauchst du die passende _Methode_ aus der Auswahl.
 Wir wollen einen Zeiger auf ein Listenelement setzen und wählen daher _setTip_. +
@@ -299,7 +299,7 @@ Die nächsten Schritte sind eine Wiederholung des bisherigen, in denen du folgen
 
 Das Ergebnis sollte ungefähr so aussehen:
 
-image::Figure 14 State after inserting the second element.PNG[align="center", width = 500]
+image::Figure14_State_after_inserting_the_second_element.PNG[align="center", width = 500]
 Dann füge einen weiteren _neuen Animationsschritt_ hinzu mit folgenden Schritten:
 
 * die Farbe der dritten Textzeile auf _schwarz_ ändern
@@ -311,7 +311,7 @@ Benutze diese Linie als _move via_ Objekt und schau dir die Animation an.
 Du wirst sehen, dass ANIMAL _relative_ Bewegungen anzeigt - die Linie zeigt, _wie_ sich die Position des Objekts verändert und muss nicht am Zielobjekt starten. +
 Wenn du alle Schritte durchgeführt hast, sollte dein _Zeichenfenster_ ungefähr so aussehen:
 
-image::Figure 15 State after inserting the second element.PNG[align="center", width = 500]
+image::Figure15_State_after_inserting_the_second_element.PNG[align="center", width = 500]
 Der kleine Pfeil auf der Anzeige ist die sogenannte _move line_.
 Ob man diese Linie angezeigt bekommt oder nicht, kann man mit dem _Show Temporary Objects_ Button image:ShowTempObjects.png[] ein- und ausschalten.
 
@@ -321,17 +321,17 @@ Jetzt lege bitte noch einen weiteren _Schritt_ mit folgenden Aktionen an:
 * die Farbe der fünften Textzeile auf _rot_ ändern
 * eine _Move_ Aktion hinzufügen um die beiden Listenelemente zu verbinden
 
-Dafür erstelle einen neuen _Move_ Animationseffekt, wähle das _erste Listenelement_ und die Methode _setTip_. +
+Erstelle dafür einen neuen _Move_ Animationseffekt, wähle das _erste Listenelement_ und die Methode _setTip_. +
 Dann klicke auf den *unteren* _Objekt auswählen_ Button und zeichne eine neue Polylinie von der _Spitze des ersten Listenelements_ zur _linken Kante_ des _zweiten Listenelements_.
 Wähle wie immer passende _Verzögerungen_ und teste deine Animation. +
 Wenn die Linie nicht so aussieht, wie du sie gerne hättest, musst du sie *nicht* löschen und neu zeichnen!
-Stattdessen kannst du die Linie einfach anklicken und siehst du kleine _Quadrate_ an beiden Enden.
+Stattdessen kannst du die Linie einfach anklicken und siehst nun kleine _Quadrate_ an beiden Enden.
 Klicke eines der Quadrate an, halte die Maustaste gedrückt und ziehe die Linie weiter, bis sie die gewünschte Länge hat.
 
 Am Ende sollte dein Ergebnis ungefähr so aussehen:
 Der _Polyline_ Pfeil ist die _Move line_ und zur besseren Ansicht ein bisschen verschoben.
 
-image::Figure 16 State after inserting the second element.PNG[align="center"]
+image::Figure16_State_after_inserting_the_second_element.PNG[align="center"]
 Die nächsten Schritte sind eine Wiederholung.
 Platziere ein _drittes_ Listenelement _zwischen_, aber _unter_ den beiden bisherigen Elementen.
 Wiederhole das, bis du den nächsten Schritt erreichst:
@@ -339,15 +339,15 @@ Wiederhole das, bis du den nächsten Schritt erreichst:
 === Bogenelemente benutzen
 Um das _erste_ und das _dritte_ Element miteinander zu verbinden, benutzen wir einen _Bogen_.
 Fang ganz normal an, indem du einen _neuen Schritt_ hinzufügst, die _Farbe_ der Text-Zeilen 6 und 7 änderst und eine neue _Move_ Animation erzeugst, in der du das _erste_ Listenelement als Objekt mit der Methode _setTip_ auswählst.
-Jetzt wähle das *untere* _Objekt auswählen_ und klicke im _Zeichenfenster_ auf das _Bogen_ Symbol image:Arc.png[]. +
+Jetzt wähle den *unteren* Punkt _Objekt auswählen_ und klicke im _Zeichenfenster_ auf das _Bogen_ Symbol image:Arc.png[]. +
 Wähle einen Punkt _direkt_ neben der _oberen rechten Ecke_ des neuen Listenelements als das _Zentrum des Bogens_ und klicke *einmal*.
 Jetzt bewege die Maus, um den Umriss des aktuellen Bogens zu sehen.
-Der Bogen sollte sowohl die _Spitze_ des _ersten_ Listenelements als auch die _linke_ Seite des neuen Elements auf Höhe dessen Pfeilspitze berühren. +
+Der Bogen sollte sowohl die _Spitze_ des _ersten_ Listenelements als auch die _linke_ Seite des neuen Elements auf Höhe von dessen Pfeilspitze berühren. +
 Vielleicht musst du ein paarmal versuchen, welches der beste Punkt für den _Zentrum des Bogens_ ist. +
 Als nächstes klickst du auf die _Pfeilspitze des ersten Elements_, die auf das zweite Element zeigt, um hier den _Bogen-Startwinkel_ zu setzen.
 Danach klickst du an die linke Seite des _neuen_ Listenelements, was ungefähr zu folgendem Ergebnis führen sollte:
 
-image::Figure 18 Linking elements using an arc component.PNG[align="center"]
+image::Figure18_Linking_elements_using_an_arc_component.PNG[align="center"]
 
 Teste und optimiere diese Animationsschritte wie immer.
 Nun brauchen wir nur noch einen Link vom _neuen_ Element zum zweiten Listenelement und sollten die _Farben_ anpassen.
@@ -357,12 +357,13 @@ Im letzten Schritt wollen wir eine "schöne" Struktur herstellen, in der alle El
 Dafür könnten wir die _translate_ Methode der _Move_ Animation benutzen, was allerdings auch den Pfeil des neues Elements verändern würde. +
 Um das zu vermeiden, mach folgendes:
 
-* Erzeuge einen neuen _Animationsschritt_
-* Setze wie immer die Farbwechsel in den Zeilen 8 und 9
-* füge eine neue _Move_ Animation mit Effekt auf das neue Listenelment ein, aber wähle die Methode _translateWithFixedTip_
+* Erzeuge einen neuen _Animationsschritt_.
+* Setze wie immer die Farbwechsel in den Zeilen 8 und 9.
+* Füge eine neue _Move_ Animation mit Effekt auf das neue Listenelment ein, aber wähle die Methode _translateWithFixedTip_.
 Zeichne eine einfache _polyline_ von der _Oberseite_ des ersten Elements gerade auf der gleichen Höhe wie die anderen Listenelemente.
-* füge eine neue _Move_ Animation mit Effekt für das _erste_ Element ein, wähle die _setTip_ Methode und benutze die _gleiche_ Polylinie wie eben. +
-Ja, man kann _move lines_ mehrfach verwenden - nur mehrfache _sichtbare_ Animationen auf dem gleichen Objekt sind nicht zulässig.
+* Füge eine neue _Move_ Animation mit Effekt für das _erste_ Element ein, wähle die _setTip_ Methode und benutze die _gleiche_ Polylinie wie eben. +
+
+TIP: Man kann _move lines_ mehrfach verwenden - nur mehrfache _sichtbare_ Animationen auf dem gleichen Objekt sind nicht zulässig.
 
 *Und jetzt:* Herzlichen Glückwunsch, du hast deine erste Animation mit ANIMAL fertig gestellt! +
 Falls noch nicht alle Linien genau so sind, wie du sie haben wolltest, schalte das _einrasten_ des Gitters aus und verschieb die Linien und dazugehörigen _move lines_ bis du mit dem Resultat zufrieden bist. +

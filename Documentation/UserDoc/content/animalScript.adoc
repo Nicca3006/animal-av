@@ -10,7 +10,6 @@
 //Hinweis: Footnotes werden im pdf als Endnotes angezeigt
 = ANIMALScript Tutorial
 
-//TODO: Bilder neu erstellen? (GUI neu?)
 Animationen erzeugen mit ANIMALScript
 ANIMAL Version 2.5.3
 
@@ -61,7 +60,7 @@ Dann kannst du ganz einfach eine eigene Animation erstellen.
 Im folgenden zeigen wir am Beispiel einer _einfach verketteten Liste_, wie das funktioniert. +
 Das Ergebnis wird etwa so aussehen (hier in englisch):
 
-image::Figure 2 Final result of the tutorial animation.JPG[align="center"]
+image::Figure2_ Final_result_of_the_tutorial_animation.JPG[align="center"]
 
 === Vorbereitung der neuen Animation
 Animationen mit ANIMALScript werden in einem beliebigen _Text Editor_ geschrieben.
@@ -127,7 +126,7 @@ Ergänze deinen Code wie folgt und schaue, was passiert, wenn du die Animation a
 
 Hast du bemerkt, dass es jetzt _zwei_ Animationsschritte gibt?
 Das liegt daran, dass generell jeder ANIMALScript Befehl einen _neuen Animationsschritt_ erzeugt.
-Um zu erreichen, dass unser _text_ und _rectangel_ Befehl im gleichen Schritt ausgeführt werden, umgeben wir diese mit _geschweiften Klammern_.
+Um zu erreichen, dass unser _text_ und _rectangle_ Befehl im gleichen Schritt ausgeführt werden, umgeben wir diese mit _geschweiften Klammern_.
 Die öffnende { muss dabei _vor_ dem _text_ Befehl in einer *separaten Codezeile* stehen, die schließende } _nach_ dem _rectangle_ Befehl ebenfalls in einer *separaten Zeile*. +
 Nun aktualisiere deine Animation und schau, was passiert. +
 Eventuell verbirgt das Rechteck nun den Text, weil es als zweites Objekt gezeichnet wurde.
@@ -170,8 +169,7 @@ Statt der absoluten Koordinaten könntest du auch _relative placement_ benutzen,
  codeGroup "listSource" offset (0, 80) from "hRect" SW color black
 
 Damit die Codezeilen später alle gleichzeitig erscheinen, solltest du sie in einen _einzelnen Animationsschritt_ packen, indem du wieder in die Zeile _vor_ und _nach_ dem *codeGroup* Befehl geschweifte Klammern schreibst.
-Text zu einer *CodeGroup* hinzuzufügen, ist denkbar einfach.
-Du gibst einfach ein:
+Der zu einer *CodeGroup* gehörende Text kann durch folgende Eingabe hinzugefügt werden:
 
  addCodeLine "text" to "codeGroupID"
 
@@ -222,7 +220,7 @@ Der Befehl *after* bestimmt eine Zeitspanne, *nach der* die Aktion ausgeführt w
 Wenn du die Animation jetzt ausführst, wirst du bemerken, dass _Hervorhebung_ und _Erscheinen des Listenelements_ wieder in unterschiedlichen _Animationsschritten_ ausgeführt werden.
 Um das zu ändern, setze die beiden Zeilen wieder in _geschweifte Klammern_.
 
-=== Hervorheben und nicht mehr hervorheben des Codes
+=== Hervorhebung und nicht mehr Hervorhebung des Codes
 Jetzt wollen wir die zweite Zeile unserer Pseudocodes _hervorheben_, gleichzeitig soll die erste Zeile _nicht mehr hervorgehoben_ erscheinen.
 Dafür brauchen wir wieder mehrere Aktionen in _einem_ Schritt:
 
@@ -287,7 +285,7 @@ Dafür brauchen wir die folgenden Aktionen:
 * Den Zeiger des ersten Elements ohne den Rest des Elements bewegen
 
 Die beiden letzten Aktionen brauchen den *move* Befehl, dessen Anwendung ein bisschen tricky ist, der aber gleichzeitig zeigt, was ANIMALScript alles kann. +
-Dazu solltest du wissen, dass jedes Objekt eine sogenannte _bounding box_ hat, daie _alle_ Komponenten des Objekts beinhaltet.
+Dazu solltest du wissen, dass jedes Objekt eine sogenannte _bounding box_ hat, die _alle_ Komponenten des Objekts beinhaltet.
 Von daher enthält die Bounding Box des _mittleren_ Listenelements (elemC) auch den _Zeiger_ auf das letzte Listenelement elemB.
 Zur Veranschaulichung hier mal eine ungefähre Grafik der Elemente mit ihren Boundig Boxes:
 
