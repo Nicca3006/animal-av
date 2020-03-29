@@ -2,12 +2,17 @@
 		<div id="push"></div>
     </div>
 
-    <!--
+    <!-- ersetzt
     <div id="footer">
       <div class="container">
         <p class="muted credit">&copy; 2014 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake ${version}</a></p>
       </div>
     </div> -->
+    <div id="footer">
+        <div class="container">
+          <div>   &copy; Dr. Guido Rößling 1998-today | <a href="datenschutz.html">Datenschutzerklärung</a></p></div>
+          </div>
+         </div>
     
     <!-- Le javascript
     ================================================== -->
