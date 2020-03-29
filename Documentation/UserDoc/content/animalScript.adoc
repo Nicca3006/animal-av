@@ -3,7 +3,9 @@
 :imagesdir: images
 :icons: font
 :toc: macro
+:toc-title: Inhalt
 :sectnums:
+:LinkSchnellstart: false
 
 //Hinweis: Footnotes werden im pdf als Endnotes angezeigt
 = ANIMALScript Tutorial
@@ -49,54 +51,12 @@ In der Anwendung zeigen sich dann jedoch die umfangreichen Möglichkeiten.
 Eine genaue Beschreibung der Funktionen und wie sie sinnvoll eingesetzt werden können, steht in <<Erstellen einer neuen Animation mit ANIMALScript>>.
 Wenn ANIMAL schon installiert und gestartet ist, kannst du direkt dort hinspringen, sonst lies einfach weiter. +
 
-== Installation
-//TODO: Absolute Links ersetzen? Regelmäßig prüfen, wenn Seite gebaut wird
-Um das Programm auf deinem PC ausführen zu können, brauchst du eine Java-Version 7 oder höher.
-Wenn du nicht weißt, ob du diese auf deinem Rechner bereits hast, findest du hier eine link:https://java.com/de/download/help/version_manual.xml[Anleitung], wie du das prüfen kannst. +
-Wenn Java auf deinem Rechner noch nicht vorhanden ist, kannst du es link:https://www.java.com/de/download/[mit diesem Link] installieren.
+include::installation.adoc[leveloffset=+1]
 
-Anschließend klicke bitte <<index.adoc#Aktuelle Version, hier>>, um die aktuelle Version von ANIMAL herunterzuladen.
-In der Regel öffnet sich ein Fenster, in dem du auswählen kannst, in welchen Ordner du die Datei mit der Endung .jar auf deinem PC speichern willst.
-
-Am besten lädst du dir gleich noch das ZIP-File herunter, das ziemlich viele Animationen beinhaltet.
-Damit kannst du dann nach der Installation direkt starten, dir verschiedene Algorithmen anzuschauen.
-//TODO: Absolute Links ersetzen
-Den Download gibt es auf link:http://www.algoanim.net/downloads/currentanims_de.zip[deutsch] oder link:http://www.algoanim.net/downloads/currentanims_en.zip[englisch] - in dieser Sprache sind dann später die Texte in den Animationen, also achte darauf, die richtige Sprache zu wählen.
-Nun musst du das ZIP-File nur noch entpacken (mit der rechten Maustaste anklicken bringt meistens eine Funktion "entpacken" oder "unzip"), am besten in einen eigenen Ordner auf deinem PC.
-
-== Programmstart
-Um endlich loslegen zu können, suchst du die JAR-Datei, die du gespeichert hast und startest durch Doppelklick auf diese Datei das Programm.
-Es erscheint ein Fenster auf dem Bildschirm, wo du siehst, dass dein PC arbeitet und danach öffnet sich das Hauptfenster des Programms ANIMAL (Animal Control Center).
-
-image::Animal_Control_Center_V253_english.PNG[align="center"]
-
-Wenn du möchstest, stell die Sprache unter _Language_ um auf *Deutsch*.
-In dieser Anleitung zeigen wir (fast) immer die deutsche Version. +
-Wenn du im Programm eine bestehende Animation anschauen willst, klicke bitte auf _Datei - Öffnen_ und suche den Ordner, in dem du vorher die Dateien aus dem ZIP-File abgelegt hast.
-Bitte achte darauf, dass beim *Dateityp* ausgewählt sein muss _animation/animal-ascii-compressed(.aml)_.
-Nun such dir eine Animation aus, die du sehen möchtest und klicke auf _Öffnen_.
-Im Beispiel schauen wir uns den Dijkstra-Algorithmus an. +
-
-image::BeispielAnimation_Dijkstra.PNG[align="center"]
-Im unteren Bereich finden sich verschiedene Schaltflächen zum Abspielen der Animation:
-
-* Animation _starten_ image:Animation_starten.PNG[]
-* Animation _anhalten_ (Pause) image:Animation_Pause.PNG[]
-* _zurück zum Anfang_ der Animation image:Animation_Beginn.PNG[]
-* einen _Schritt zurück_ image:Animation_SchrittZurueck.PNG[]
-* einen _Schritt vor_ image:Animation_SchrittVor.PNG[]
-* _ans Ende_ der Animation springen image:Animation_Ende.PNG[]
-* Animation _rückwärts_ zeigen image:Animaion_rueckwaerts.PNG[]
-
-Während der *Erstellung* einer Animation kann es passieren, dass das Springen zu bestimmten Schritten nicht richtig funktioniert.
-Bitte speichere deine Animation dann einmal und lade sie neu - nun sollte alles wieder funktionieren. +
-Du kannst auch direkt die Nummer des Schritts eingeben, den du dir anzeigen lassen möchtest: image:Animation_Schritt_Eingabe.PNG[] +
-Mit dem _Schieberegler_ lässt sich die Geschwindigkeit einstellen, in der die Animation abläuft.
-Ganz oben kannst du außerdem einen Zoom einstellen.
-Das ist besonders sinnvoll bei sehr breiten oder hohen Animationen, um Screenshots zu erstellen oder um die Größe von der _Anzeige auf dem Computer_ an die _Anzeige auf einem Beamer_ anzupassen. +
+include::schnellstart.adoc[leveloffset=+1]
 
 == Erstellen einer neuen Animation mit ANIMALScript
-Vielleicht willst (oder sollst) du die Funktionsweise eines Algorithmus mit eigenen Zahlen erklären oder es gibt noch kein Beispiel zu dem Algorithmus.
+Vielleicht willst (oder sollst) du die Funktionsweise eines Algorithmus mit eigenen Zahlen erklären oder es gibt noch kein Beispiel zu deinem Algorithmus.
 Dann kannst du ganz einfach eine eigene Animation erstellen.
 Im folgenden zeigen wir am Beispiel einer _einfach verketteten Liste_, wie das funktioniert. +
 Das Ergebnis wird etwa so aussehen (hier in englisch):
@@ -106,7 +66,10 @@ image::Figure 2 Final result of the tutorial animation.JPG[align="center"]
 === Vorbereitung der neuen Animation
 Animationen mit ANIMALScript werden in einem beliebigen _Text Editor_ geschrieben.
 In _Windows_ kannst du zum Beispiel den _Editor_ benutzen, auf dem Mac _TextEdit_.
-Bitte lege dir dort eine (erstmal leere) Datei z.B. unter dem Namen _demo.asu_ an.
+Bitte lege dir dort eine (erstmal leere) Datei z.B. unter dem Namen _demo.asu_ an
+footnote:[Meistens kannst nach _speichern unter_ einfach _demo.asu_ in den *Dateinamen* schreiben, egal welcher *Dateityp* voreingestellt ist].
+
+Jetzt füllen wir nach und nach diese Datei im Editor. +
 ANIMALScript Dateien starten immer mit der folgenden Kopfzeile:
 
  %Animal 2 . 5 . 3
@@ -118,11 +81,12 @@ Nun kannst du ein paar Informationen zu dir als Autor eingeben, z.B.
 title "AnimalScript Tutorial Animation"
 author "Guido Roessling <roessling@acm.org>"
 ....
-Parallel kannst du schon mal ANIMAL starten (s.<<Programmstart>>) und deine Datei öffnen.
+Parallel kannst du schon mal ANIMAL starten (s. <<Schnellstart>>) und deine Datei _demo.asu_ öffnen.
 
 image::Animal_Control_Center_V253_english.PNG[]
 
-Klicke dazu auf image:Open.PNG[] oder _Datei - Öffnen_ (_File - Open_). +
+Klicke dazu auf image:Open.PNG[] oder _Datei - Öffnen_ (_File - Open_) und wähle beim *Dateityp* _animation/animalscript(.asu).
+Jetzt solltest du die Datei sehen, die du aus dem Editor heraus gespeichert hast. +
 
 === Überschrift erzeugen
 Als erstes wollen wir einen _Überschrift_ in unserer Animation haben.
@@ -135,8 +99,7 @@ Wenn du in ANIMAL nun das Animationsfenster (image:animWindow2.png[]) und das Ze
 Falls der Text noch nicht sichtbar ist, musst du noch einmal die Animation _refreshen_ (image:Reload.PNG[] im _Animation Control Center_).
 Nun sollte es so aussehen:
 
-//TODO: Bilder kleiner?
-image:DrawingWindow_AnimScript_Title.PNG[] image:AnimWindowAnimalScript_Title.PNG[]
+image:DrawingWindow_AnimScript_Title.PNG[width = 568] image:AnimWindowAnimalScript_Title.PNG[width = 377]
 
 Nun wollen wir die Schrift noch etwas anpassen auf SansSerif, size 24, *bold* und ändern dafür nochmal den Code im Editor:
 
@@ -164,7 +127,7 @@ Ergänze deinen Code wie folgt und schaue, was passiert, wenn du die Animation a
 
 Hast du bemerkt, dass es jetzt _zwei_ Animationsschritte gibt?
 Das liegt daran, dass generell jeder ANIMALScript Befehl einen _neuen Animationsschritt_ erzeugt.
-Um zu erreichen, dass unser _text_ und _rectangel_ Befehl im gleichen Schritt ausgeführt werden, umgeben wir diese mit _geschweiften Klammern_).
+Um zu erreichen, dass unser _text_ und _rectangel_ Befehl im gleichen Schritt ausgeführt werden, umgeben wir diese mit _geschweiften Klammern_.
 Die öffnende { muss dabei _vor_ dem _text_ Befehl in einer *separaten Codezeile* stehen, die schließende } _nach_ dem _rectangle_ Befehl ebenfalls in einer *separaten Zeile*. +
 Nun aktualisiere deine Animation und schau, was passiert. +
 Eventuell verbirgt das Rechteck nun den Text, weil es als zweites Objekt gezeichnet wurde.
@@ -265,7 +228,7 @@ Dafür brauchen wir wieder mehrere Aktionen in _einem_ Schritt:
 
 * die erste Zeile nicht mehr hervorheben (*line 0*)
 * die zweite Zeile hervorheben (*line 1*)
-* denk Link des ersten Listenelements löschen
+* den Link des ersten Listenelements löschen
 
 Das sollte mittlerweile kein Problem mehr für dich darstellen.
 Nicht sehr überraschend heißt der Befehl, um etwas _nicht mehr hervorzuheben_ *unhighlightCode*. +
@@ -307,13 +270,13 @@ setLink "elemA" to "elemB" within 200 ticks
 }
 ....
 IMPORTANT: Beachte, dass *within* die _Dauer_ einer Aktion definiert, während *after* das _offset_ festlegt.
-Werden *beide* benutzt, muss du *zuerst* das _offset_ festlegen.
+Werden *beide* benutzt, musst du *zuerst* das _offset_ festlegen.
 
 Die nächsten Schritte kannst du als kleine Übung alleine machen.
 Mit den gleichen Befehlen, die du bereits benutzt hast, sollte es kein großes Problem sein, das _Code Highlighting_ für die weiteren Elemente zu hinterlegen und ein drittes Listenelement *elemC* einzufügen.
 Setze bitte auch einen Link zu dem neuen Element.
 Das Element selbst sollte ungefähr in der Mitte der bisherigen Elemente liegen, aber etwas tiefer, z.B. offset *(80,50)* von *NW* des ersten Elements. +
-Am Ende dieser Anleitung findest du nochmal den gesamten Code, falls du hier nicht weiterkommst.
+Am Ende dieses Tutorials findest du nochmal den gesamten Code, falls du hier nicht weiterkommst.
 
 === Bewegen von Objekten
 Der letzte Schritt soll die Liste in eine _schöne_ Struktur verwandeln.
@@ -329,7 +292,6 @@ Von daher enthält die Bounding Box des _mittleren_ Listenelements (elemC) auch 
 Zur Veranschaulichung hier mal eine ungefähre Grafik der Elemente mit ihren Boundig Boxes:
 
 image::Image_Elem1_2_3.PNG[align="center"]
-Wenn du die Positionen wie vorgeschlagen genutzt hast, wirst du sehen, dass der Zeiger über die Grenzen nach oben und rechts hinausgeht. +
 Jetzt wollen wir das Listenelement _elemC_ und den _Zeiger_ des Listenelement elemA bewegen. +
 Dazu müssen wir erstmal überlegen, wie wir die Elemente bewegen müssen.
 Bei genauem Hinsehen erkennst du, dass du bestimmte Punkte im Zusammenhang mit den Bounding Boxes nutzen kannst, um die Platzierung der Objekte zu bestimmen:
@@ -337,7 +299,7 @@ Bei genauem Hinsehen erkennst du, dass du bestimmte Punkte im Zusammenhang mit d
 * die *SE* Ecke des mittleren Elements, denn diese enthält die untere Linie des Objekts _und_ den Zeiger
 * die *SW* Ecke des letzten Elements, denn dieses gibt die untere Zielline _und_ die Zielkoordinaten für den Zeiger vor
 
-Als ersten werden wir ein verstecktes Linien-Objekt erzeugen:
+Als erstes werden wir ein verstecktes Linien-Objekt erzeugen:
 
  line "moveLine1" offset (0, 0) from "elemC" SE offset (0, 0) from "elemB" SW hidden
 

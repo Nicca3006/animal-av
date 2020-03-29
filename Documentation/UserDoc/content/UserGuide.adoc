@@ -2,7 +2,11 @@
 :jbake-status: published
 :imagesdir: images
 :toc: macro
+:toc-title: Inhalt
+//Nummerierung des Inhaltsverzeichnis
 :sectnums:
+//unterdrückt Link auf Schnellstart aus installation.doc
+:LinkSchnellstart: false
 //Hinweis: Footnotes werden im pdf als Endnotes angezeigt
 
 = ANIMAL Tutorial
@@ -24,59 +28,9 @@ In der Anwendung zeigen sich dann jedoch die umfangreichen Möglichkeiten.
 Eine genaue Beschreibung findest du unter <<Erstellen eigener Animationen an einem Beispiel>>.
 Wenn ANIMAL schon installiert und gestartet ist, kannst du direkt dort hinspringen, sonst lies einfach weiter. +
 
-== Installation
-Um das Programm auf deinem PC ausführen zu können, brauchst du eine Java-Version 7 oder höher.
-In den allermeisten Fällen wirst du die bereits auf deinem Rechner haben, weil ganz viele Tools sie nutzen. +
-Wenn du nicht sicher weißt, ob Java auf deinem Rechner installiert ist, findest du hier eine link:https://java.com/de/download/help/version_manual.xml[Anleitung], wie du das prüfen kannst
-footnote:[Mit dem Link landest du auf der offiziellen Java-Seite, die nicht ganz einfach aufgebaut ist.
-Wenn du damit nicht klar kommst, frag jemanden um Hilfe.]. +
-Wenn Java auf deinem Rechner tatsächlich noch nicht vorhanden ist, kannst du es link:https://www.java.com/de/download/[mit diesem Link] installieren, ansonsten lies direkt weiter.
+include::installation.adoc[leveloffset=+1]
 
-Bitte klicke <<index.adoc#Aktuelle Version, hier>>, um die aktuelle Version von ANIMAL herunterzuladen.
-In der Regel öffnet sich ein Fenster, in dem du auswählen kannst, in welchen Ordner du die Datei mit der Endung .jar auf deinem PC speichern willst. +
-
-Am besten lädst du dir gleich noch einen Ordner herunter, das ziemlich viele Animationen beinhaltet.
-Damit kannst du dann nach der Installation direkt starten, dir verschiedene Algorithmen anzuschauen. +
-Den Download gibt es auf link:http://www.algoanim.net/downloads/currentanims_de.zip[deutsch] oder link:http://www.algoanim.net/downloads/currentanims_en.zip[englisch] - in dieser Sprache sind dann später die Texte in den Animationen, also achte darauf, die richtige Sprache zu wählen.
-Nun musst du das ZIP-File nur noch entpacken (mit der rechten Maustaste anklicken bringt meistens eine Funktion "entpacken" oder "unzip"), am besten in einen eigenen Ordner auf deinem PC.
-
-== Programmstart
-Falls du das Programm noch nicht installiert hast, findest du <<Installation,hier>> eine kurze Anleitung dazu.
-
-Um loslegen zu können, suchst du als erstes die JAR-Datei, die du gespeichert hast und startest durch Doppelklick auf diese Datei das Programm.
-Je nach den Sicherheitseinstellungen auf deinem Rechner kann es sein, dass die Installation geblockt wird.
-Falls das passiert und du nicht weißt, wie du das beheben kannst, lass dir am besten von jemandem helfen
-footnote:[In der Regel gibt es irgendwo eine Abfrage, mit der du bestätigen kannst, dass du das wirklich installieren willst.
-Wo du das findest, ist aber je nach Betriebssystem unterschiedlich.].
-Wenn die Installation funktioniert, erscheint ein kleines Fenster auf dem Bildschirm, wo du siehst, dass dein PC arbeitet und danach öffnet sich das Hauptfenster des Programms ANIMAL.
-
-image::Animal_Control_Center_V253_english.PNG[align="center"]
-
-Wenn du möchstest, stell die Sprache unter _Language_ um auf *Deutsch*.
-In dieser Anleitung zeigen wir (fast) immer die deutsche Version.
-
-Wenn du im Programm die Animation eines bereits vorhandenen Beispiels sehen möchtest, wie ein bestimmter Algorithmus funktioniert, klicke bitte auf _Datei - Öffnen_ und suche den Ordner, in dem du vorher die Dateien aus dem ZIP-File abgelegt hast.
-Bitte achte darauf, dass beim *Dateityp* ausgewählt sein muss _animation/animal-ascii-compressed(.aml)_.
-Nun such dir eine Animation aus, die du sehen möchtest und klicke auf _Öffnen_.
-Das Beispiel zeigt den Dijkstra-Algorithmus, der genutzt wird, um den schnellsten Weg zwischen verschiedenen Orten zu finden. +
-
-image::BeispielAnimation_Dijkstra.PNG[align="center"]
-Im unteren Bereich finden sich verschiedene Schaltflächen zum Abspielen der Animation:
-
-* Animation _starten_ image:Animation_starten.PNG[]
-* Animation _anhalten_ (Pause) image:Animation_Pause.PNG[]
-* _zurück zum Anfang_ der Animation image:Animation_Beginn.PNG[]
-* einen _Schritt zurück_ image:Animation_SchrittZurueck.PNG[]
-* einen _Schritt vor_ image:Animation_SchrittVor.PNG[]
-* _ans Ende_ der Animation springen image:Animation_Ende.PNG[]
-* Animation _rückwärts_ zeigen image:Animaion_rueckwaerts.PNG[]
-
-Während der *Erstellung* einer Animation kann es passieren, dass das Springen zu bestimmten Schritten nicht richtig funktioniert.
-Bitte speichere deine Animation dann einmal und lade sie neu - nun sollte alles wieder funktionieren. +
-Du kannst auch direkt die Nummer des Schritts eingeben, den du dir anzeigen lassen möchtest: image:Animation_Schritt_Eingabe.PNG[] +
-Mit dem _Schieberegler_ lässt sich die Geschwindigkeit einstellen, in der die Animation abläuft.
-Ganz oben kannst du außerdem einen Zoom einstellen.
-Das ist besonders sinnvoll bei sehr breiten oder hohen Animationen, um Screenshots zu erstellen oder um die Größe von der _Anzeige auf dem Computer_ an die _Anzeige auf einem Beamer_ anzupassen. +
+include::schnellstart.adoc[leveloffset=+1]
 
 == Erstellen eigener Animationen an einem Beispiel
 Vielleicht willst (oder sollst) du die Funktionsweise eines Algorithmus mit eigenen Zahlen erklären oder es gibt noch kein Beispiel zu dem Algorithmus.
@@ -87,23 +41,22 @@ Das Ergebnis wird etwa so aussehen (hier in englisch):
 image::Figure 2 Final result of the tutorial animation.JPG[align="center"]
 
 === Vorbereitung der neuen Animation
-Falls nötig, starte ANIMAL wie in <<Programmstart>> beschrieben. +
-Nun kannst du
+Nachdem du ANIMAL gestartet hast, kannst du
 
 * entweder die Schaltfläche image:New.PNG[] anklicken oder
 * im Menü auswählen _Datei - Neu... - Leere Animation_
 
 Wenn du gerne mit sogenannten Shortcuts arbeitest, kannst du auch _ALT-D_ drücken, um den Menüpunkt _Datei_ zu öffnen, danach _N_ für _Neu_ usw.
-Falls das mit _ALT_ nicht funktioniert, probier stattdessen die _CTRL_ Taste zu drücken oder frag den Systemadministrator, welche Tastenkombination in deinem Fall die richtige ist.
+Falls das mit _ALT_ nicht funktioniert, nimm stattdessen die _CTRL_ Taste oder probiere aus, welche Tastenkombination in deinem Fall die richtige ist.
 
 === ANIMALs Zeichenfenster
 Als erstes wollen wir ein einfaches _Rechteck_ zeichnen.
-Dafür öffnen wir das Zeichenfenster
+Dafür öffne bitte das Zeichenfenster
 
 * entweder durch Klick auf das Symbol _Draw_ image:Draw.PNG[] oder
 * über den Menüpunkt _Fenster - Zeichenfenster anzeigen_
 
-image::Zeichenfenster.PNG[align="center"]
+image::Zeichenfenster.PNG[align="center", width = 600]
 
 In diesem Fenster werden alle Objekte gezeichnet.
 Am oberen Rand des Fensters befindet sich eine Reihe von _Buttons für verschiedene Einstellungen_.
@@ -128,7 +81,7 @@ Die folgenden Tabelle gibt eine Übersicht über die Bedeutung der Buttons:
 |image:prevStep.png[] |Schritt zurück
 |image:nextStep.png[] |Schritt vor
 |image:runStep.png[] |Animation im Animations-Fenster laufen lassen
-|image:Multiselection.png[] |Auswahl mehrerer Objekte an/aus
+|image:MultiSelection.png[] |Auswahl mehrerer Objekte an/aus
 |image:useEditors.png[] |Editor an/aus
 |image:Point.png[] |Neuen Punkt einfügen
 |image:Polyline.png[] |Neue Linie (Polyline) einfügen
@@ -146,25 +99,25 @@ Wie sich das auswirkt, wirst du gleich noch in unserem Beispiel sehen. +
 Im Moment setzt du die Größe bitte erstmal auf _20_ zum Zeichnen unserer Beispiel-Animation.
 
 === Zeichnen des Rechtecks für die Überschrift
-Als erstes zeichne wir ein Rechteck in die linke obere Ecke.
-Dafür klicken wir links auf das Symbol _Rectangle_ image:Rectangle.PNG[] und markieren dann im Gitternetz die *obere linke* und die *untere rechte* Ecke für unser Rechteck.
-Dadurch wird nicht nur das Rechteck im Zeichenfenster erzeugt, sondern gleichzeitig öffnet sich noch ein kleineres Fenster mit _Einstellungsmöglichkeiten für unser Rechteck_ (_Rectangle Options_).
+Als erstes zeichnen wir ein Rechteck in die linke obere Ecke.
+Dafür klicke bitte links auf das Symbol _Rectangle_ image:Rectangle.PNG[] und markiere dann im Gitternetz die *obere linke* und die *untere rechte* Ecke für das Rechteck.
+Dadurch wird nicht nur das Rechteck im Zeichenfenster erzeugt, sondern gleichzeitig öffnet sich noch ein kleineres Fenster mit _Einstellungsmöglichkeiten für das Rechteck_ (_Rectangle Options_).
 Wenn dieses zweite Fenster im Weg ist, schieb es einfach an die Seite oder schließe es vorübergehend.
 Du kannst es jederzeit wieder öffnen, indem du das breits gezeichnete Rechteck anklickst. +
-Der obere Teil unseres Zeichenfensters sieht jetzt so aus (hier wurde das zweite Fenster nicht weggeschoben und das Rechteck ist im Moment noch _gefüllt_, weil es dadurch besser zu erkennen ist):
+Der obere Teil unseres Zeichenfensters sieht jetzt so aus (hier wurde das zweite Fenster nicht weggeschoben):
 
 image::Rectangle_Drawn.PNG[align="Center"]
 
 === Objekteigenschaften und Farben festlegen
 Mit Hilfe der Angaben im Fenster _Rectangle Optionen_ können wir festlegen, ob das Rechteck _gefüllt_ sein soll oder nicht.
 (Zur Erinnerung: Falls das Fenster gerade nicht angezeigt wird, klicke einfach einmal auf das Rechteck.)
-Für unser Beispiel soll das Rechteck gefüllt sein. +
-Außerdem können hier auch noch die _Farbe_ des Rands des Rechtecks und die _Füllfarbe_ festgelegt werden.
-Dazu klick auf das Feld, in dem jetzt *black* angezeigt wird und wähle die gewünschte Farbe aus. +
+Außerdem können hier auch noch die _Farbe_ des Rands des Rechtecks und die _Füllfarbe_ festgelegt werden. +
+Für unser Beispiel soll das Rechteck weiß gefüllt sein.
+Dazu klick auf das Feld, in dem jetzt *black* angezeigt wird und wähle *white* als neue Farbe aus. +
 Später werden wir noch einen Text *über* dem Rechteck anzeigen lassen.
 Damit das Rechteck wirklich *unter* dem Text liegt, setzen wir die _Tiefe_ auf 16.
 Je höher die Zahl ist, umso _tiefer_, also weiter im Hintergrund wird das Objekt später dargestellt.
-Wenn wir meherer Objekte übereinander schieben, können wir damit also bestimmen, in welcher Reihenfolge sie _aufeinander liegen_.
+Wenn wir mehrere Objekte übereinander schieben, können wir damit also bestimmen, in welcher Reihenfolge sie _aufeinander liegen_.
 Wenn du fertig bist, kannst du mit _OK_ das Fenster _Rectangle Optionen_ schließen. +
 Jetzt speichere bitte den aktuellen Bearbeitungsstand durch Klick auf _Save_ image:save.png[] .
 
@@ -173,7 +126,7 @@ Als nächstes wollen wir die Überschrift "Beste Listen Demo" einfügen.
 Dafür klick bitte die Schaltfläche _Text_  an (image:Text.PNG[]). +
 Dadurch öffnet sich das Fenster _Text Options_ und du kannst ganz oben ins _Text-Feld_ "Beste Listen Demo" schreiben. +
 Dann kannst du eine Schriftart und -größe auswählen, festlegen, ob die Schrift _kursiv_ oder *fett* gedruckt werden soll, und welche Farbe sie haben soll. +
-Damit der Text in deinem Rechteck erscheint, klicke bitte auf einen Punkt *innerhalb* der _linken obere Ecke_ des Rechtecks.
+Damit der Text in deinem Rechteck erscheint, klicke bitte auf einen Punkt *innerhalb* der _linken oberen Ecke_ des Rechtecks.
 Der erste Klick übernimmt den Text in das Zeichenfenster, der zweite Klick rastet ihn an der Stelle ein, an der du ihn platziert hast. +
 Experimentiere gerne mal ein bisschen mit den unterschiedlichen Text-Einstellungen
 footnote:[Einige Systeme zeigen SansSerif Schriften, die kursiv oder fett oder fett kursiv gestellt sind, nicht an.
@@ -182,11 +135,11 @@ aber stelle für unser Beispiel am Ende bitte zurück auf _SansSerif_ in Größe
 Am Ende klicke auf _OK_ um das Text-Editor-Fenster zu schließen.
 
 Bevor wir weitermachen, wollen wir uns das bisherige Ergebnis mal anschauen.
-Dafür kannst du im _Animal Control Center_ (das war das Startfenster unseres Programms) auf _Fenster - Animationsfenster anzeigen_ klicken und landest in einem Fenster, dass du schon aus der ersten Animation kennst, die wir uns angeschaut haben.
-Das Fenster ist im Moment vermutlich leer, aber sobald du im _Animation Drawing Window_ (dem Fenster, in dem wir gerade gezeichnet haben), auf _Speichern_ klickst, wird die "Animation" angezeigt. +
+Dafür kannst du im _Animal Control Center_ (das ist das Startfenster unseres Programms) auf _Fenster - Animationsfenster anzeigen_ klicken und landest in dem Fenster, dass du vielleicht noch aus dem Dijkstra-Beispiel kennst.
+Das Fenster ist im Moment vielleicht leer, aber sobald du im _Animation Drawing Window_ (dem Fenster, in dem wir gerade gezeichnet haben), auf _Speichern_ klickst, wird die "Animation" angezeigt. +
 Bisher sieht sie so aus:
 
-image::Animationsfenster_Rechteck_Text.PNG[align="center"]
+image::Animationsfenster_Rechteck_Text.PNG[align="center", width = 500]
 
 === Ausrichten der Objekte
 Besonders schön ist unsere Animation bisher nicht, da der Text im Rechteck links an der Kante hängt und rechts noch sehr viel Platz ist.
@@ -225,7 +178,7 @@ Bitte klick dafür auf image:append.png[] +
 Dadurch wird ein neuer Schritt _Step 2_ in die Liste eingefügt und markiert.
 
 === Mehrere Zeilen Text einfügen
-Wir wollen jetzt die Dokumentation unserer Animation schreiben.
+Als nächstes wollen wir eine Dokumentation zu unserer Animation schreiben.
 Diese besteht aus den folgenden Text Eingaben:
 
 * 1. Erstes Listenelement erzeugen
@@ -235,13 +188,13 @@ Diese besteht aus den folgenden Text Eingaben:
 * 5. Erstes mit zweitem Element verbinden
 * 6. Neues Listenelement erzeugen
 * 7. Neues Element mit zweitem Element verbinden
-* 8. Erstes ELement mit neuem Element verbinden
+* 8. Erstes Element mit neuem Element verbinden
 * 9. Alles in eine "schöne" Struktur verwandeln
 
-Setze als erstes die _Gittergröße_ wieder auf _20_ und schalte das _einrasten des Gitters_ ein, falls es nicht schon aktiviert ist (=grau unterlegt). +
+Setze als erstes die _Gittergröße_ wieder auf _20_ und schalte das _einrasten des Gitters_ ein, falls es nicht schon aktiviert ist (= grau unterlegt). +
 Öffne den _Text Editor_ wie schon beschrieben in <<Einfügen eines Text Objekts>>.
 Wähle entweder SansSerif oder Monospaced als Schriftart, _Größe 16_, weder _kursiv_ noch _fett_ gedruckt. +
-Gib den ersten Text (1. Erstes Listenelement erzeugen) in das _Text_-Feld ein.
+Gib den ersten Text ("1. Erstes Listenelement erzeugen") in das _Text_-Feld ein.
 Jetzt markiere mit der Maus das Gitter *8* Zeilen unterhalb von dem Rechteck mit der Überschrift, um den Text dort zu platzieren.
 Ein zweiter Klick rastet den Text dort ein. +
 _Bitte lass das Text Editor Fenster geöffnet und klicke *weder OK* noch *Apply*!_ +
@@ -276,34 +229,35 @@ image::Speichern_Dialog.PNG[align="center"]
 Bevor du jetzt das erste Listenelement erzeugst, füge bitte einen neuen Animationsschritt ein, indem du in der Animationsübersicht _Animation Overview_ einen neuen Schritt _nach_ dem aktuellen Schritt einfügst (s. <<Erstellen eines Animations-Schritts>>).
 Das sollte jetzt _Schritt 3_ sein.
 Nun klicke im _Zeichenfenster_ bitte auf den _Boxpointer_ (image:BoxPointer.PNG[]).
-Wie schon gewohnt öffnet sich ein Fenster mit den _Box Pointer Options_.
+Wie du es schon kennst, öffnet sich ein Fenster mit den _Box Pointer Options_. +
 Das neue Element soll _Elem1_ heißen, das schreibe wie gewohnt in das Feld _Text_.
 Die _Zeigerposition_ stelle bitte auf _bottom_ und die _Anzahl Zeiger_ auf _1_.
 Dann kannst du wie immer *ohne OK oder Appply zu drücken* das Element einfach im Zeichenfenster platzieren, ein Kästchen nach unten und zwei nach rechts versetzt von unserem Rechteck.
 Der erste Klick platziert das Element, der zweite lässt es dort einrasten und der dritte Klick lässt dich den Zeiger definieren. +
-Hast du eigentlich schon bemerkt, dass ganz unten im Fenster auch immer angezeigt wird, wofür die verschiedenen Maustasten benutzt werden können? +
+Hast du eigentlich schon bemerkt, dass ganz unten im Fenster auch immer angezeigt wird, wofür die verschiedenen Maustasten benutzt werden können?
+Das ist oft ziemlich hilfreich.
+
 Wenn du das Element platziert hast, sollte dein Zeichenfenster so aussehen:
 
 image::Animationsfenster_Listenelement1.PNG[align="center"]
 
 === Elemente farblich hervorheben
 Um sicher zu gehen, dass man später den Zusammenhang zwischen dem ersten Listenelement und der ersten Textzeile erkennt, kannst du den Text _rot_ schreiben.
-Aber: Würdest du das im Text-Editor machen, wäre die Zeile _in der gesamten Animation_ rot geschrieben.
+Aber: Würdest du das im Text-Editor machen, wäre die Zeile während der _gesamten Animation_ rot geschrieben.
 Das ist nicht das, was wir wollen.
 Deshalb benutzen wir den Button image:ColorChanger.PNG[] _ColorChanger_ im Fenster _Animationsübersicht_.
 Ein Klick darauf öffnet die _ColorChanger Optionen_ für den aktuellen Animationsschritt.
 Als erstes müssen wir jetzt das _Objekt wählen_, indem wir diesen Button anklicken (ist dann dunkel hinterlegt) und danach im _Zeichenfenster_ die erste Zeile unseres Texts anklicken.
 Bei Bedarf können auch mehrere Objekte nacheinander markiert und gemeinsam bearbeitet werden, aber wir benötigen jetzt nur die erste Zeile. +
 Nachdem diese ausgewählt ist, klicke bitte erneut auf den _Objekt wählen_ Button, um die Auswahl zu bestätigen.
-Hier steht jetzt etwas wie _Ausgewähltes Objekt: 7_. +
+Hier steht jetzt sowas wie *Ausgewähltes Objekt: 7*. +
 Je nachdem, welche Art von Objekt man auswählt, gibt es sehr unterschiedliche _Methoden_, wie man das Objekt bearbeiten kann.
-Bei einem _Text_ gibt es allerdings nur die Methode _color_, weswegen diese nun bereits ausgewählt ist, so dass wir hier nichts weiter machen müssen.
-Wir können allerdings noch auswählen, ob wir eine _Verzögerung_ vor dem Farbwechsel haben wollen.
+Für einen _Text_ gibt es allerdings ausschließlich die Methode _color_, weswegen diese nun bereits ausgewählt ist, so dass wir hier nichts weiter machen müssen. +
+Wir können jedoch noch auswählen, ob wir eine _Verzögerung_ vor dem Farbwechsel haben wollen.
 Hierbei können wir zwischen _ms (Millisekunden)_ und sogenannten _Ticks_ wählen.
-Bei Millisekunden wählt man sinnvollerweise ein Mehrfaches von 100, bei Ticks kann man auch kleine Werte wie z.B. 5 oder 10 benutzen. +
-Für unser Beispiel setzen wir die _Verzögerung_ auf _10 Ticks_ und wählen _rot_ als _Farbe_ aus.
+Für unser Beispiel setzen wir die _Verzögerung_ auf _100 Ticks_ und wählen _rot_ als _Farbe_ aus.
 
-Um die Animation anzuschauen, wechsle nun ins Animationsfenster (falls es nicht noch geöffnet ist, kannst du es im _Animal Control Center_ öffnen durch Klick auf  image:animWindow2.png[]).
+Um die Animation anzuschauen, wechsle nun ins _Animationsfenster_ (falls es nicht mehr geöffnet ist, kannst du es im _Animal Control Center_ öffnen durch Klick auf  image:animWindow2.png[]).
 Nun starte im Zeichenfenster die Animation durch Klick auf image:runStep.png[] . +
 Wie du siehst, erscheint unser Listenelement jetzt im gleichen Momemt, in dem die Zeile rot angezeigt wird.
 Wenn wir _erst_ die rote Schrift und _dann_ das Listenelement sehen wollen, können wir unsere Animation entsprechend anpassen: +
@@ -313,7 +267,7 @@ Nun kannst du die _Verzögerung_ auf einen passenden Wert einstellen und das Fen
 
 Abschließend wollen wir noch weitere Effekte hinzufügen.
 Dazu müssen wir einen _neuen Schritt einfügen_, da pro Schritt nur *ein Effekt pro Objekt* angelegt werden kann.
-Das _Anzeigen_ eines neuen Elements erzeugt immer einen _Show_ Effekt.
+Das _Anzeigen_ eines neuen Elements erzeugt immer einen sogenannten _Show_ Effekt.
 Würden wir dem neuen Element nun noch einen weiteren Effekt hinzufügen, hätten wir also _zwei_ Effekte für dieses Element. +
 Nachdem du also einen _neuen Schritt_ in der _Animations Übersicht_ hinzugefügt hast, bearbeite die zweite Textzeile genau so, wie du es eben mit der ersten gemacht hast, damit diese dann ebenfalls rot dargestellt wird. +
 Jetzt sind beide Zeilen rot markiert, was nicht ganz das ist, was wir haben wollen.
@@ -321,7 +275,7 @@ Deswegen markieren wir die erste Zeile als _erledigt_, indem wir die gleichen Sc
 
 === Bewegliche Elemente
 Wir wollen jetzt den _Link_ (Pfeil) des ersten Listenelements auf null setzen, also nicht mehr anzeigen.
-DAfür bleiben wir _bleiben im gleichen Step_ und klicken den _Move_ button image:Move.png[] in der _Animationsübersicht_ an.
+Dafür bleiben wir _bleiben im gleichen Step_ und klicken den _Move_ button image:Move.png[] in der _Animationsübersicht_ an.
 Das Fenster, das sich jetzt öffnet, sieht ziemlich ähnlich wie das _ColoChanger_ Fenster aus, allerdings gibt es eine zweite _Objektauswahl_ statt der Farbauswahl. +
 Klicke das *obere* _Objekt/e wählen_ an und klicke dann das Listenelement _Elem1_ im _Zeichenfenster_ an.
 Nun brauchst du die passende _Methode_ aus der Auswahl.
@@ -330,11 +284,11 @@ Setze jetzt im _Zeichenfenster_ die _Gittergröße_ auf _5_ und wähle die _Poly
 Nun zeichnest du eine Linie von der Spitze des vorhandenen Pfeils zurück zu seinem Beginn (innerhalb des Listenelements).
 Dafür setzt du mit der _linken Maustaste_ den _Beginn_ deiner Linie und mit der *mittleren* Taste das _Ende_.
 Denk dran, dass du auch immer ganz unten im Fenster siehst, welche _Mausklicks_ welche _Aktionen_ auslösen. +
-Nachdem du die Linie gezeichnet hast, sieht es ungefähr so aus: image:Elem1_SetTip.png[align="center]
+Nachdem du die Linie gezeichnet hast, sieht es ungefähr so aus: image:Elem1_SetTip.PNG[align="center]
 
 Jetzt wähle in dem _Move Optionen_ Fenster diese Linie als Objekt für die *untere* Objektauswahl.
 Außerdem kannst du wie immer eine _Verzögerung_ hinterlegen. +
-Benutze den _Run_ Button image:Run.PNG[], um die Animation im _Animationsfenster_ abzuspielen und ändere die eingegegbenen Werte, bis du mit der Ansicht zufrieden bist.
+Benutze den _Run_ Button image:Run.PNG[], um die Animation im _Animationsfenster_ abzuspielen und ändere die eingegebenen Werte, bis du mit der Ansicht zufrieden bist.
 
 Die nächsten Schritte sind eine Wiederholung des bisherigen, in denen du folgendes umsetzt:
 
@@ -345,17 +299,19 @@ Die nächsten Schritte sind eine Wiederholung des bisherigen, in denen du folgen
 
 Das Ergebnis sollte ungefähr so aussehen:
 
-image::Figure 14 State after inserting the second element.PNG[align="center"]
+image::Figure 14 State after inserting the second element.PNG[align="center", width = 500]
 Dann füge einen weiteren _neuen Animationsschritt_ hinzu mit folgenden Schritten:
+
 * die Farbe der dritten Textzeile auf _schwarz_ ändern
 * die Farbe der vierten Textzeile auf _rot_ ändern
-* eine _Move_ Aktion hinzufügen wie in <<Bewegliche Elemente>> beschrieben
+* eine _Move_ Aktion hinzufügen wie in <<Bewegliche Elemente>> beschrieben.
 Diesmal soll allerdings die Linie, an der sich das Element bewegt, so angeordnet werden, dass der _zweite Punkt (= das Ende)_ 10 Pixel weiter _links_ und 10 Pixel _oberhalb_ des ersten Punkts ist.
+
 Benutze diese Linie als _move via_ Objekt und schau dir die Animation an.
-Du wirst sehen, dass ANIMAL _relative_ Bewegungen anzeigt - die Linie zeigt _wie_ sich die Position des Objekts verändert und muss nicht am Zielobjekt starten. +
+Du wirst sehen, dass ANIMAL _relative_ Bewegungen anzeigt - die Linie zeigt, _wie_ sich die Position des Objekts verändert und muss nicht am Zielobjekt starten. +
 Wenn du alle Schritte durchgeführt hast, sollte dein _Zeichenfenster_ ungefähr so aussehen:
 
-image::Figure 15 State after inserting the second element.PNG[align="center"]
+image::Figure 15 State after inserting the second element.PNG[align="center", width = 500]
 Der kleine Pfeil auf der Anzeige ist die sogenannte _move line_.
 Ob man diese Linie angezeigt bekommt oder nicht, kann man mit dem _Show Temporary Objects_ Button image:ShowTempObjects.png[] ein- und ausschalten.
 
@@ -364,10 +320,11 @@ Jetzt lege bitte noch einen weiteren _Schritt_ mit folgenden Aktionen an:
 * die Farbe der vierten Textzeile auf _schwarz_ ändern
 * die Farbe der fünften Textzeile auf _rot_ ändern
 * eine _Move_ Aktion hinzufügen um die beiden Listenelemente zu verbinden
+
 Dafür erstelle einen neuen _Move_ Animationseffekt, wähle das _erste Listenelement_ und die Methode _setTip_. +
 Dann klicke auf den *unteren* _Objekt auswählen_ Button und zeichne eine neue Polylinie von der _Spitze des ersten Listenelements_ zur _linken Kante_ des _zweiten Listenelements_.
-Wähle wie immer passende _Verzögerungen_ und teste deine Animation.
-Wenn die Linie nicht so aussieht, wie du sie gerne hättest, musst du sie *nicht* löschen und neu zeichnen! +
+Wähle wie immer passende _Verzögerungen_ und teste deine Animation. +
+Wenn die Linie nicht so aussieht, wie du sie gerne hättest, musst du sie *nicht* löschen und neu zeichnen!
 Stattdessen kannst du die Linie einfach anklicken und siehst du kleine _Quadrate_ an beiden Enden.
 Klicke eines der Quadrate an, halte die Maustaste gedrückt und ziehe die Linie weiter, bis sie die gewünschte Länge hat.
 
@@ -384,9 +341,9 @@ Um das _erste_ und das _dritte_ Element miteinander zu verbinden, benutzen wir e
 Fang ganz normal an, indem du einen _neuen Schritt_ hinzufügst, die _Farbe_ der Text-Zeilen 6 und 7 änderst und eine neue _Move_ Animation erzeugst, in der du das _erste_ Listenelement als Objekt mit der Methode _setTip_ auswählst.
 Jetzt wähle das *untere* _Objekt auswählen_ und klicke im _Zeichenfenster_ auf das _Bogen_ Symbol image:Arc.png[]. +
 Wähle einen Punkt _direkt_ neben der _oberen rechten Ecke_ des neuen Listenelements als das _Zentrum des Bogens_ und klicke *einmal*.
-Jetzt bewege die Maus um den Umriss des aktuellen Bogens zu sehen.
+Jetzt bewege die Maus, um den Umriss des aktuellen Bogens zu sehen.
 Der Bogen sollte sowohl die _Spitze_ des _ersten_ Listenelements als auch die _linke_ Seite des neuen Elements auf Höhe dessen Pfeilspitze berühren. +
-Vielleicht musst du ein paarmal versuchen, welches der beste Punkt für den _Zentrim des Bogens_ ist. +
+Vielleicht musst du ein paarmal versuchen, welches der beste Punkt für den _Zentrum des Bogens_ ist. +
 Als nächstes klickst du auf die _Pfeilspitze des ersten Elements_, die auf das zweite Element zeigt, um hier den _Bogen-Startwinkel_ zu setzen.
 Danach klickst du an die linke Seite des _neuen_ Listenelements, was ungefähr zu folgendem Ergebnis führen sollte:
 
@@ -395,7 +352,7 @@ image::Figure 18 Linking elements using an arc component.PNG[align="center"]
 Teste und optimiere diese Animationsschritte wie immer.
 Nun brauchen wir nur noch einen Link vom _neuen_ Element zum zweiten Listenelement und sollten die _Farben_ anpassen.
 
-=== Diverse Optionen um Listenelemente zu bewegen
+=== Diverse Optionen, um Listenelemente zu bewegen
 Im letzten Schritt wollen wir eine "schöne" Struktur herstellen, in der alle Elemente auf der gleichen Höhe dargestellt sind. +
 Dafür könnten wir die _translate_ Methode der _Move_ Animation benutzen, was allerdings auch den Pfeil des neues Elements verändern würde. +
 Um das zu vermeiden, mach folgendes:
@@ -404,9 +361,9 @@ Um das zu vermeiden, mach folgendes:
 * Setze wie immer die Farbwechsel in den Zeilen 8 und 9
 * füge eine neue _Move_ Animation mit Effekt auf das neue Listenelment ein, aber wähle die Methode _translateWithFixedTip_
 Zeichne eine einfache _polyline_ von der _Oberseite_ des ersten Elements gerade auf der gleichen Höhe wie die anderen Listenelemente.
-* füge eine neue _Move_ Animation mit Effekt für das _erste_ Element ein, wähle die _setTip_ Methode und benutze die _gleiche_ Polylinie wie eben.
+* füge eine neue _Move_ Animation mit Effekt für das _erste_ Element ein, wähle die _setTip_ Methode und benutze die _gleiche_ Polylinie wie eben. +
 Ja, man kann _move lines_ mehrfach verwenden - nur mehrfache _sichtbare_ Animationen auf dem gleichen Objekt sind nicht zulässig.
 
-Und jetzt: Herzlichen Glückwunsch, du hast deine erste Animation mit ANIMAL fertig gestellt! +
+*Und jetzt:* Herzlichen Glückwunsch, du hast deine erste Animation mit ANIMAL fertig gestellt! +
 Falls noch nicht alle Linien genau so sind, wie du sie haben wolltest, schalte das _einrasten_ des Gitters aus und verschieb die Linien und dazugehörigen _move lines_ bis du mit dem Resultat zufrieden bist. +
 Und vergiss am Ende nicht, deine Animation zu speichern :)

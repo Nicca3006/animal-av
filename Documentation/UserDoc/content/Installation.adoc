@@ -6,18 +6,20 @@
 == Voraussetzungen
 Um das Programm auf deinem PC ausführen zu können, brauchst du eine Java-Version 7 oder höher.
 In den allermeisten Fällen wirst du die bereits auf deinem Rechner haben, weil ganz viele Tools sie nutzen. +
-Wenn du nicht sicher weißt, ob Java auf deinem Rechner installiert ist, findest du hier eine link:https://java.com/de/download/help/version_manual.xml[Anleitung], wie du das prüfen kannst
+Wenn du nicht sicher weißt, ob Java auf deinem Rechner installiert ist, findest du hier eine link:https://java.com/de/download/help/version_manual.xml[Anleitung, window=_blank], wie du das prüfen kannst
 footnote:[Mit dem Link landest du auf der offiziellen Java-Seite, die nicht ganz einfach aufgebaut ist.
-Wenn du damit nicht klar kommst, frag jemanden um Hilfe.]. +
-Wenn Java auf deinem Rechner tatsächlich noch nicht vorhanden ist, kannst du es link:https://www.java.com/de/download/[mit diesem Link] installieren, ansonsten lies direkt weiter.
+Wenn du damit nicht klar kommst, frag am besten jemanden um Hilfe.]. +
+Wenn Java auf deinem Rechner tatsächlich noch nicht vorhanden ist, kannst du es link:https://www.java.com/de/download/[mit diesem Link, window=_blank] installieren, ansonsten lies direkt weiter.
 
 == Download
-Bitte klicke <<index.adoc#Aktuelle Version, hier>>, um die aktuelle Version von ANIMAL herunterzuladen.
+Bitte lade dir <<index.adoc#Aktuelle Version, hier die aktuelle Version>> von ANIMAL herunter.
 In der Regel öffnet sich ein Fenster, in dem du auswählen kannst, in welchen Ordner du die Datei mit der Endung .jar auf deinem PC speichern willst. +
 
-Am besten lädst du dir gleich noch einen Ordner herunter, das ziemlich viele Animationen beinhaltet.
-Damit kannst du dann nach der Installation direkt starten, dir verschiedene Algorithmen anzuschauen. +
-Den Download gibt es auf link:http://www.algoanim.net/downloads/currentanims_de.zip[deutsch] oder link:http://www.algoanim.net/downloads/currentanims_en.zip[englisch] - in dieser Sprache sind dann später die Texte in den Animationen, also achte darauf, die richtige Sprache zu wählen.
+Am besten lädst du dir gleich noch den Ordner herunter, der ziemlich viele Animationen beinhaltet.
+Damit kannst du dann nach der Installation direkt starten, dir verschiedene Algorithmen anzuschauen.
+Diesen Ordner gibt es auf link:http://www.algoanim.net/downloads/currentanims_de.zip[deutsch] oder link:http://www.algoanim.net/downloads/currentanims_en.zip[englisch] - in dieser Sprache sind dann später die Texte in den Animationen, also achte darauf, die richtige Sprache zu wählen.
 Nun musst du das ZIP-File nur noch entpacken (mit der rechten Maustaste anklicken bringt meistens eine Funktion "entpacken" oder "unzip"), am besten in einen eigenen Ordner auf deinem PC.
 
+ifndef::LinkSchnellstart[]
 Wie es weitergeht, findest du auf der Seite <<schnellstart.adoc#Schnellstart, Schnellstart>>.
+endif::[]

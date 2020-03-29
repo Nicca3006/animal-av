@@ -24,6 +24,7 @@ Das Bild selbst wird eingefügt mit image:NameDesBildes.jpg[] innerhalb einer Ze
 Es können Zusatzinfos wie z.B. [align="center", width = 100] (Bild wird zentriert mit einer Breite von 100 dargestellt) angegeben werden
 * Absolute Links können einfach in den Text geschrieben werden mit https://meinLink.de
 Soll der Link einen eigenen Namen bekommen und nur dieser angezeigt werde: https://meinLink.de[Name]
+Um den Link in einem neuen Tab zu öffnen: https://meinLink.de[window= _blank]
 * kursiv setzen mit _Unterstrichen_
 * Fett drucken mit *Stern*
 * Fußnote einfügen mit footnote:[Hier steht der Text] +
@@ -33,7 +34,8 @@ Fußnoten werden derzeit als End Note (also ganz am Ende des Dokuments angezeigt
 * Ein Code-Block wird mit .... umklammert (also davor und danach jeweils als eigene Zeile)
 * Tabellen können eine Überschrift und/oder einen Header haben [cols="1,2", options="header] wird die erste Zeile als Header darstellen +
 Darunter wird die Tabelle ein- und ausgeleitet mit |=== und die einzelnen Zeilen werden dargestellt als |1.Spalte |2.Spalte
-
+* Dokumente können in andere Dokumente integriert werden mit include::anderesdoc.adoc[].
+Falls die Überschriften-Level dann nicht mehr zueinander passen, kann man z.B. [leveloffset=+1] benutzen, um sie aneinander anzupassen.
 
 == Webseite für SchülerInnen
 Unter Documentation/UserDoc wurden alle Inhalte angelegt, die sich vor allem an SchülerInnen der Q-Phase richten.

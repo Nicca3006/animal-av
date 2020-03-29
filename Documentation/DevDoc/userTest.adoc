@@ -35,3 +35,15 @@ image::Animal_Animation_Fenster_Fehler.png[]
 In der Spracheinstellung Deutsch öffnet _ALT-D_ den Drucker statt _Datei_.
 _ALT-T_ verweist auf Repository (mit oben dargestelltem Fehler) statt auf _Fenster_.
 
+== Menü
+
+=== Help
+_Animmal Tutorial_ öffnet HTML Code
+_AnimalScript Definition_ öffnet HTML Code
+Hilfe zur allgemeinen Bedienung ist nicht vorhanden
+
+=== Options
+_Component Config_ passiert nichts
+
+=== File
+_Examples_ passiert nichts

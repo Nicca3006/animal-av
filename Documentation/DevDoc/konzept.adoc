@@ -1,36 +1,56 @@
 = Konzept für die weitere Entwicklung von ANIMAL
 
 == Installer
-
 Zur Zeit müssen verschiedene Dateien heruntergeladen und gespeichert werden.
 Die Ausführung des Tools erfolgt über die .jar-Datei.
 Für die Zukunft wäre insbesondere im Hinblick auf die Benutzung durch SchülerInnen, die noch nicht so versiert im Umgang mit ihrem Rechner sind, ein Installer wünschenswert.
-Von vielen anderen Anwendungen ist bekannt, nur auf einen "Download"-Button klicken zu müssen, womit sich das Tool installiert.
-Die spätere Ausführung des Tools könnte über den Programmaufruf erfolgen.
+
+== Webseite
+Im Moment sind die Installationsdateien auf der deutschen Webseite über die Links der englischen Webseite eingebunden.
+In Zukunft sollten sie aus dem Build-Prozess erzeugt und direkt in die Webseite eingebunden werden.
+
+Überarbeitet werden muss mindestens die Seite _Über uns_ (Angaben wurden von der englischen Webseite übernommen).
 
 == Qualitätssicherung Webseite
-
 Für die Webseite kann eine Überprüfung aller Links eingebaut werden.
 Damit kann in Zukunft bei jeder Änderung vor Veröffentlichung der neuen Seite geprüft werden, ob alle Links gültig sind.
 Andernfalls wird die Seite gar nicht erst veröffentlicht.
 
 == Eigener Bereich SchülerInnen in ANIMAL
-
 Für SchülerInnen relevante Algorithmen werden in einem separaten Bereich vorgestellt, damit die Zielgruppe hier gezielt nachschauen kann.
 Gleichzeitig sollen alle Benutzer Zugriff auf sämtliche Inhalte haben.
 
-== Beschreibung der Algorithmen für SchülerInnen
+=== Relevante Algorithmen für SchülerInnen
+Nach dem hessischen Curriculum vor allem
 
+* Quicksort
+* Insertion Sort
+* Bubble Sort
+* Selection Sort
+
+== Beschreibung der Algorithmen für SchülerInnen
 Insbesondere für SchülerInnen, aber auch für wenig erfahrene Nutzer sollten Algorithmen so beschrieben werden, dass sie auch dann verständlich sind, wenn sie vorher völlig unbekannt waren.
 Dafür müssen alle Texte geprüft und ggf. überarbeitet werden.
+Es sollte grundsätzlich sowohl Code als auch Beschreibung jedes Schritts des Algorithmus dargestellt werden.
+Zusätzliche Informationen, z.B. zur Komplexität, könnten mit aufgenommen werden.
 
-== Mobile App
-
-Langfristig sollte ein Ziel sein, ANIMAL als mobile app anzubieten, da SchülerInnnen vorwiegend auf mobilen Geräten unterwegs sind und in der Regel eher Apps als Browser-Anwendungen benutzen.
-
-== User Guide englische Version
-
-Die englische Version des User Guide muss überarbeitet werden (ist von 2000!).
+== Englische Versionen Tutorials
+Die englischen Versionen der Tutoruials müssen überarbeitet werden (aus dem Jahr 2000 zu Version 1.4!).
 Teilweise sind sehr alte Systemangaben vorhanden, teilweise sind Links nicht mehr gültig.
-Zusätzlich muss auf inhaltliche Änderungen geprüft werden.
-Ziel sollte sein, den englischen User-Guide ebenfalls als AsciiDoc zu schreiben, um ihn leicht anpassen zu können bei neuen Versionen.
+Im Animalscript Tutorial sind kleine Fehler enthalten (nicht übernommen in AsciiDoc).
+Die Dateien liegen bereits als AsciiDoc in _Documentation - UserDocEnglish_ und können dort überarbeitet werden.
+
+== Video Tutorials
+Gerade zur Installation und zum Schnellstart, aber auch zu anderen Inhalten, können kurze Videos mit Erläuterungen erstellt werden.
+Besonders SchülerInnnen sind dafür evt. offener als für lange Texte.
+
+== VOLS
+Um deutsche Version erweitern
+
+== Neue ANIMAL Versionen
+Mit jeder neuen Version müssen auch die Tutorials entsprechend angepasst werden.
+Aktuell:
+
+* englisch ANIMAL und ANIMALScript Version 1.4
+* deutsch ANIMAL und ANIMALScript Version 2.5.3
+

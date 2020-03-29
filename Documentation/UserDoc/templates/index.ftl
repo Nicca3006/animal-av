@@ -23,6 +23,6 @@
 	
 	<hr />
 	
-	<p>Weitere Versionen befinden sich im <a href="${content.rootpath}${config.archive_file}">Archiv</a>.</p>
+	<p>Vorherige Versionen befinden sich im <a href="${content.rootpath}${config.archive_file}">Archiv</a>.</p>
 
 <#include "footer.ftl">

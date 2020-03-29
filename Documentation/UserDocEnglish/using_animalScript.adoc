@@ -26,22 +26,6 @@ April 6, 2000
 
 toc::[]
 
-////
-mit den toc:: erzeugen wir ein automatisches Inhaltsverzeichnis und brauchen daher diese Sektion nicht
-1 Introduction 2
-2 Requirements 3
-3 Starting and Playing ANIMAL Animations 4
-4 Generating A New Animation Using ANIMALSCRIPT 6
-4.1 Preparation for the new Animation . . . . . . . . . . . . . . . . . . . 6
-4.2 Generating the Title . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
-4.3 Embedding Code Lines . . . . . . . . . . . . . . . . . . . . . . . . . 9
-4.4 Code Highlighting . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
-4.5 Generating A List Element . . . . . . . . . . . . . . . . . . . . . . . 11
-4.6 Highlighting and Unhighlighting Code . . . . . . . . . . . . . . . . . 11
-4.7 Linking list elements . . . . . . . . . . . . . . . . . . . . . . . . . . 12
-4.8 Moving objects . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
-////
-
 == Introduction
 ANIMAL is a compact, efficient and easy to use animation tool developed at the University of Siegen starting in 1998.
 The motivation for developing ANIMAL came from a lack of satisfying tools for animations that are both easy to generate and edit and helpful in lectures. +

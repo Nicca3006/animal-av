@@ -8,14 +8,14 @@
 (= Visualization of List Strucures)
 
 == Was macht VOLS?
-VOLS ist eine eigene App, die ANIMAL nur im Hintergrund benutzt um grafisch darzustellen, wie verschiedene Arten von Listen aufgebaut werden:
+VOLS ist eine eigene App, die ANIMAL nur im Hintergrund benutzt, um grafisch darzustellen, wie verschiedene Arten von Listen aufgebaut werden:
 
 * einfach verkettete Listen
 * doppelt verkettete Listen
 * Array-basierte Listen
 
 Du kannst entweder vorgegebene Beispiele anschauen oder eigene Listen erstellen.
-Die jeweilige Liste wird dann grafisch dargestellt und gleichzeitig siehst du den dazugehörigen Java-Code.
+Die jeweilige Liste wird dann grafisch dargestellt und gleichzeitig siehst du den dazugehörigen Programm-Code.
 Damit wird es viel leichter zu verstehen, was eigentlich passiert, wenn wir Listen programmieren.
 
 == Was brauche ich dafür?
@@ -43,16 +43,16 @@ Die _Zoom_ Bereiche findest du ganz oben im _Player_.
 Falls dich das nicht interessiert, kannst du sie über den Menüpunkt _Window - Switch Visibility_ ausblenden (und natürlich auch wieder einblenden).
 
 === Beispiel anschauen
-Um eines der vorgefertigten Beispiele zu sehen, kannst du im _Interaction Window_ auf *Load ...* klicken, je nachdem welche Listenart du dir anschauen möchtest.
+Um eines der vorgefertigten Beispiele zu sehen, kannst du im _Interaction Window_ auf *Load ...(Listenart)* klicken, je nachdem welche Liste du dir anschauen möchtest.
 
-TIP: Du siehst das _Interaction Window_ wieder, wenn du oben rechts in der _Manual Step Control_ den Regler zurück auf die *1* ziehst.
+TIP: Du siehst das _Interaction Window_ immer wieder, wenn du oben rechts in der _Manual Step Control_ den Regler zurück auf die *1* ziehst.
 
-Du kannst aber genauso im Menü _Examples - ..._ aufrufen oder die Schaltflächen image:VOLS_CreateAuswahl.PNG[] benutzen. +
+Du kannst aber genauso im Menü _Examples - ...(Listenart)_ aufrufen oder die Schaltflächen image:VOLS_CreateAuswahl.PNG[] benutzen. +
 Sobald das Beispiel fertig erzeugt ist, kannst du es über die _Navigation_ unten abspielen, pausieren, vor- und zurückgehen.
 
 === Eigene Liste erstellen
 Spannender ist es wahrscheinlich, eigene Listen aufzubauen.
-Dazu kannst du ebenso entweder im _Interaction Window_ oder im Menü _Create - ..._ aufrufen.
+Dazu kannst du ebenso entweder im _Interaction Window_ oder im Menü _Create - ...(Listenart)_ aufrufen.
 Es öffnet sich ein Fenster, in dem du den ersten Wert für deine Liste eintragen kannst:
 
 image::VOLS_CreateList.PNG[]
