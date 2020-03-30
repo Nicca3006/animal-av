@@ -4,7 +4,9 @@
 
 = Schnellstart
 
+ifndef::LinkInstallation[]
 Falls du das Programm noch nicht installiert hast, findest du <<installation.adoc#_installation, hier>> eine kurze Anleitung dazu.
+endif::[]
 
 Um loslegen zu können, suchst du als erstes die .jar-Datei, die du dir heruntergeladen hast und startest durch Doppelklick auf diese Datei das Programm.
 Je nach den Sicherheitseinstellungen auf deinem Rechner kann es sein, dass die Installation geblockt wird.

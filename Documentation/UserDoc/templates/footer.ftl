@@ -10,7 +10,7 @@
     </div> -->
     <div id="footer">
         <div class="container">
-          <div>   &copy; Dr. Guido Rößling 1998-today | <a href="datenschutz.html">Datenschutzerklärung</a></p></div>
+          <div>   &copy; Dr. Guido Rößling 1998-today | <a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>datenschutz.html">Datenschutzerklärung</a></p></div>
           </div>
          </div>
     
