@@ -4,3 +4,4 @@
 /Documentation/UserDoc/output/
 *.pdf
 *.html
+/.gradle/
