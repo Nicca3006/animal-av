@@ -25,18 +25,13 @@ Dafür müssen alle Texte geprüft und ggf. überarbeitet werden.
 Es sollte grundsätzlich sowohl Code als auch Beschreibung jedes Schritts des Algorithmus dargestellt werden.
 Zusätzliche Informationen, z.B. zur Komplexität, könnten mit aufgenommen werden.
 
-== Webseiten
+== Deutsche Webseite
 
-=== deutsche Seite
 Wird gebaut mit jBake (s. <<devDocumentation.adoc#Bauen der Seite mit jBAke>>) +
 Im Moment sind die Installationsdateien auf der deutschen Webseite über die Links der englischen Webseite eingebunden.
 In Zukunft sollten sie aus dem Build-Prozess erzeugt und direkt in die Webseite eingebunden werden.
 
 Überarbeitet werden muss mindestens die Seite _Über uns_ (Angaben wurden von der englischen Webseite übernommen).
-
-==== Qualitätssicherung
-Für die Webseite kann ein SanityCheck eingebaut werden.
-Infos: https://github.com/aim42/htmlSanityCheck +
 
 == Tutorials
 Die englischen Versionen der Tutorials müssen überarbeitet werden (aus dem Jahr 2000 zu Version 1.4!).

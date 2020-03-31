@@ -102,6 +102,25 @@ CAUTION: Wenn eine "normale" HTML-Seite manuell aus dem AsciiDoc erstellt wurde,
 Es wird dann jedoch keine HTML-Seite dazu mehr im Output erzeugt, bzw. falls eine vorhanden ist, wird sie nicht mehr aktualisiert.
 Deshalb sollten HTML Seiten ausschließlich im output Ordner liegen.
 
+=== HTML Sanity Check
+Im Rahmen der Qualitätssicherung wurde ein HTML Sanity Check eingebaut, der den Output für unsere Webseite auf fehlerhafte Links, Bilder etc. prüft.
+Aufgerufen werden kann der Checker mit
+
+ gradlew htmlsanitychecker
+
+Das Ergebnis wird direkt auf der Konsole ausgegeben und abgelegt in link:Documentation/DevDoc/reports/htmlSanityChecks[].
+Die dort liegende `index.html` kann direkt im Browser geöffnet werden.
+Infos, auch zu weiteren optionalen Einstellungen: https://github.com/aim42/htmlSanityCheck +
+
+Bekannte Fehler momentan:
+
+* zwei Links in der Datenschutzerklärung
+* Es wird ein index.html im Verzeichnis `output/home` erzeugt, die eigentlich nicht gebraucht wird.
+Diese wird auch nirgendwo auf der Seite angesteuert, da die "echte" index.html direkt im `output` liegt (erzeugt durch ein Template).
+Hier muss geprüft werden, wie die Generierung der überflüssigen index.html unterdrückt werden kann.
+
+Beide Fehler sind insofern nicht kritisch, sollten aber langfristig ausgeräumt werden.
+
 == Englische Tutorials
 Unter link:documentation.UserDocEnglish[] sind die englischen Tutorials hinterlegt. Die Kapitel "Introduction", "Requirements" und "Starting Animal" sind in eigene Dateien ausgelagert und werden per `include` in die Tutorials eingebunden.
 
