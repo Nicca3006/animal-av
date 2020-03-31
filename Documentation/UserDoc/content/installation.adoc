@@ -6,8 +6,9 @@
 == Voraussetzungen
 Um das Programm auf deinem PC ausführen zu können, brauchst du eine Java-Version 7 oder höher.
 In den allermeisten Fällen wirst du die bereits auf deinem Rechner haben, weil ganz viele Tools sie nutzen. +
-Wenn du nicht sicher weißt, ob Java auf deinem Rechner installiert ist, findest du hier eine link:https://java.com/de/download/help/version_manual.xml[Anleitung, window=_blank], wie du das prüfen kannst
-footnote:[Mit dem Link landest du auf der offiziellen Java-Seite, die nicht gerade einfach aufgebaut ist, daher frag ruhig jemanden um Hilfe.] +
+Wenn du nicht sicher weißt, ob Java auf deinem Rechner installiert ist, findest du hier eine link:https://java.com/de/download/help/version_manual.xml[Anleitung, window=_blank]
+footnote:[Mit dem Link landest du auf der offiziellen Java-Seite, die nicht gerade einfach aufgebaut ist, daher frag ruhig jemanden um Hilfe.],
+wie du das prüfen kannst +
 Wenn Java auf deinem Rechner tatsächlich noch nicht vorhanden ist, kannst du es link:https://www.java.com/de/download/[mit diesem Link, window=_blank] installieren, ansonsten lies direkt weiter.
 
 == Download

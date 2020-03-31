@@ -1,0 +1,59 @@
+:imagesdir: images
+
+== Starting and Playing ANIMAL Animations
+
+ANIMAL’s animation player is included in ANIMAL and is also useful for checking the animation currently under development. +
+To start the player, simply type the following command:
+
+ java animal.main.Animal
+
+If this leads to the following message
+
+`Can´t find class animal.main.Animal`
+
+you must update your CLASSPATH environment variable first to include the ANIMAL archive file `Animal.jar`.
+This is usually done by locating the place where CLASSPATH is set and appending an entry like
+
+`C:\Java\Animal.jar`
+
+for `Windows` users, or
+
+`$HOME/Java/Animal.jar`
+
+for users of UNIX-based operating systems.
+If you are unfamiliar with how to do this, take a look at the Java documentation which should including information about setting the CLASSPATH. +
+To start the ANIMAL animation player, choose the entry `Show Animation` in the `Edit` menu of ANIMAL’s main window shown in <<F3,figure 3>>.
+See <<F4,figure 4>> for a screen shot of this operation. +
+The player itself consists of a single window with video player-like functionality, magnification setting and step choice.
+<<F1, Figure 1>> shows an example window. +
+Most of the player is taken up by the _animation canvas_ in which the actual animation is shown. +
+Below this are the controls for the current animation.
+These consist of a series of buttons which are used to
+
+* jump to the animation’s first step |<;
+* go to the previous step _without_ playing out the animators contained in the step <<;
+* _pause_ before changing the to the next step ||; +
+Note that this is only useful if there is a _timed link_ between the current step and the next step.
+* _play_ the current step, ie. activate all animators >;
+* go to the next step _without_ playing out the animators contained in the >>;
+* jump to the animation’s last step >|.
+
+The next component is a _slider_ showing how far the animation has progressed.
+By clicking on the slider icon and dragging the mouse, a “skip forward” effect can be obtained, resulting in a execution of the steps dragged over.
+The slider can thus also be used to jump to a different step (whether backward or forward) in the animation.
+
+image::Figure 1 ANIMAL Player front end.jpg[]
+[.text-center]
+[[F1]]Figure 1: ANIMAL Player front end
+
+Note that this may cause problems while generating animations, as the numbers of the animation steps need not be _always_ sequential.
+If you encounter such problems, simply save your animation and reload it, and the problem should be solved. +
+The next component allows the user to select a _magnification_ for the display.
+This is especially helpful for very broad or high animations, grabbing screen shots or scaling the components to allow a switch from computer presentation to beamer presentation in lectures. +
+Due to scaling anomalities, only the following “sane” scaling factors are supported:
+
+* 50%,
+* 71%,
+* 100% (default),
+* 141%,
+* 200%

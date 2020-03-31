@@ -25,102 +25,11 @@ April 6, 2000
 
 toc::[]
 
-== Introduction
-ANIMAL is a compact, efficient and easy to use animation tool developed at the University of Siegen starting in 1998.
-The motivation for developing ANIMAL came from a lack of satisfying tools for animations that are both easy to generate and edit and helpful in lectures. +
-ANIMAL is an acronym for A NEW INTERACTIVE MODELLER FOR ANIMATIONS IN LECTURES, which already shows the main area of usage for ANIMAL. +
-ANIMAL’s strengths lie mainly in the following areas:
+include::introductionEnglish.adoc[]
 
-* very easy to use graphic interface incorporating _drag and drop_,
-* animations can be automatically generated using either the scripting language ANIMALSCRIPT or the ANIMALGENERATOR API,
-* platform neutral implementation in Java,
-* high flexibility.
+include::requirementsEnglish.adoc[]
 
-On first using ANIMAL , the program might appear somewhat limited in the animation effects as well as the primitive graphic types offered.
-Other programs seem to offer a far more operations at first glance. +
-However, a closer look will quick reveal that this impression is not necessarily accurate.
-Some other programs tend to offer the same basic effect not as a configurable effect, but rather as a collection of effects.
-ANIMAL offers highly flexible, adaptable effects that can usually perform the same other animation programs also offer - although the list of “supported effects” at first seems much shorter.
-Check out section <<Generating A New Animation>> for an in-depth description of the basic effects available and what operations can be done by using them wisely. +
-Finally, the high flexibility mentioned above comes from the simple fact that practically all operations and objects ANIMAL uses are easy to edit and adapt to specific needs.
-Furthermore, the available object or animation effect types are not coded directly into the implementation.
-Thus, developers should find it very easy to add extensions to ANIMAL without having to touch much existing code. +
-Using the new additions to ANIMAL, it is very easy to generate interesting animations to enhance viewers’ motivation and understanding of the topics presented. +
-ANIMAL is freely available on the _World Wide Web_, complete with a extensive collection of animations including screen shots and description.
-Check out the official ANIMAL Home page at http://www.informatik.uni-siegen.de/˜roesslin/Animal/index.html for more information.
-
-== Requirements
-ANIMAL is implemented completely in Java.
-This means several things, one of which being that the performance is - alas - at times somewhat slower than one might wish. +
-It also means, however, that the _hardware / software_ requirements for using ANIMAL are very easy to specify: your computer must be able to run Java.
-This is something that practically _all_ current computer models can do, although with a wide difference in performance.
-We recommend a moderately modern computer with a “enough” RAM, since Java itself is somewhat memory-intensive on most platforms.
-For example, ANIMAL runs smoothly on my laptop (Pentium II Mobile, 300 MHz, with 64 MB RAM). +
-As stated above, ANIMAL is implemented completely in _100% Pure_ Java, using SUN’s _JDK 1.1.5_ or above.
-The only further requirement is Swing , the graphic package collection that provides a far more attractive alternative to Java’s original _Abstract Windowing Toolkit (AWT)_.
-ANIMAL is currently only available for the current Swing 1.1.1 release also included in JDK 1.2+. +
-ANIMAL has been developed both on Digital AlphaStation running Digital OSF v4.0 – also known as Digital Unix – and Intel-based computers running Linux, FreeBSD, Windows 95 / 98 and Windows NT.
-It has also been tested on an Apple Powerbook and thus underscores Java’s claim of “write once, run everywhere”. +
-Note that changes in the class libraries, especially the renaming of the Swing packages, prevents us from providing support for both _JDK 1.1.5+_ and _JDK 1.2 / 2.0_ with the same *source* code.
-The binary Java code for JDK 1.1.5+ will run under JDK 1.2, so this is the main release we support.
-
-== Starting and Playing ANIMAL Animations
-
-ANIMAL’s animation player is included in ANIMAL and is also useful for checking the animation currently under development. +
-To start the player, simply type the following command:
-
- java animal.main.Animal
-
-If this leads to the following message
-
- Can’t find class animal.main.Animal
-
-you must update your CLASSPATH environment variable first to include the ANIMAL archive file Animal.jar.
-This is usually done by locating the place where CLASSPATH is set and appending an entry like
-
- C:\Java\Animal.jar
-
-for Windows users, or
-
- $HOME/Java/Animal.jar
-
-for users of UNIX-based operating systems.
-If you are unfamiliar with how to do this, take a look at the Java documentation which should including information about setting the CLASSPATH. +
-To start the ANIMAL animation player, choose the entry Show Animation in the Edit menu of ANIMAL’s main window shown in <<F3,figure 3>>.
-See <<F4,figure 4>> for a screen shot of this operation. +
-The player itself consists of a single window with video player-like functionality, magnification setting and step choice.
-<<F1, Figure 1>> shows an example window. +
-Most of the player is taken up by the _animation canvas_ in which the actual animation is shown. +
-Below this are the controls for the current animation.
-These consist of a series of buttons which are used to
-
-* jump to the animation’s first step <|;
-* go to the previous step _without_ playing out the animators contained in the step <<;
-* _pause_ before changing the to the next step ||; +
-Note that this is only useful if there is a _timed link_ between the current step and the next step.
-* _play_ the current step, ie. activate all animators >;
-* go to the next step _without_ playing out the animators contained in the step ensuremath¿¿;
-* jump to the animation’s last step >|.
-
-The next component is a _slider_ showing how far the animation has progressed.
-By clicking on the slider icon and dragging the mouse, a “skip forward” effect can be obtained, resulting in a execution of the steps dragged over.
-The slider can thus also be used to jump to a different step (whether backward or forward) in the animation.
-
-image::Figure 1 ANIMAL Player front end.jpg[]
-[.text-center]
-[[F1]]Figure 1: ANIMAL Player front end
-
-Note that this may cause problems while generating animations, as the numbers of the animation steps need not be _always_ sequential.
-If you encounter such problems, simply save your animation and reload it, and the problem should be solved. +
-The next component allows the user to select a _magnification_ for the display.
-This is especially helpful for very broad or high animations, grabbing screen shots or scaling the components to allow a switch from computer presentation to beamer presentation in lectures. +
-Due to scaling anomalities, only the following “sane” scaling factors are supported:
-
-* 50%,
-* 71%,
-* 100% (default),
-* 141%,
-* 200%
+include::startingAnimalEnglish.adoc[]
 
 == Generating A New Animation
 
@@ -160,19 +69,19 @@ image::Figure 3 ANIMALs Main Window.jpg[]
 [.text-center]
 [[F3]]Figure 3: ANIMALs Main Window
 
-This window contains menus for _file operations_ (File), opening and closing the windows (Edit) used for editing and viewing the animation, setting the _Options_ (menu Options), and Help.
+This window contains menus for _file operations_ (`File`), opening and closing the windows (`Edit`) used for editing and viewing the animation, setting the _Options_ (menu `Options`), and `Help`.
 Furthermore, it has a list of buttons which serve as a shortcut for – from left to right – _New Animation, Load Animation, Input_ ANIMALSCRIPT, _Save Animation, Save Animation As..._ +
-Select _Load_ in one of the following ways:
+Select _Load_ in one of the following ways:
 
 * Click on the _second_ button in ANIMAL’s main window showing a _opened folder_,
-* or click on the menu File and select its second entry, Load. +
-You can also use shortcuts by pressing the shortcut key and the letter highlighted in the menu - in this case, L, so press both ALT and L, and the menu will be displayed.
-If not, you probably have to replace ALT by CTRL.
+* or click on the menu `File` and select its second entry, `Load`. +
+You can also use shortcuts by pressing the shortcut key and the letter highlighted in the menu - in this case, `L`, so press both `ALT` and `L`, and the menu will be displayed.
+If not, you probably have to replace `ALT` by `CTRL`.
 If this does not work either, ask your system administrator for the local configuration details. +
-After the menu is shown, pressing L – the letter shown after the entry Load – is the same as clicking on New.
+After the menu is shown, pressing `L` – the letter shown after the entry `Load` – is the same as clicking on `New`.
 
 You can see the title and author information in the _Animation Information_.
-Select the menu _Help_ and then _About this Animation_ to show the information dialog.
+Select the menu `Help` and then `About this Animation` to show the information dialog.
 
 === Generating the Title
 
@@ -187,7 +96,7 @@ image::Figure 4 Selecting the displayed windows.jpg[]
 Here, both Animation and Draw Window are opened.
 
 Reload your animation, and you should see the header, but possibly not quite with the right "look".
-To change this, we assign the header a new font: SansSerif, size 24, *bold*.
+To change this, we assign the header a new font: `SansSerif`, size 24, *bold*.
 To do so, simply change the line to the following:
 
  text "header" "List element demo" at (20, 30) font SansSerif size 24 bold
@@ -223,7 +132,8 @@ Therefore, change your lines to the following:
 ....
 {
 text "header" "List element demo" at(20, 30) depth 1 font SansSerif size 24 bold
-rectangle "hRect" offset (-5, -5) from "header" NW offset (5, 5) from "header" SE depth 2 filled fillColor white
+rectangle "hRect" offset (-5, -5) from "header" NW offset (5, 5) from "header" SE\
+    depth 2 filled fillColor white
 }
 ....
 
@@ -239,15 +149,15 @@ This will output the exact bounding box of the title when the animation is loade
 Now, we are going to enter the documentation for this animation.
 This consists of the following text entries:
 
-* 1. Generate first list element
-* 2. Set link of first list element to null
-* 3. Generate new list element
-* 4. Clear link of second list element
-* 5. Link first with second list element
-* 6. Generate new list element
-* 7. Link new with second list element
-* 8. Link first with new element
-* 9. Transform into ’nice’ list structure
+* `1. Generate first list element`
+* `2. Set link of first list element to null`
+* `3. Generate new list element`
+* `4. Clear link of second list element`
+* `5. Link first with second list element`
+* `6. Generate new list element`
+* `7. Link new with second list element`
+* `8. Link first with new element`
+* `9. Transform into ’nice’ list structure`
 
 To enter this code, you could use the *text* command as shown previously.
 However, ANIMALSCRIPT also offers the concept of a code group of related lines of code (in this case, pseudo code!) which allows operations such as _indentation_ and especially _highlighting_. +
@@ -313,8 +223,8 @@ Therefore, use the command as follows:
  listelement "elemA" (100, 80) text "Elem1" pointers 1 after 20 ticks
 
 The *after* command determines the amount of time to wait until the action is performed - in this case, 20 ticks will take place before the element is shown.
-*Ticks* are an ANIMAL-internal time unit that allows for smoother effects than precise timing on a millisecond base does :footprint:[
-If you are wondering about this, note that statements like after 200 ms require the computer to act at a precise point of time, or perform all operations within a presice amount of time.
+*Ticks* are an ANIMAL-internal time unit that allows for smoother effects than precise timing on a millisecond base does
+footnote:[If you are wondering about this, note that statements like after 200 ms require the computer to act at a precise point of time, or perform all operations within a presice amount of time.
 If the computer is busy or the actions are time-consuming to perform, it may fall behind the schedule and try to catch up by skipping intermediate animation frames.
 This will often lead to a jerky display.]. +
 On reloading the animation, you will find that the operations have ended on separate steps, so change the code to include curly braces around the two commands.
@@ -397,7 +307,7 @@ Now, we want to move both the new list element – _without_ changing its pointe
 To do so, we first have to decide on how to move the elements.
 The following screenshot should be helpful, showing the bounding box of the elements.
 
-image::Image_Elem1_2_3.png[align="center"]
+image::Image_Elem1_2_3.png[align="center", width=400]
 
 If you take a close look, you will find that you can use the following edges of the bounding boxes for precise placement:
 
@@ -417,7 +327,8 @@ However, we have to use two _special_ subtypes of the *move* command for this pu
 The following code does the trick:
 
 ....
-move "elemC" type "translateWithFixedTip" via "moveLine1" after 20 ticks within 20 ticks
+move "elemC" type "translateWithFixedTip" via "moveLine1" after 20 ticks within\
+    20 ticks
 move "elemA" type "setTip #1" via "moveLine1" after 20 ms within 20 ticks
 ....
 
@@ -429,11 +340,10 @@ The complete animation code is as follows:
 %Animal 1 . 4
 title "AnimalScript Tutorial Animation"
 author "Guido Roessling <roessling@acm.org>"
-text "header" "List element demo" at (20, 30) font SansSerif size 24 bold
-rectangle "hRect" offset (-5, -5) from "header" NW offset (5, 5) from "header" SE filled fillColor white
 {
-text "header" "Listelement demo" at(2 y0, 30) depth 1 font SansSerif size 24 bold
-rectangle "hRect" offset (-5, -5) from "header" NW offset (5, 5) from "header" SE depth 2 filled fillColor white
+text "header" "Listelement demo" at(20, 30) depth 1 font SansSerif size 24 bold
+rectangle "hRect" offset (-5, -5) from "header" NW offset (5, 5) from "header" SE\
+    depth 2 filled fillColor white
 }
 {
 codeGroup "listSource" at (10, 200) color black highlightColor red
@@ -489,7 +399,8 @@ setLink "elemC" link 1 to "elemB"
 unhighlightCode on "listSource" line 7
 highlightCode on "listSource" line 8
 line "moveLine1" offset (0, 0) from "elemC" SE offset (0, 0) from "elemB" SW hidden
-move "elemC" type "translateWithFixedTip" via "moveLine1" after 20 ticks within 20 ticks
+move "elemC" type "translateWithFixedTip" via "moveLine1" after 20 ticks\
+    within 20 ticks
 move "elemA" type "setTip #1" via "moveLine1" after 20 ms within 20 ticks
 }
 ....

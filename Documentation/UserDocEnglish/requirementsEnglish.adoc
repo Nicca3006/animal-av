@@ -1,0 +1,14 @@
+== Requirements
+ANIMAL is implemented completely in `Java`.
+This means several things, one of which being that the performance is - alas - at times somewhat slower than one might wish. +
+It also means, however, that the _hardware / software_ requirements for using ANIMAL are very easy to specify: your computer must be able to run `Java`.
+This is something that practically _all_ current computer models can do, although with a wide difference in performance.
+We recommend a moderately modern computer with a “enough” RAM, since `Java` itself is somewhat memory-intensive on most platforms.
+For example, ANIMAL runs smoothly on my laptop (Pentium II Mobile, 300 MHz, with 64 MB RAM). +
+As stated above, ANIMAL is implemented completely in _100% Pure_ `Java`, using SUN’s _JDK 1.1.5_ or above.
+The only further requirement is `Swing`, the graphic package collection that provides a far more attractive alternative to `Java`’s original _Abstract Windowing Toolkit (AWT)_.
+ANIMAL is currently only available for the current `Swing 1.1.1` release also included in `JDK 1.2+`. +
+ANIMAL has been developed both on `Digital AlphaStation` running `Digital OSF v4.0` – also known as `Digital Unix` – and `Intel`-based computers running `Linux, FreeBSD, Windows 95 / 98` and `Windows NT`.
+It has also been tested on an `Apple Powerbook` and thus underscores `Java`’s claim of “write once, run everywhere”. +
+Note that changes in the class libraries, especially the renaming of the `Swing` packages, prevents us from providing support for both _JDK 1.1.5+_ and _JDK 1.2 / 2.0_ with the same *source* code.
+The binary `Java` code for `JDK 1.1.5+` will run under `JDK 1.2`, so this is the main release we support.

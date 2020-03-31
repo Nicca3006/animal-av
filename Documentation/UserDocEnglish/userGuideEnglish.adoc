@@ -67,102 +67,11 @@ mit den toc:: erzeugen wir ein automatisches Inhaltsverzeichnis und brauchen dah
 <<B Animator and object options summary>>
 ////
 
-== Introduction
-ANIMAL is a compact, efficient and easy to use animation tool developed at the University of Siegen starting in 1998.
-The motivation for developing ANIMAL came from a lack of satisfying tools for animations that are both easy to generate and edit and helpful in lectures. +
-ANIMAL is an acronym for A NEW INTERACTIVE MODELLER FOR ANIMATIONS IN LECTURES, which already shows the main area of usage for ANIMAL. +
-ANIMAL’s strengths lie mainly in the following areas:
+include::introductionEnglish.adoc[]
 
-* very easy to use graphic interface incorporating _drag and drop_,
-* animations can be automatically generated using either the scripting language ANIMALSCRIPT or the ANIMALGENERATOR API,
-* platform neutral implementation in Java,
-* high flexibility.
+include::requirementsEnglish.adoc[]
 
-On first using ANIMAL , the program might appear somewhat limited in the animation effects as well as the primitive graphic types offered.
-Other programs seem to offer a far more operations at first glance. +
-However, a closer look will quick reveal that this impression is not necessarily accurate.
-Some other programs tend to offer the same basic effect not as a configurable effect, but rather as a collection of effects.
-ANIMAL offers highly flexible, adaptable effects that can usually perform the same other animation programs also offer - although the list of “supported effects” at first seems much shorter.
-Check out section <<Generating A New Animation>> for an in-depth description of the basic effects available and what operations can be done by using them wisely. +
-Finally, the high flexibility mentioned above comes from the simple fact that practically all operations and objects ANIMAL uses are easy to edit and adapt to specific needs.
-Furthermore, the available object or animation effect types are not coded directly into the implementation.
-Thus, developers should find it very easy to add extensions to ANIMAL without having to touch much existing code. +
-Using the new additions to ANIMAL, it is very easy to generate interesting animations to enhance viewers’ motivation and understanding of the topics presented. +
-ANIMAL is freely available on the _World Wide Web_, complete with a extensive collection of animations including screen shots and description.
-Check out the official ANIMAL Home page at http://www.informatik.uni-siegen.de/˜roesslin/Animal/index.html for more information.
-
-== Requirements
-ANIMAL is implemented completely in Java.
-This means several things, one of which being that the performance is - alas - at times somewhat slower than one might wish. +
-It also means, however, that the _hardware / software_ requirements for using ANIMAL are very easy to specify: your computer must be able to run Java.
-This is something that practically _all_ current computer models can do, although with a wide difference in performance.
-We recommend a moderately modern computer with a “enough” RAM, since Java itself is somewhat memory-intensive on most platforms.
-For example, ANIMAL runs smoothly on my laptop (Pentium II Mobile, 300 MHz, with 64 MB RAM). +
-As stated above, ANIMAL is implemented completely in _100% Pure_ Java, using SUN’s _JDK 1.1.5_ or above.
-The only further requirement is Swing , the graphic package collection that provides a far more attractive alternative to Java’s original _Abstract Windowing Toolkit (AWT)_.
-ANIMAL is currently only available for the current Swing 1.1.1 release also included in JDK 1.2+. +
-ANIMAL has been developed both on Digital AlphaStation running Digital OSF v4.0 – also known as Digital Unix – and Intel-based computers running Linux, FreeBSD, Windows 95 / 98 and Windows NT.
-It has also been tested on an Apple Powerbook and thus underscores Java’s claim of “write once, run everywhere”. +
-Note that changes in the class libraries, especially the renaming of the Swing packages, prevents us from providing support for both _JDK 1.1.5+_ and _JDK 1.2 / 2.0_ with the same *source* code.
-The binary Java code for JDK 1.1.5+ will run under JDK 1.2, so this is the main release we support.
-
-== Starting and Playing ANIMAL Animations
-
-ANIMAL’s animation player is included in ANIMAL and is also useful for checking the animation currently under development. +
-To start the player, simply type the following command:
-
- java animal.main.Animal
-
-If this leads to the following message
-
- Can’t find class animal.main.Animal
-
-you must update your CLASSPATH environment variable first to include the ANIMAL archive file Animal.jar.
-This is usually done by locating the place where CLASSPATH is set and appending an entry like
-
- C:\Java\Animal.jar
-
-for Windows users, or
-
- $HOME/Java/Animal.jar
-
-for users of UNIX-based operating systems.
-If you are unfamiliar with how to do this, take a look at the Java documentation which should including information about setting the CLASSPATH. +
-To start the ANIMAL animation player, choose the entry Show Animation in the Edit menu of ANIMAL’s main window shown in <<F3,figure 3>>.
-See <<F4,figure 4>> for a screen shot of this operation. +
-The player itself consists of a single window with video player-like functionality, magnification setting and step choice.
-<<F1, Figure 1>> shows an example window. +
-Most of the player is taken up by the _animation canvas_ in which the actual animation is shown. +
-Below this are the controls for the current animation.
-These consist of a series of buttons which are used to
-
-* jump to the animation’s first step |<;
-* go to the previous step _without_ playing out the animators contained in the step <<;
-* _pause_ before changing the to the next step ||; +
-Note that this is only useful if there is a _timed link_ between the current step and the next step.
-* _play_ the current step, ie. activate all animators >;
-* go to the next step _without_ playing out the animators contained in the >>;
-* jump to the animation’s last step >|.
-
-The next component is a _slider_ showing how far the animation has progressed.
-By clicking on the slider icon and dragging the mouse, a “skip forward” effect can be obtained, resulting in a execution of the steps dragged over.
-The slider can thus also be used to jump to a different step (whether backward or forward) in the animation.
-
-image::Figure 1 ANIMAL Player front end.jpg[]
-[.text-center]
-[[F1]]Figure 1: ANIMAL Player front end
-
-Note that this may cause problems while generating animations, as the numbers of the animation steps need not be _always_ sequential.
-If you encounter such problems, simply save your animation and reload it, and the problem should be solved. +
-The next component allows the user to select a _magnification_ for the display.
-This is especially helpful for very broad or high animations, grabbing screen shots or scaling the components to allow a switch from computer presentation to beamer presentation in lectures. +
-Due to scaling anomalities, only the following “sane” scaling factors are supported:
-
-* 50%,
-* 71%,
-* 100% (default),
-* 141%,
-* 200%
+include::startingAnimalEnglish.adoc[]
 
 == Generating A New Animation
 
@@ -182,114 +91,58 @@ But now, let’s get going!
 First of all, you must start ANIMAL as described in <<3 Starting and Playing ANIMAL Animations, chapter 3>>.
 After a while spent on initialization and loading the initial animation, (at least) ANIMAL’s main window is shown:
 
-image::Figure 3 ANIMALs Main Window.jpg[]
+image::Figure 3 ANIMALs Main Window.jpg[align="center", width=500]
 [.text-center]
 [[F3]]Figure 3: ANIMALs Main Window
 
-This window contains menus for _file operations_ (File), opening and closing the windows (Edit) used for editing and viewing the animation, setting the _Options_ (menu Options), and Help.
+This window contains menus for _file operations_ (`File`), opening and closing the windows (`Edit`) used for editing and viewing the animation, setting the _Options_ (`menu Options`), and `Help`.
 Furthermore, it has a list of buttons which serve as a shortcut for – from left to right – _New Animation, Load Animation, Input_ ANIMALSCRIPT, _Save Animation, Save Animation As..._ +
 
 For now, you need to create _new animation_, so you should do _either_ of the following two operations:
 
 * Click on the first button in ANIMAL’s main window showing a _blank sheet_,
-* or click on the menu File and select its first entry, New. +
-You can also use shortcuts by pressing the shortcut key and the letter highlighted in the menu - in this case, F, so press both ALT and F, and the menu will be displayed.
-If not, you probably have to replace ALT by CTRL.
+* or click on the menu `File` and select its first entry, `New`. +
+You can also use shortcuts by pressing the shortcut key and the letter highlighted in the menu - in this case, `F`, so press both `ALT and F`, and the menu will be displayed.
+If not, you probably have to replace `ALT` by `CTRL`.
 If this does not work either, ask your system administrator for the local configuration details. +
-After the menu is shown, pressing N – the letter shown after the entry New – is the same as clicking on New.
+After the menu is shown, pressing `N` – the letter shown after the entry `New` – is the same as clicking on `New`.
 
 === ANIMAL’s Draw Window
 
 First of all, you are going to draw a simple object: the _rectangle_ underlining the title.
 To do so, you have to open ANIMAL’s _Draw Window_.
 Go to the Edit menu and select the entry Show Draw Window, if the window is not already opened.
-The menu should now have a check mark in from of the entry Draw Window as shown in <<F4,figure 4>>. +
-ANIMAL’s drawing window looks as shown in <<F5,figure 5>>.
-At the top of DrawWindow the window, you can see a row of _buttons_ for _object generation_ - the _Object Toolbar_.
-Below this row on the window’s left are some helpful buttons, the _animation step selection_ and a _options_ entry.
-The _status line_ at the bottom of the window always displays information about the semantics of the currently selected operation. +
-Tables 1 on page 11 and 2 on page 12 summarize the buttons shown. +
-The main part of the window is taken up by the _drawing area_ – here showing a snapshot of the _Quicksort_ animation.
-This is the place where all objects are drawn.
+The menu should now have a check mark in from of the entry Draw Window as shown in <<F4,figure 4>>.
 
-=== Activating Grid Support
-
-First, you should activate a _grid_ for easier and more precise drawing.
-Referring to <<F5,figure 5>>, click on the _pop-down menu_ labeled Grid and set the value to 20.
-Then look for the following button directly below and to the left of the Grid menu:
-
-image::Figure 4 Selecting the displayed windows.jpg[]
+image::Figure 4 Selecting the displayed windows.jpg[align="center", width=500]
 [.text-center]
 [[F4]]Figure 4: Selecting the displayed windows.
 Here, both Animation and Draw Window are opened.
 
-image:snap.png[] If the button has a dark grey background, the _Grid Snap_ is already turned on; otherwise, click once on the button.
-This button serves as a _toggle_ - each click _inverts_ the selection and thus changes from _grid off_ to _grid on_ and vice versa.
-The _grid_ is helpful for precise drawing, as it adds a line every _n_ pixels in both horizontal and vertical orientation.
-The exact value of _n_ depends on your selection; in this case, the distance between two lines is _n=20 pixels_.
-By activating _Grid Snap_, you can only draw points falling exactly on those points where two such grid lines meet, and not “in between”.
+ANIMAL’s drawing window looks as shown in <<F5,figure 5>>.
 
-=== Drawing the Header Rectangle
-
-As the first thing you should draw is the _title highlight rectangle_, click on the symbol for _polyline / polygon_ showing a short line: image:polyline.png[] +
-This will cause a window labeled Polyline Options to pop up showing one of the displays given in <<F6,figure 6>>.
-Move this window out of your way, _but do not close it_. +
-Now, set the _first_ rectangle point by clicking on the first point where two of the grid Polyline drawing lines meet – the coordinate (20, 20).
-Now move the mouse to the right over the next *11* vertical lines (to coordinate (260, 20)).
-You should see a line being drawn between the first set point and the current mouse position. +
-Click the left mouse button again to set the second point.
-Now go down two horizontal lines to coordinate (260, 60) and again click the _left_ mouse button.
-Finally, go left until you are at the point directly below the first point and click the middle to finish the component.
-It should now look like a U turned by 90 degrees, open to the left.
-The component is now finished...but it is not really a rectangle, as it is still open!
-
-image::Figure 5 ANIMAL’s Drawing Window.jpg[]
+image::Figure 5 ANIMAL’s Drawing Window.jpg[align="center", width=500]
 [.text-center]
 [[F5]]Figure 5: ANIMAL’s Drawing Window
 
-.Buttons in ANIMAL´s Draw Window
+At the top of DrawWindow the window, you can see a row of _buttons_ for _object generation_ - the _Object Toolbar_:
+
+[cols="1,2", options="header"]
 |===
 |Button |Function
-
-|image:point.png[]
-|Button for generating a new Point object
-
-|image:polyline.png[]
-|Button for generating a new Polyline or Polygon object
-
-|image:Text.png[]
-|Button for generating a new Text object
-
-|image:Button_newList.JPG[]
-|Button for generating a new list element object
-
-|image:Arc.png[]
-|Button for generating a new Arc, Ellipse, Circle or Ellipse / Circle segment object
+|image:point.png[] |Button for generating a new Point object
+|image:polyline.png[]|Button for generating a new Polyline or Polygon object
+|image:Text.png[]|Button for generating a new Text object
+|image:Button_newList.JPG[]|Button for generating a new list element object
+|image:Arc.png[]|Button for generating a new Arc, Ellipse, Circle or Ellipse / Circle segment object
 |===
 
-=== Setting Object Attributes and Color
+Below this row on the window’s left are some helpful buttons, the _animation step selection_ and a _options_ entry:
 
-Go to the Polyline Options window shown in <<F6,figure 6>> and click on the entry _Attributes_ to bring up _Object Attribute Selection Pane_. +
-Here, you can set some options for the component.
-As you need a _filled rectangle_, click once box before the entry closed to add a line connecting the first and last node.
-After clicking on the box, a check mark appears before the entry.
-Now you have a closed rectangle, but still not a filled one.
-So, simply click on the entry filled which is only active if closed is also selected.
-Now the rectangle is filled. +
-If the colors are not to your liking, click on the _Color_ label in the _Polyline Options_ window and select a new color for the _rectangle outline_ with the _Polyline_: menu, or a new fill color using the _Fillcolor_: menu.
-The menu is used just as the _Grid_ menu - just click on it to open the menu and select an entry by clicking on it.
-If the entry you look for is not visible, use the _scrollbars_ on the right as shown in <<F7,figure 7>>. +
-To make sure that the header is placed on the rectangle, and not the other way round, you can set the _depth_ of the polygon to a value larger than the one for the text.
-For now, set the depth to 16 , as shown in the screen shot.
-The higher this value is, the further to the background (”deeper”) the object will be, and will thus be more like to be partially hidden by other objects. +
-When you’re done, press the _OK_ button in the _Polyline Editor_ to close the window.
-Next, press the _Write Back_ button to store the current state of the animation.
-The button looks like this:
-image:save.png[]
-
-.Editing Tools
+[cols="1,2", options="header"]
 |===
-|image:Button_GridSize.JPG[] |Menu for setting the _Grid_ size
+|Button |Function
+|image:Button_GridSize.JPG[width=100] |Menu for setting the _Grid_ size
 |image:snap.png[] |Toggles _Snap_ mode on / off: points can only selected at the meeting of grid lines when _snap_ is on.
 |image:move.png[] |Toggles the display of temporary objects used for moving other object etc.
 |image:repaint.png[] |Repaint the display
@@ -301,15 +154,71 @@ image:save.png[]
 |image:delete.png[] |Delete selected object(s)
 |image:clone.png[] |Clone selected object(s)
 |image:save.png[] |write back changes to the animation and update windows
-|image:step_1.png[] |Choose step
+|image:step_1.png[width=100] |Choose step
 |image:prevStep.png[] |Previous step
 |image:nextStep.png[] |Next step
 |image:runStep.png[] |Run step in animation window
 |===
 
-image::Figure 6 Polyline Options Editor for setting color, attributes and depth.jpg[align="center"]
+The _status line_ at the bottom of the window always displays information about the semantics of the currently selected operation. +
+The main part of the window is taken up by the _drawing area_ – here showing a snapshot of the _Quicksort_ animation.
+This is the place where all objects are drawn.
+
+=== Activating Grid Support
+
+First, you should activate a _grid_ for easier and more precise drawing.
+Referring to <<F5,figure 5>>, click on the _pop-down menu_ labeled Grid and set the value to 20.
+Then look for the following button directly below and to the left of the Grid menu:
+
+image:snap.png[] If the button has a dark grey background, the _Grid Snap_ is already turned on; otherwise, click once on the button.
+This button serves as a _toggle_ - each click _inverts_ the selection and thus changes from _grid off_ to _grid on_ and vice versa.
+The _grid_ is helpful for precise drawing, as it adds a line every _n_ pixels in both horizontal and vertical orientation.
+The exact value of _n_ depends on your selection; in this case, the distance between two lines is _n=20 pixels_.
+By activating _Grid Snap_, you can only draw points falling exactly on those points where two such grid lines meet, and not “in between”.
+
+=== Drawing the Header Rectangle
+
+As the first thing you should draw is the _title highlight rectangle_, click on the symbol for _polyline / polygon_ showing a short line: image:polyline.png[] +
+This will cause a window labeled `Polyline Options` to pop up showing one of the displays given in <<F6,figure 6>>.
+Move this window out of your way, _but do not close it_.
+
+image::Figure 6 Polyline Options Editor for setting color, attributes and depth.jpg[align="center", width=400]
 [.text-center]
 [[F6]]Figure 6: Polyline Options Editor for setting _color, attributes_ and _depth_
+
+Now, set the _first_ rectangle point by clicking on the first point where two of the grid Polyline drawing lines meet – the coordinate (20, 20).
+Now move the mouse to the right over the next *11* vertical lines (to coordinate (260, 20)).
+You should see a line being drawn between the first set point and the current mouse position. +
+Click the left mouse button again to set the second point.
+Now go down two horizontal lines to coordinate (260, 60) and again click the _left_ mouse button.
+Finally, go left until you are at the point directly below the first point and click the middle to finish the component.
+It should now look like a U turned by 90 degrees, open to the left.
+The component is now finished...but it is not really a rectangle, as it is still open!
+
+=== Setting Object Attributes and Color
+
+Go to the Polyline Options window shown in <<F6,figure 6>> and click on the entry _Attributes_ to bring up _Object Attribute Selection Pane_. +
+Here, you can set some options for the component.
+As you need a _filled rectangle_, click once box before the entry `closed` to add a line connecting the first and last node.
+After clicking on the box, a check mark appears before the entry.
+Now you have a closed rectangle, but still not a filled one.
+So, simply click on the entry `filled` which is only active if closed is also selected.
+Now the rectangle is filled. +
+If the colors are not to your liking, click on the _Color_ label in the _Polyline Options_ window and select a new color for the _rectangle outline_ with the _Polyline_: menu, or a new fill color using the _Fillcolor_: menu.
+The menu is used just as the _Grid_ menu - just click on it to open the menu and select an entry by clicking on it.
+If the entry you look for is not visible, use the _scrollbars_ on the right as shown in <<F7,figure 7>>. +
+
+image::Figure 7 Color Selection Menu.jpg[align="center", width=500]
+[.text-center]
+[[F7]]Figure 7: Color Selection Menu
+
+To make sure that the header is placed on the rectangle, and not the other way round, you can set the _depth_ of the polygon to a value larger than the one for the text.
+For now, set the depth to 16 , as shown in the screen shot.
+The higher this value is, the further to the background (”deeper”) the object will be, and will thus be more like to be partially hidden by other objects. +
+When you’re done, press the _OK_ button in the _Polyline Editor_ to close the window.
+Next, press the _Write Back_ button to store the current state of the animation.
+The button looks like this:
+image:save.png[]
 
 === Drawing A Text Component
 
@@ -317,22 +226,23 @@ Now you can add the header text “List element demo” to your current animatio
 To do so, first click on the symbol for text showing the capital letter A:
 
 image::Text.png[align="center"]
-This will open the _editor window_ for text components with title Text Options, similar to what happened when you clicked on the _polyline / polygon_ symbol.
+This will open the _editor window_ for text components with title `Text Options`, similar to what happened when you clicked on the _polyline / polygon_ symbol.
 This editor window is shown in <<F8,figure 8>>.
-The _depth_ part of the window is not shown, as this is identical for all objects. +
+The _depth_ part of the window is not shown, as this is identical for all objects.
+
+image::Figure 8 Text Editor Window for setting text options.jpg[align="center", width=500]
+[.text-center]
+[[F8]]Figure 8: Text Editor Window for setting text options
+
 First, we are going to set the _text font_. Therefore, click on the _Font_ tab, and set the values as shown in <<F8,figure 8>> to _SansSerif_ font, size _24_, neither _italics_ nor _bold_. +
 For entering the text, click once on the _Text_ tab for entering the text itself.
-
-image::Figure 7 Color Selection Menu.jpg[align="center"]
-[.text-center]
-[[F7]]Figure 7: Color Selection Menu
 
 Now simply type in the text “List element demo” into the _text field_ as shown in <<F8,figure 8>>.
 You can also adjust the text color as described in section <<4.5 Setting Object Attributes and Color,4.5>>.
 Place the text inside the _header rectangle_ by clicking on the first point at the bottom _inside_ the rectangle.
 Your text should now have 20 pixels space to both the left and right side, and touch the bottom line of the header rectangle as follows:
 
-image::Image_ListElementDemo.jpg[align="center"]
+image::Image_ListElementDemo.jpg[align="center", width=400]
 You can also experiment with the _Font_ settings after the text has been placed - just change back to the _Font_ tab and see what happens when you click on the _italics_ or _bold_ check boxes
 footnote:[Note that some systems may not support SansSerif fonts which are italics, bold or bold italics.
 This is not a problem caused within ANIMAL’s ability to handle, but reflects the Java installation settings.].
@@ -345,14 +255,10 @@ The current display is not very attractive, as the header text has some free spa
 To change this, you have to _turn off Grid Snap_, since moving the text to the left would only invert the situation: no space to the left, but free space to the right.
 Therefore, click once on the _Grid Snap_ icon image:snap.png[] as described in section <<4.3 Activating Grid Support,4.3>> to turn it off for now.
 
-image::Figure 8 Text Editor Window for setting text options.jpg[align="center"]
-[.text-center]
-[[F8]]Figure 8: Text Editor Window for setting text options
-
 Now, you can click on the text – _anywhere_ inside the text.
 An outline around the text with circles at all edges (two circles at the bottom left) should appear, looking like this:
 
-image::Image_ListElementDemoCircles.JPG[align="center"]
+image::Image_ListElementDemoCircles.JPG[align="center", width=400]
 Now, click on one of the circles and _keep the left mouse button pressed_.
 These circles are called *drag points* and are used for dragging the object along with any mouse movements.
 So, move your mouse around a bit and see how the text follows the movement. +
@@ -366,10 +272,10 @@ You should find it easy to (roughly) center the text now.
 
 The current display containing the centered heading shall be enough for the animation start.
 Therefore, we need to add a _new animation step_ for the next display.
-To do so, open the _Animation OverviewWindow_ by activating the entry Show Animation Overview in the Edit menu of ANIMAL’s main window as shown in <<F3,figure 3>>.
+To do so, open the _Animation OverviewWindow_ by activating the entry `Show Animation Overview` in the `Edit menu` of ANIMAL’s main window as shown in <<F3,figure 3>>.
 The window which opens should look as shown:
 
-image::Image_AnimationOverview.jpg[align="center"]
+image::Image_AnimationOverview.jpg[align="center", width=500]
 
 At the top and bottom of this window, there is set of buttons.
 The top button row is used for _adding animation effects_, while the bottom button row offers operations for _animation maintenance_. +
@@ -403,20 +309,20 @@ This will lead to the addition of the new animation step *2* and will also direc
 Now, we are going to enter the documentation for this animation.
 This consists of the following text entries:
 
-* 1. Generate first list element
-* 2. Set link of first list element to null
-* 3. Generate new list element
-* 4. Clear link of second list element
-* 5. Link first with second list element
-* 6. Generate new list element
-* 7. Link new with second list element
-* 8. Link first with new element
-* 9. Transform into ’nice’ list structure
+* `1. Generate first list element`
+* `2. Set link of first list element to null`
+* `3. Generate new list element`
+* `4. Clear link of second list element`
+* `5. Link first with second list element`
+* `6. Generate new list element`
+* `7. Link new with second list element`
+* `8. Link first with new element`
+* `9. Transform into ’nice’ list structure`
 
 First, set the _grid size_ back to _20_ and turn on _Grid Snap_ if it is not already turned on. +
 Now open the _Text Editor_ again as described in section <<4.6 Drawing A Text Component,4.6>>.
-Select either SansSerif or Monospaced as the font, _size 16_, neither _italics_ nor _bold_. +
-Enter the first text – 1. Generate first list element – as before by typing it into the text field under the _Text_ tab.
+Select either `SansSerif` or `Monospaced` as the font, _size 16_, neither _italics_ nor _bold_. +
+Enter the first text – `1. Generate first list element` – as before by typing it into the text field under the _Text_ tab.
 If you do not recall how this is done, look it up in section <<4.6 Drawing A Text Component,4.6>>. +
 Place the text at at the same horizontal position as the header rectangle, but *8* lines below it.
 _Do not close the Text Editor_ window! +
@@ -430,6 +336,10 @@ If you have made some typing mistake, you can fix it either
 * _after_ you placed another object: _close_ the _Editor_ window after placing the current object, then click on the object in question.
 If the _Text Editor_ does not open, you have to click on the _Editor button_ on the left border of the _Draw Window_: image:useEditors.png[]
 
+image::Figure 9 State after entering the animation documentation.png[align="center", width=500]
+[.text-center]
+[[F9]]Figure 9: State after entering the animation documentation
+
 === Storing An Animation
 
 This is a good time for storing the animation!
@@ -437,15 +347,11 @@ Animations are stored in one of the following ways:
 
 * Clicking on the _Save_ button in ANIMAL’s main window image:save.png[],
 * Clicking on the _SaveAs_ button in ANIMAL’s main window image:saveas.png[],
-* Selecting Save from the File menu in ANIMAL’s main window,
-* or selecting Save As from the File menu in ANIMAL’s main window.
-
-image::Figure 9 State after entering the animation documentation.png[align="Center"]
-[.text-center]
-[[F9]]Figure 9: State after entering the animation documentation
+* Selecting `Save` from the `File` menu in ANIMAL’s main window,
+* or selecting `Save As` from the `File` menu in ANIMAL’s main window.
 
 These components are shown in <<F3,figure 3>>.
-As you have not yet selected a filename for this animation, you will be prompted for a filename _regardless_ of whether you chose Save or SaveAs.
+As you have not yet selected a filename for this animation, you will be prompted for a filename _regardless_ of whether you chose `Save` or `SaveAs`.
 The dialog for filename selection looks as shown in <<F10,figure 10>>.
 
 image::Figure 10 ANIMAL’s File Selector.png[align="center"]
@@ -472,7 +378,7 @@ The _second_ click places the object’s pointer, which should point to the next
 Note how the _status line_ at the bottom of the _DrawWindow_ tells you exactly what each mouse click means.
 Your display should now resemble <<F11,figure 11>>.
 
-image::Figure 11 State of the animation after adding the first element.png[]
+image::Figure 11 State of the animation after adding the first element.png[align="center", width = 500]
 [.text-center]
 [[F11]]Figure 11: State of the animation after adding the first element
 
@@ -481,9 +387,9 @@ image::Figure 11 State of the animation after adding the first element.png[]
 In order to make sure users understand the connection between the new list element and the first instruction, you can change this line to _red_.
 However, if you do so using the _Text Editor_, you actually change the color of the object _for the whole animation_, which is unwanted in this case. +
 Therefore, choose the _ColorChanger_ button image:colorchanger.png[] in ANIMAL’s _AnimationOverview_ window instead.
-This brings up the _ColorChanger Editor_ title ColorChanger Options, shown in <<F12,figure 12>>.
+This brings up the _ColorChanger Editor_ title `ColorChanger Options`, shown in <<F12,figure 12>>.
 
-image::Figure 12 ColorChanger Editor window.png[]
+image::Figure 12 ColorChanger Editor window.png[align="center", width=500]
 [.text-center]
 [[F12]]Figure 12: ColorChanger Editor window
 
@@ -492,7 +398,7 @@ The button will now turn dark to show it is active. +
 Go to the _DrawWindow_ and click _once_ on the first text line.
 Notice how the entry in the Color Changer Editor changes.
 The editor allows you to select as many objects for simultaneous animation as you want; for now, the text line is sufficient, though.
-Click again on the _Select Objects_ button, which should now no longer be dark, but display a message like Selected Objects: 3. +
+Click again on the _Select Objects_ button, which should now no longer be dark, but display a message like `Selected Objects: 3`. +
 Next, choose the _animation method_ from the list.
 For a _text_ component, this is limited to the default entry _color_, so you do not really have to do anything here. +
 Finally, you can decide whether you want to use a _delay_ before the object changes color.
@@ -502,12 +408,12 @@ For _ms_, multiples of 100 make sense.
 For _ticks_, you can use smaller units, such as 5 or ten. +
 Set the delay to a short interval, for example _10 ticks_.
 Finally, choose the _target color_, for example _red_. +
-Now open the _Animation Window_ by selecting the _Show Animation_ entry in the Edit menu of ANIMAL’s main window (see section <<4.2 ANIMAL´s Draw Window,4.2>> if you are unsure of how to do this).
+Now open the _Animation Window_ by selecting the _Show Animation_ entry in the `Edit` menu of ANIMAL’s main window (see section <<4.2 ANIMAL´s Draw Window,4.2>> if you are unsure of how to do this).
 Watch your animation and see what happens in step 3. +
 Strange... _first_ the element is shown, _then_ the line is highlighted!
 Change this by _double clicking_ on the line containing the _ColorChanger_ in the _Animation Overview_ window as shown in <<F13,figure 13>>.
 
-image::Figure 13 Selecting an animator.png[]
+image::Figure 13 Selecting an animator.png[align="center", width=500]
 [.text-center]
 [[F13]]Figure 13: Selecting an animator
 
@@ -531,12 +437,12 @@ The next operation calls for changing the _tip_ (arrow) of the current list elem
 _Without_ changing the step, click on the _Move Editor_ button image:Move.png[] in ANIMAL’s _Animation Overview_.
 The window that pops up looks very similar to <<F12,figure 12>>, but replaces the _color selection_ with a second _object selection_. +
 Press the *topmost* Select Objects:_ button and then click on the list element in the _Draw Window_.
-The button should now read as Selected Objects: 12 or similar. +
+The button should now read as `Selected Objects: 12` or similar. +
 Next, choose a method in the _Method:_ menu.
 The appropriate method for setting the pointer of a list element is called _setTip_, so choose this one. +
 Now, also click on an arbitrary _text line_ in the _Draw Window_.
 Notice how the editor changes to reflect that _two_ objects are now selected.
-The _method_ is automatically changed to translate, as this is the _only Move_ method common to both _Text_ and _List Element_.
+The _method_ is automatically changed to `translate`, as this is the _only Move_ method common to both _Text_ and _List Element_.
 footnote:[ANIMAL automatically adapts the list to those methods common to all selected methods.
 If there is no such method, the method bar will read No appropriate method!] +
 Click again on the _text line_ to deselect it.
@@ -548,15 +454,17 @@ Select the _polyline_ icon and draw a simple line as follows:
 
 * the line’s first point is identical to the top of the arrow,
 * the line’s second and last point – set by pressing the middle mouse button! – should roughly be one the same height as the starting point of the tip and liecinside the element box. +
-An example of this line looks as follows: +
-image:image_elem1.png[align="center"] +
+An example of this line looks as follows:
+
+image::image_elem1.png[align="center"]
 Next, select this line as the _Move via_ object using the *bottom* _Select Objects:_ button.
 You can also set a _delay_ and _duration_ as described in section <<4.12 Highlighting Elements By Color Changing,4.12>>. +
 The final look of the _Move Editor_ window before clicking on _OK_ should resemble the following, although your _timing_ and _object numbers_ may differ:
 
-image::image_moveOptions.png[align="center"]
-Again, use the _Run_ icon to test your animation as described on on page 22 until you are satisfied with your results. +
+image::image_moveOptions.png[align="center", width=500]
+Again, use the _Run_ icon to test your animation as described in <<Highlighting Elements By Color Changing>> until you are satisfied with your results. +
 The next step is simply a repetition of previous work in which you have to do the following operations:
+
 1. generate a new step,
 2. change the color of the second text line to _blue_,
 3. change the color of the third text line to _red_,
@@ -564,7 +472,7 @@ The next step is simply a repetition of previous work in which you have to do th
 
 The result of these operations should resemble <<F14,figure 14>>.
 
-image::Figure 14 State after inserting the second element.png[align="center"]
+image::Figure 14 State after inserting the second element.png[align="center", width=500]
 [.text-center]
 [[F14]]Figure 14: State after inserting the second element
 
@@ -579,7 +487,7 @@ You will see that ANIMAL uses _relative_ movement – the line only shows _how_ 
 
 The result of these operations should resemble <<F15,figure 15>>.
 
-image::Figure 15 State after inserting the second element.png[align="center"]
+image::Figure 15 State after inserting the second element.png[align="center", width=500]
 [.text-center]
 [[F15]]Figure 15: State after inserting the second element
 
@@ -600,17 +508,17 @@ Click on such a point and move the mouse with the left button pressed, and you c
 The result of these operations should resemble <<F16,figure 16>>.
 The polyline arrow in the display is the move line and was moved out of the way for better comparability.
 
-image::Figure 16 State after inserting the second element.png[align="center"]
+image::Figure 16 State after inserting the second element.png[align="center", width=500]
 [.text-center]
 [[F16]]Figure 16: State after inserting the second element
 
 The next few steps call for a repetition of the same steps.
-Place the _third_ list element with text Elem 3 _between_ the two list elements, but _below_ them. +
+Place the _third_ list element with text `Elem 3` _between_ the two list elements, but _below_ them. +
 Repeat these steps until you reach the following rough step:
 
 === Using Arc Elements
 For linking the _first_ and _third_ list element, we will now use a _arc_ component. +
-Begin with the usual operations, that is, adding a _new_ step, changing the color of text lines _six_ and _seven_ and generating a new _Move_ animator in which you select the _first_ list element and the method setTip.
+Begin with the usual operations, that is, adding a _new_ step, changing the color of text lines _six_ and _seven_ and generating a new _Move_ animator in which you select the _first_ list element and the method `setTip`.
 Then, select the _Move via:_ button “Select Objects:”. +
 Click on the arc icon image:arc.png[].
 Select a point _directly_ next to the top right corner of the new list element as the _arc center_ and click *once*. +
@@ -620,14 +528,14 @@ Try to manage that this arc line touches both the _tip_ of the _first_ list elem
 _This may take some time in trying out possible arc centers._
 However, using the figure, you can determine where to place the element to make it work.
 
-image::Figure 17 State after inserting the third element.png[align="center"]
+image::Figure 17 State after inserting the third element.png[align="center", width=500]
 [.text-center]
 [[F17]]Figure 17: State after inserting the third element
 
 Next, click on the _first element’s tip end_ resting next to the second list element to mark the _arc start angle_.
 The next mouse click then goes to the left side of the _new_ list element, and should result in something resembling <<F18,figure 18>>.
 
-image::Figure 18 Linking elements using an arc component.png[align="center"]
+image::Figure 18 Linking elements using an arc component.png[align="center", width=500]
 [.text-center]
 [[F18]]Figure 18: Linking elements using an arc component
 
@@ -645,7 +553,7 @@ To avoid this problem, proceed as follows:
 2. perform the usual color highlighting on the lines 8 and 9,
 3. insert a new _Move_ animation effect on the _new_ element, but select the method translateWithFixedTip.
 Draw a simple _polyline_ starting at the _top_ of the new list element and going straight up to the same height as the top of the other list elements.
-4. insert a new _Move_ animation effect on the _first_ element, selecting the setTip method and using the _same_ polyline as in the previous animation effect.
+4. insert a new _Move_ animation effect on the _first_ element, selecting the `setTip` method and using the _same_ polyline as in the previous animation effect.
 Yes, you *can* reuse move lines – ANIMAL only forbids you to use more than a single _visible_ animation on the same object.
 _Moving_ along a line does not change the _move line_, though, so this reuse is possible.
 

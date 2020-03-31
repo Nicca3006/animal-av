@@ -1,71 +1,112 @@
 :icons: font
+:toc:
 
 = Interne Dokumentation
 
 == AsciiDoc
-Damit die Dokumentation mit dem gesamten Code in der Versionsverwaltung eingecheckt werden kann, wird für die Dokumentation Ascii Doc verwendet (https://asciidoctor.org/). +
-Dazu muss in IntellJ das AsciiDoc-Plugin installiert werden, dann kann ein file *.adoc angelegt werden, das jeweils direkt als PDF oder HTML ausgegeben werden kann. +
-AsciiDoc hat eine recht einfache Syntax, so dass ohne großen Aufwand ein Dokument erzeugt werden kann:
-https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/ +
-Damit es später keine Probleme bei der Versionsverwaltung der AsciiDocs gibt, sollte in jeder Zeile jeweils nur ein Satz stehen.
+Für die Dokumentation wird AsciiDoc verwendet.
+AsciiDoc ist eine einfache Markup Sprache mit einer leicht verständlichen Syntax (https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/).
+Dokumente, die mit AsciiCode geschrieben werden, können mit dem gesamten Code in der Versionsverwaltung eingecheckt werden, und werden so immer mit dem Rest auf dem aktuellen Stand gehalten.
+Mit Hilfe von AsciiDoctor können direkt PDF oder HTML Seiten aus den AsciiDoc (.adoc) Dateien erstellt werden.
+(https://asciidoctor.org/). +
+Sowohl in intellJ als auch in Eclipse stehen AsciiDoc-Plugins zur Verfügung. +
 
 === Syntax AsciiDoc aktuell verwendet
 
-* Überschriften haben automatisch einen Anker, d.h. sie können einfach verlinkt werden. +
-Bsp.: <<AsciiDoc>> verweist auf das entsprechende Kapitel.
-Befindet sich das Ziel in einem anderen Dokument, muss der Link gesetzt werden mit <<dokumentname.adoc#_kapitel_>> oder <<dokumentname.adoc#_kapitel, eigenerText>>.
+CAUTION: Syntax lässt sich bei Ausgabe als pdf oder html nicht unbedingt sinnvoll lesen, da dort natürlich das Ausgabeformat dargestellt ist!
+Wenn das gewünscht ist, muss dieses Dokument geändert werden!
+
+TIP: Damit es später keine Probleme bei der Versionsverwaltung der AsciiDocs gibt, sollte in jeder Zeile jeweils nur ein Satz stehen.
+
+* Überschriften haben automatisch einen Anker, d.h. sie können innerhalb eins Dokuments einfach referenziert werden. +
+_Bsp._ <<AsciiDoc>> verweist auf das entsprechende Kapitel. +
+Befindet sich das Ziel in einem anderen Dokument, muss der Link gesetzt werden mit <<dokumentname.adoc#Kapitel>> oder <<dokumentname.adoc#Kapitel, eigene Bezeichnung>>.
 Eigene Anker werden gesetzt mit [[Anker]]Text.
 Auf den <<Text>> kann dann wieder verwiesen werden, auch mit einem <<Text, eigenen Namen>> für den Link.
+* Absolute Links können einfach in den Text geschrieben werden mit https://meinLink.de.
+Soll der Link einen eigenen Namen bekommen und nur dieser angezeigt werden: https://meinLink.de[Name].
+Um den Link in einem neuen Tab zu öffnen: https://meinLink.de[window=_blank].
 * Bilder sollten alle in einem Ordner liegen.
-Auf diesen wird zu Beginn des Dokuments verwiesen (Pfadangabe relativ zum aktuellen Ordner) +
-Bsp.: /:imagedir: images (ohne das /) +
-Falls es unterschiedliche imagedir gibt, kann jederzeit im Dokument ein neues Verzeichnis eingefügt, dass *ab diesem Punkt dann für alle Bilder gilt* +
-Das Bild selbst wird eingefügt mit image:NameDesBildes.jpg[] innerhalb einer Zeile oder image::NameDesBildes.png[] alleinstehend.
+Auf diesen wird zu Beginn des Dokuments verwiesen (Pfadangabe relativ zum aktuellen Ordner) mit :imagedir: images +
+Falls die Bilder in unterschiedlichen imagedir liegen, kann jederzeit im Dokument ein neues Verzeichnis bestimmt werden, dass *ab diesem Punkt dann für alle Bilder gilt*. +
+Das Bild selbst wird eingefügt mit \image:NameDesBildes.png[] innerhalb einer Zeile oder image::NameDesBildes.png[] als Block (dann mit Leerzeile davor).
 Es können Zusatzinfos wie z.B. [align="center", width = 100] (Bild wird zentriert mit einer Breite von 100 dargestellt) angegeben werden
-* Absolute Links können einfach in den Text geschrieben werden mit https://meinLink.de
-Soll der Link einen eigenen Namen bekommen und nur dieser angezeigt werde: https://meinLink.de[Name]
-Um den Link in einem neuen Tab zu öffnen: https://meinLink.de[window=_blank]
 * kursiv setzen mit _Unterstrichen_
 * Fett drucken mit *Stern*
-* Fußnote einfügen mit footnote:[Hier steht der Text] +
+* Fußnote einfügen mit \footnote:[Hier steht der Text] +
 Fußnoten werden derzeit als End Note (also ganz am Ende des Dokuments angezeigt)
 * [.text-center] vor einem Abschnitt lässt diesen zentriert darstellen
 * Einzeilige Code-Snippets können dadurch gekennzeichnet werden, dass sie einen space eingerückt sind (davor eine Leerzeile!)
-* Ein Code-Block wird mit .... umklammert (also davor und danach jeweils als eigene Zeile)
-* Tabellen können eine Überschrift und/oder einen Header haben [cols="1,2", options="header] wird die erste Zeile als Header darstellen +
+* Ein Code-Block wird mit .... umklammert:
+....
+Codeblock
+....
+* Tabellen können eine Überschrift und/oder einen Header haben. +
+_Bsp._ [cols="1,2", options="header"] wird die erste Zeile als Header darstellen +
 Darunter wird die Tabelle ein- und ausgeleitet mit |=== und die einzelnen Zeilen werden dargestellt als |1.Spalte |2.Spalte
 * Dokumente können in andere Dokumente integriert werden mit include::anderesdoc.adoc[].
 Falls die Überschriften-Level dann nicht mehr zueinander passen, kann man z.B. [leveloffset=+1] benutzen, um sie aneinander anzupassen.
 
 == Webseite für SchülerInnen
-Unter Documentation/UserDoc wurden alle Inhalte angelegt, die sich vor allem an SchülerInnen der Q-Phase richten.
-Aus diesen Docs kann direkt eine Webseite gebaut werden (s. <<Bauen der Seite mit JBake>>)
-Die SchülerInnen finden dort Informationen über ANIMAL, die Programmdateien und Anleitungen.
-Verschiedene Templates zum Bauen der Navigation / Header usw. sind bereits vorhanden und können angepasst werden, soweit erforderlich
-Da in der zugrunde gelegten Literatur zum Zusammenspiel von AsciiDoc und JBake (https://www.informatik-aktuell.de/entwicklung/methoden/docs-as-code-alles-unter-einem-dach.html) Gradle als Build Tool genommen wurde, haben wir es auch hier verwendet.
+Unter link:Documentation/UserDoc[] sind alle Inhalte angelegt, die sich vor allem an SchülerInnen der Q-Phase richten.
+Aus diesen Docs kann direkt eine Webseite gebaut werden (s. <<Bauen der Seite mit jBake>>).
+Die SchülerInnen finden dort Informationen über ANIMAL sowie die Programmdateien und Anleitungen.
+Verschiedene Templates zum Bauen der Navigation / Header usw. sind bereits vorhanden und können angepasst werden, soweit erforderlich.
 
-=== Struktur Webseite
-Die index.html wird gebaut aus der Seite index.adoc (type: page) und den ANIMAL-Versionen, die jeweils als neuer (type: post) hinzugefügt werden können.
+=== Bauen der Seite mit jBAke
+jBake ist ein static site generator, d.h. aus den Asciidocs wird eine statische Webseite generiert.
+
+==== Erstmalige Einrichtung
+Um jBake zu nutzen, kann das Verzeichnis unter https://jbake.org/download.html heruntergeladen und auf den Rechner entpackt werden in das Verzeichnis JBAKE_HOME.
+Anschließend muss ein Eintrag für JBAKE_HOME/bin zu den Umgebungsvariablen hinzugefügt werden.
+Um zu testen, dass es funktioniert, kann auf der Kommandozeile
+
+ run jbake -h
+
+oder für Windows
+
+ run jbake.bat -h
+
+ausgeführt werden - die Ausgabe sollte ungefähr so aussehen:
+
+....
+JBake v2.6.4 (2018-10-16 17:56) [http://jbake.org]
+Usage: jbake ...
+....
+Da das Projekt im Repository bereits angelegt ist, kann jBake nun genutzt werden.
+Für Interessierte gibt es ausführliche Infos auf https://jbake.org/docs/2.6.4/#quickstart_guide +
+
+=== Verwendung in unserem Projekt
+Der jeweilige Content einer Seite wird als <<AsciiDoc>> Datei im link:Documentation/UserDoc/content[] geschrieben.
+
+Die index.html wird gebaut aus der Seite index.adoc (`:jbake-type: page`) und den adoc der ANIMAL-Versionen, die jeweils als neuer `:jbake-type: post` hinzugefügt werden können.
+Diese liegen alle in link:Documentation/UserDoc/content/home[].
 Dadurch wird automatisch ein Archiv der alten Versionen aufgebaut.
 Damit auf der _Home_ Seite immer nur die aktuellste Version von ANIMAL zum Download angezeigt wird, ist folgendes zu beachten:
-* adoc für neue Version kann kopiert werden von der vorherigen Version ins gleiche Verzeichnis (content/home)
+
+* adoc für neue Version kann kopiert werden von der vorherigen Version ins gleiche Verzeichnis
 * Link, Versionsnummer, Datum ändern
-* in der vorherigen Version das Tag _actual_ löschen
+* in der vorherigen Version das Tag _actual_ aus `:jbake-status: published, actual` löschen
 
-=== Bauen der Seite mit JBAke
-Der jeweilige Content einer Seite wird als <<AsciiDoc>> Datei im Ordner content geschrieben.
-Jede Datei muss am Anfang mindestens die Angaben haben, um welchen Typ von Inhalt es sich handelt (z.B. :jbake-type:page) und wie der Status (z.B. :jbake-status:published)ist.
+
+IMPORTANT: Das Verzeichnis der Bilder, die auf den Webseiten verwendet werden und das über `:imagesdir:` in Asciidoc eingebunden wird, muss ebenfalls im Content Ordner liegen
+
+Jede Datei muss am Anfang mindestens die Angaben haben, um welchen Typ von Inhalt es sich handelt (`:jbake-type:page` oder `:jbake-type:post`) und wie der Status (z.B. `:jbake-status:published`) ist.
 Weitere Attribute wie Datum oder Tags können optional hinzugefügt werden.
-Durch Eingabe von jbake -b werden daraus die html-Seiten im Ordner output erzeugt.
+Der Ordner link:Documentation/UserDoc/templates[] enthält verschiedene Templates, die mit dem jBake-Projekt angelegt wurden.
+Im `menu.ftl` wird die Navigationsleiste der Webseite angepasst, wenn neue Seiten hinzugefügt werden.
+Durch Auruf von `jbake -b` (aus dem Pfad `Documentation/UserDoc` heraus) werden daraus die html-Seiten im Ordner output gebaut.
+Mit `jbake -s` wird direkt im Browser (http://localhost:8820) das Ergebnis angezeigt. +
 
-CAUTION: Wenn eine "normale" HTML-Seite aus dem AsciiDoc erstellt wurde, liegt diese im Content-Ordner.
+CAUTION: Wenn eine "normale" HTML-Seite manuell aus dem AsciiDoc erstellt wurde, liegt diese im Content-Ordner.
 Es wird dann jedoch keine HTML-Seite dazu mehr im Output erzeugt, bzw. falls eine vorhanden ist, wird sie nicht mehr aktualisiert.
-Deshalb sollten ausschließlich im output Ordner HTML Seiten liegen.
+Deshalb sollten HTML Seiten ausschließlich im output Ordner liegen.
 
-Mit jbake -s wird direkt im Browser das Ergebnis daraus angezeigt.
-Der Ordner templates enthält verschiedene Templates, die mit dem JBake-Projekt angelegt wurden.
-Im menu.ftl kann die Navigationsleiste der Webseite angepasst werden.
+== Englische Tutorials
+Unter link:documentation.UserDocEnglish[] sind die englischen Tutorials hinterlegt. Die Kapitel "Introduction", "Requirements" und "Starting Animal" sind in eigene Dateien ausgelagert und werden per `include` in die Tutorials eingebunden.
 
-IMPORTANT: Das Verzeichnis der Bilder, die auf den Webseiten verwendet werden und das über :imagesdir: in Asciidoc eingebunden wird, muss im Content Ordner liegen
+== Programmfehler
+In der userTest.adoc sind aufgetretene Fehler / Unklarheiten im Programmablauf aufgenommen.
 
-Ausführlichere Infos finden sich auf https://jbake.org/docs/2.6.4/#quickstart_guide
+== Konzept
+Im konzept.adoc sind Ideen gesammelt, welche Features in Zukunft umgesetzt werden können.

@@ -1,56 +1,62 @@
 = Konzept für die weitere Entwicklung von ANIMAL
 
-== Installer
+== Programm ANIMAL
+
+=== Installer
 Zur Zeit müssen verschiedene Dateien heruntergeladen und gespeichert werden.
 Die Ausführung des Tools erfolgt über die .jar-Datei.
 Für die Zukunft wäre insbesondere im Hinblick auf die Benutzung durch SchülerInnen, die noch nicht so versiert im Umgang mit ihrem Rechner sind, ein Installer wünschenswert.
 
-== Webseite
-Im Moment sind die Installationsdateien auf der deutschen Webseite über die Links der englischen Webseite eingebunden.
-In Zukunft sollten sie aus dem Build-Prozess erzeugt und direkt in die Webseite eingebunden werden.
-
-Überarbeitet werden muss mindestens die Seite _Über uns_ (Angaben wurden von der englischen Webseite übernommen).
-
-== Qualitätssicherung Webseite
-Für die Webseite kann eine Überprüfung aller Links eingebaut werden.
-Damit kann in Zukunft bei jeder Änderung vor Veröffentlichung der neuen Seite geprüft werden, ob alle Links gültig sind.
-Andernfalls wird die Seite gar nicht erst veröffentlicht.
-
-== Eigener Bereich SchülerInnen in ANIMAL
-Für SchülerInnen relevante Algorithmen werden in einem separaten Bereich vorgestellt, damit die Zielgruppe hier gezielt nachschauen kann.
+=== Fokus SchülerInnen
+Für SchülerInnen relevante Algorithmen sollen in einem separaten Bereich vorgestellt, damit die Zielgruppe hier gezielt nachschauen kann.
 Gleichzeitig sollen alle Benutzer Zugriff auf sämtliche Inhalte haben.
 
-=== Relevante Algorithmen für SchülerInnen
-Nach dem hessischen Curriculum vor allem
+==== Relevante Algorithmen für SchülerInnen
+Nach dem hessischen Kerncurriculum
 
 * Quicksort
 * Insertion Sort
 * Bubble Sort
 * Selection Sort
 
-== Beschreibung der Algorithmen für SchülerInnen
+==== Beschreibung der Algorithmen für SchülerInnen
 Insbesondere für SchülerInnen, aber auch für wenig erfahrene Nutzer sollten Algorithmen so beschrieben werden, dass sie auch dann verständlich sind, wenn sie vorher völlig unbekannt waren.
 Dafür müssen alle Texte geprüft und ggf. überarbeitet werden.
 Es sollte grundsätzlich sowohl Code als auch Beschreibung jedes Schritts des Algorithmus dargestellt werden.
 Zusätzliche Informationen, z.B. zur Komplexität, könnten mit aufgenommen werden.
 
-== Englische Versionen Tutorials
-Die englischen Versionen der Tutoruials müssen überarbeitet werden (aus dem Jahr 2000 zu Version 1.4!).
+== Webseiten
+
+=== deutsche Seite
+Wird gebaut mit jBake (s. <<devDocumentation.adoc#Bauen der Seite mit jBAke>>) +
+Im Moment sind die Installationsdateien auf der deutschen Webseite über die Links der englischen Webseite eingebunden.
+In Zukunft sollten sie aus dem Build-Prozess erzeugt und direkt in die Webseite eingebunden werden.
+
+Überarbeitet werden muss mindestens die Seite _Über uns_ (Angaben wurden von der englischen Webseite übernommen).
+
+==== Qualitätssicherung
+Für die Webseite kann ein SanityCheck eingebaut werden.
+Infos: https://github.com/aim42/htmlSanityCheck +
+
+== Tutorials
+Die englischen Versionen der Tutorials müssen überarbeitet werden (aus dem Jahr 2000 zu Version 1.4!).
 Teilweise sind sehr alte Systemangaben vorhanden, teilweise sind Links nicht mehr gültig.
 Im Animalscript Tutorial sind kleine Fehler enthalten (nicht übernommen in AsciiDoc).
-Die Dateien liegen bereits als AsciiDoc in _Documentation - UserDocEnglish_ und können dort überarbeitet werden.
+Die Dateien liegen bereits als AsciiDoc vor in link:Documentation/UserDocEnglish[] und können dort überarbeitet werden.
 
-== Video Tutorials
-Gerade zur Installation und zum Schnellstart, aber auch zu anderen Inhalten, können kurze Videos mit Erläuterungen erstellt werden.
-Besonders SchülerInnnen sind dafür evt. offener als für lange Texte.
-
-== VOLS
-Um deutsche Version erweitern
-
-== Neue ANIMAL Versionen
+=== Neue ANIMAL Versionen
 Mit jeder neuen Version müssen auch die Tutorials entsprechend angepasst werden.
-Aktuell:
+Aktueller Stand:
 
 * englisch ANIMAL und ANIMALScript Version 1.4
 * deutsch ANIMAL und ANIMALScript Version 2.5.3
+
+=== Video Tutorials
+Gerade zur Installation und zum Schnellstart, aber auch zu anderen Inhalten, können kurze Videos mit Erläuterungen erstellt werden.
+Besonders SchülerInnnen sind dafür evt. offener als für lange Texte.
+
+== App VOLS
+Um deutsche Version erweitern
+
+
 

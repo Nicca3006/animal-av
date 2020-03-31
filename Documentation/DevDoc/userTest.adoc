@@ -14,36 +14,28 @@ Internet Connection ist vorhanden - URL changed?
 
 image::Repository_nicht_gefunden.png[]
 
-Hinweis darauf, unter "Bearbeiten" einen Befehl auszuwählen.
-Es gibt keinen Menüpunkt "Bearbeiten", der Befehl "Animationsfenster anzeigen" befindet sich unter "Fenster". +
-Zusatzfrage: Was passiert hier?
-
-image::Bearbeiten_auswaehlen.png[]
-
-== File - Examples keine Funktion
+== File - Examples
+keine Funktion erkennbar
 
 == File - Demo Animation
 
 Was soll hier passieren?
 Zwei schwarze Rechtecke, lassen sich zoomen.
-Unten scheint es vier Schritte in der Auswahl zu geben, bei Schritt 3 springt das rechte Rechteck weiter nach rechts.
+Vier Schritte in der Auswahl, bei Schritt 3 springt das rechte Rechteck weiter nach rechts.
+Ist das die Demo?!?
 
 image::Animal_Animation_Fenster_Fehler.png[]
 
 == Shortcuts führen zum falschen Ziel
 
-In der Spracheinstellung Deutsch öffnet _ALT-D_ den Drucker statt _Datei_.
-_ALT-T_ verweist auf Repository (mit oben dargestelltem Fehler) statt auf _Fenster_.
+In der Spracheinstellung Deutsch öffnet `ALT-D` den Drucker statt _Datei_.
+`ALT-T` verweist auf Repository (mit oben dargestelltem Fehler) statt auf _Fenster_.
 
-== Menü
+== Menü - Help
+`Animal Tutorial` öffnet HTML Code. +
+`AnimalScript Definition` öffnet HTML Code. +
+Hilfe zur allgemeinen Bedienung ist nicht vorhanden.
 
-=== Help
-_Animmal Tutorial_ öffnet HTML Code
-_AnimalScript Definition_ öffnet HTML Code
-Hilfe zur allgemeinen Bedienung ist nicht vorhanden
+== Menü - Options
+Mit `Component Config` passiert nichts
 
-=== Options
-_Component Config_ passiert nichts
-
-=== File
-_Examples_ passiert nichts

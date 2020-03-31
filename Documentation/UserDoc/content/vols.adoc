@@ -20,7 +20,7 @@ Damit wird es viel leichter zu verstehen, was eigentlich passiert, wenn wir List
 
 == Was brauche ich dafür?
 Die <<installation.adoc#Voraussetzungen, Voraussetzungen auf deinem Rechner>> sind die gleichen wie für ANIMAL.
-Du kannst dir einfach link:http://www.algoanim.net/downloads/vols_finalversion.jar[hier die Datei herunterladen] und direkt ausführen.
+Du kannst dir die link:http://www.algoanim.net/downloads/vols_finalversion.jar[Datei hier herunterladen] und direkt ausführen.
 
 == Wie funktioniert VOLS?
 Nach dem Start siehst du das Hauptfenster von VOLS.
@@ -39,40 +39,40 @@ image::VOLS_MainWindow_Splitted.PNG[width = 600]
 Du kannst die Schriftgröße in den beiden Fenstern unabhängig voneinander vergößern und verkleinern.
 Die _Zoom_ Bereiche findest du ganz oben im _Player_.
 
-* Im unteren Bereich befindet sich die _Navigation_, mit der du eine Animation komplett abspielen oder schrittweise ansehen kannst.
+* Unter den rechten Fenstern befindet sich die _Navigation_, mit der du eine Animation komplett abspielen oder schrittweise ansehen kannst.
 * Ganz unten siehst du die _Console_, in der du nachverfolgen kannst, welche Befehle ausgeführt wurden. +
-Falls dich das nicht interessiert, kannst du sie über den Menüpunkt _Window - Switch Visibility_ ausblenden (und natürlich auch wieder einblenden).
+Falls dich das nicht interessiert, kannst du sie über den Menüpunkt `Window - Switch Visibility` ausblenden (und natürlich auch wieder einblenden).
 
 === Beispiel anschauen
-Um eines der vorgefertigten Beispiele zu sehen, kannst du im _Interaction Window_ auf *Load ...(Listenart)* klicken, je nachdem welche Liste du dir anschauen möchtest.
+Um eines der vorgefertigten Beispiele zu sehen, kannst du im _Interaction Window_ auf `Load ...(Listenart)` klicken, je nachdem welche Liste du dir anschauen möchtest.
 
 TIP: Du siehst das _Interaction Window_ immer wieder, wenn du oben rechts in der _Manual Step Control_ den Regler zurück auf die *1* ziehst.
 
-Du kannst aber genauso im Menü _Examples - ...(Listenart)_ aufrufen oder die Schaltflächen image:VOLS_CreateAuswahl.PNG[] benutzen. +
+Du kannst aber genauso im Menü `Examples - ...(Listenart)` aufrufen oder die Schaltflächen image:VOLS_CreateAuswahl.PNG[] benutzen. +
 Sobald das Beispiel fertig erzeugt ist, kannst du es über die _Navigation_ unten abspielen, pausieren, vor- und zurückgehen.
 
 === Eigene Liste erstellen
 Spannender ist es wahrscheinlich, eigene Listen aufzubauen.
-Dazu kannst du ebenso entweder im _Interaction Window_ oder im Menü _Create - ...(Listenart)_ aufrufen.
+Dazu kannst du ebenso entweder im _Interaction Window_ oder im Menü `Create - ...(Listenart)` aufrufen.
 Es öffnet sich ein Fenster, in dem du den ersten Wert für deine Liste eintragen kannst:
 
 image::VOLS_CreateList.PNG[]
 
-IMPORTANT: Damit der zugehörige Code später mit angezeigt wird, solltest du den Haken bei _Create step by step animation_ gesetzt lassen.
+IMPORTANT: Damit der zugehörige Code später mit angezeigt wird, solltest du den Haken bei `Create step by step animation` gesetzt lassen.
 
-Der Haken bei _Go to the end of the animation_ bewirkt folgendes:
+Der Haken bei `Go to the end of the animation` bewirkt folgendes:
 
 * Gesetzt: Du siehst sofort das Endergebnis und musst in der Navigation _zurück_ gehen, wenn du die einzelnen Schritte sehen möchtest.
 * Nicht gesetzt: Erst nach Starten der Animation in der _Navigation_ (image:VOLS_Play.PNG[]) siehst du das Ergebnis.
 
-Um weitere Elemente zu deiner Liste hinzuzufügen, kannst du entweder ein bestehendes Element mit der _rechten Maustaste_ anklicken oder im Menü _Action - ..._ auswählen oder die Schaltflächen image:VOLS_BearbeitenAuswahl.PNG[] benutzen.
+Um weitere Elemente zu deiner Liste hinzuzufügen, kannst du entweder ein bestehendes Element mit der _rechten Maustaste_ anklicken oder im Menü `Action - ...` auswählen oder die Schaltflächen image:VOLS_BearbeitenAuswahl.PNG[] benutzen.
 Du kannst
 
-* ein weiteres Element an einer beliebigen Stelle hinzufügen (*Add*)
-* ein Element an einer beliebigen Stelle entfernen (*Remove*)
-* ein Element an einer beliebigen Stelle mit einem neuen Wert versehen (*Set*)
+* ein weiteres Element an einer beliebigen Stelle hinzufügen (`Add`)
+* ein Element an einer beliebigen Stelle entfernen (`Remove`)
+* ein Element an einer beliebigen Stelle mit einem neuen Wert versehen (`Set`)
 
 IMPORTANT: Wie in Java üblich, beginnen wir bei _0_ zu zählen.
-Das _zweite_ Listenelement hat also _Position 1_
+Das _zweite_ Listenelement hat also _Position 1_.
 
 Das war schon alles, am besten probierst du es gleich mal aus!

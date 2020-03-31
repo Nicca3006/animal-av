@@ -7,6 +7,7 @@
 :sectnums:
 :LinkSchnellstart: false
 :LinkInstallation: false
+:LinkTutorials: false
 
 //Hinweis: Footnotes werden im pdf als Endnotes angezeigt
 = ANIMALScript Tutorial
@@ -51,7 +52,7 @@ include::schnellstart.adoc[leveloffset=+1]
 
 == Erstellen einer neuen Animation mit ANIMALScript
 Vielleicht willst (oder sollst) du die Funktionsweise eines Algorithmus mit eigenen Zahlen erklären oder es gibt noch kein Beispiel zu deinem Algorithmus.
-Dann kannst du ganz einfach eine eigene Animation erstellen.
+Dann kannst du mit ANIMALScript eine eigene Animation erstellen.
 Im folgenden zeigen wir am Beispiel einer _einfach verketteten Liste_, wie das funktioniert. +
 Das Ergebnis wird etwa so aussehen (hier in englisch):
 
@@ -59,7 +60,7 @@ image::Figure2_Final_result_of_the_tutorial_animation.JPG[align="center"]
 
 === Vorbereitung der neuen Animation
 Animationen mit ANIMALScript werden in einem beliebigen _Text Editor_ geschrieben.
-In _Windows_ kannst du zum Beispiel den _Editor_ benutzen, auf dem Mac _TextEdit_.
+In _Windows_ kannst du zum Beispiel den "Editor" benutzen, auf dem Mac "TextEdit".
 Bitte lege dir dort eine (erstmal leere) Datei z.B. unter dem Namen `demo.asu` an
 footnote:[Meistens kannst nach `speichern unter` einfach _demo.asu_ in den `Dateinamen` schreiben, egal welcher `Dateityp` voreingestellt ist].
 
@@ -75,7 +76,7 @@ Nun kannst du ein paar Informationen zu dir als Autor eingeben, z.B.
 title "AnimalScript Tutorial Animation"
 author "Guido Roessling <roessling@acm.org>"
 ....
-Parallel kannst du schon mal ANIMAL starten (s. <<Schnellstart>>) und deine Datei `demo.asu` öffnen.
+Parallel kannst du schon mal ANIMAL starten (s. <<Schnellstart>>) und deine Datei _demo.asu_ öffnen.
 
 image::Animal_Control_Center_V253_english.PNG[align="center"]
 
@@ -119,9 +120,9 @@ Ergänze deinen Code wie folgt und schaue, was passiert, wenn du die Animation a
 
  rectangle "hRect" offset (-5, -5) from "header" NW offset (5, 5) from "header" SE
 
-Hast du bemerkt, dass es jetzt _zwei_ Animationsschritte gibt?
+Hast du bemerkt, dass es jetzt *zwei* Animationsschritte gibt?
 Das liegt daran, dass generell jeder ANIMALScript Befehl einen _neuen Animationsschritt_ erzeugt.
-Um zu erreichen, dass unser _text_ und _rectangle_ Befehl im gleichen Schritt ausgeführt werden, umgeben wir diese mit `geschweiften Klammern`.
+Um zu erreichen, dass unser `text` und `rectangle` Befehl im gleichen Schritt ausgeführt werden, umgeben wir diese mit _geschweiften Klammern_ {}.
 Die öffnende { muss dabei _vor_ dem _text_ Befehl in einer *separaten Codezeile* stehen, die schließende } _nach_ dem `rectangle` Befehl ebenfalls in einer *separaten Zeile*. +
 Nun aktualisiere deine Animation und schau, was passiert. +
 Eventuell verbirgt das Rechteck nun den Text, weil es als zweites Objekt gezeichnet wurde und die Befehle in der Reihenfolge ausgeführt werden, in der sie im Code stehen.

@@ -9,7 +9,7 @@ Mittlerweile wird es betreut von der Rechnerbetriebsgruppe am Fachbereich Inform
 
 //TODO: Mailadresse ok?
 Wir freuen uns über deine Meinung und Verbesserungsvorschläge zu dieser Seite.
-Schreibt einfach an roessling@acm.org
+Schreib einfach an roessling@acm.org
 
 == Impressum
 Verantwortlich: +

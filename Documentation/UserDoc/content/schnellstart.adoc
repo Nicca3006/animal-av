@@ -42,3 +42,8 @@ Du kannst auch direkt die Nummer des Schritts eingeben, den du dir anzeigen lass
 Mit dem _Schieberegler_ lässt sich die Geschwindigkeit einstellen, in der die Animation abläuft.
 Ganz oben kannst du außerdem einen Zoom einstellen.
 Das ist besonders sinnvoll bei sehr breiten oder hohen Animationen, um Screenshots zu erstellen oder um die Größe von der Anzeige auf dem Computer an die Anzeige auf einem Beamer anzupassen. +
+
+ifndef::LinkTutorials[]
+Jetzt kannst du loslegen und mit dem Programm spielen.
+Wenn du gerne ein ausführliches Beispiel mit Anleitung durchgehen möchest, dann schau dir doch mal unsere <<tutorials.adoc#_tutorials, Tutorials>> an.
+endif::[]

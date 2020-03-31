@@ -5,9 +5,9 @@
 
 Am einfachsten versteht man die Funktionsweise von ANIMAL vermutlich anhand eines Beispiels.
 Deshalb haben wir zwei Tutorials geschrieben, mit denen du die gleiche Animation auf zwei unterschiedliche Arten erstellen kannst. +
-Das <<userGuide.adoc#ANIMAL Tutorial, ANIMAL Tutorial>> zeigt, wie man vor allem mit einer grafischen Oberfläche - d.h. mit einem Zeichenfenster - eine Animation erstellen kann. +
-Mit dem <<animalScript.adoc#ANIMALScript Tutorial, ANIMALScript Tutorial>> kannst du genau die gleiche Animation erstellen, allerdings gibst du hier alle Befehle über einen Editor ein.
-Falls du die Arbeit mit einem _Editor_ bisher eher nicht kanntest, lass dich davon nicht abhalten.
+Das <<userGuide.adoc#animal_tutorial, ANIMAL Tutorial>> zeigt, wie man vor allem mit einer grafischen Oberfläche - d.h. mit einem Zeichenfenster - eine Animation erstellen kann. +
+Mit dem <<animalScript.adoc#_animalscript_tutorial, ANIMALScript Tutorial>> kannst du genau die gleiche Animation erstellen, allerdings gibst du hier alle Befehle über einen Editor ein.
+Falls du bisher noch nie mit einem Editor gearbeitet hast, lass dich davon nicht abhalten.
 Alle Schritte sind in den Tutorials genau erklärt. +
 Wichtig ist in jedem Fall, dass du alles direkt mitmachst - das reine Lesen wirkt eher verwirrend :)
 

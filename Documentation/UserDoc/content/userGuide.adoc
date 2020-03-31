@@ -9,6 +9,7 @@
 //Installation und Schnellstart sind beide eingebunden, deshalb machen bestimmte Links keinen Sinn und werden unterdrückt
 :LinkSchnellstart: false
 :LinkInstallation: false
+:LinkTutorials: false
 //Hinweis: Footnotes werden im pdf als Endnotes angezeigt
 
 = ANIMAL Tutorial
@@ -116,11 +117,11 @@ Mit Hilfe der Angaben im Fenster _Rectangle Optionen_ können wir festlegen, ob 
 (Zur Erinnerung: Falls das Fenster gerade nicht angezeigt wird, klicke einfach einmal auf das Rechteck.)
 Außerdem können hier auch noch die `Farbe` des Rands des Rechtecks und die `Füllfarbe` festgelegt werden. +
 Für unser Beispiel soll das Rechteck weiß gefüllt sein.
-Dazu klick auf das Feld, in dem jetzt *black* angezeigt wird und wähle *white* als neue Farbe aus. +
-Später werden wir noch einen Text *über* dem Rechteck anzeigen lassen.
-Damit das Rechteck wirklich *unter* dem Text liegt, setzen wir die `Tiefe` auf 16.
+Dazu klick auf das Feld `Füllfarbe`, in dem jetzt `black` angezeigt wird und wähle `white` als neue Farbe aus. +
+Später wollen wir noch einen Text *über* dem Rechteck anzeigen lassen.
+Damit das Rechteck dann wirklich *unter* dem Text liegt, setzen wir die `Tiefe` auf 16.
 Je höher die Zahl ist, umso _tiefer_, also weiter im Hintergrund wird das Objekt später dargestellt.
-Wenn wir mehrere Objekte übereinander schieben, können wir damit also bestimmen, in welcher Reihenfolge sie _aufeinander liegen_.
+Wenn wir mehrere Objekte übereinander schieben, können wir damit also bestimmen, in welcher Reihenfolge sie _aufeinander liegen_. +
 Wenn du fertig bist, kannst du mit `OK` das Fenster _Rectangle Optionen_ schließen. +
 Jetzt speichere bitte den aktuellen Bearbeitungsstand durch Klick auf _Save_ image:save.png[] .
 
@@ -139,7 +140,7 @@ Am Ende klicke auf `OK` um das Text-Editor-Fenster zu schließen.
 
 Bevor wir weitermachen, wollen wir uns das bisherige Ergebnis mal anschauen.
 Dafür kannst du im _Animal Control Center_ (das ist das Startfenster unseres Programms) auf `Fenster - Animationsfenster anzeigen` klicken und landest in dem Fenster, dass du vielleicht noch aus dem Dijkstra-Beispiel kennst.
-Das Fenster ist im Moment vielleicht leer, aber sobald du im _Animation Drawing Window_ (dem Fenster, in dem wir gerade gezeichnet haben), auf `Speichern` klickst, wird die "Animation" angezeigt. +
+Das Fenster ist im Moment evt. leer, aber sobald du im _Animation Drawing Window_ (dem Fenster, in dem wir gerade gezeichnet haben), auf `Speichern` klickst, wird die "Animation" angezeigt. +
 Bisher sieht sie so aus:
 
 image::Animationsfenster_Rechteck_Text.PNG[align="center", width = 500]
@@ -177,8 +178,7 @@ Im einzelnen bedeuten sie:
 |===
 
 Wir möchten jetzt einen neuen Animationsschritt _nach_ dem aktuellen Stand erzeugen.
-Bitte klick dafür auf image:append.png[] +
-Dadurch wird ein neuer Schritt _Step 2_ in die Liste eingefügt und markiert.
+Bitte klick dafür auf image:append.png[] - dadurch wird ein neuer Schritt _Step 2_ in die Liste eingefügt und markiert.
 
 === Mehrere Zeilen Text einfügen
 Als nächstes wollen wir eine Dokumentation zu unserer Animation schreiben.
@@ -197,7 +197,7 @@ Diese besteht aus den folgenden Text Eingaben:
 Setze als erstes die _Gittergröße_ wieder auf _20_ und schalte das _einrasten des Gitters_ ein, falls es nicht schon aktiviert ist (= grau unterlegt). +
 Öffne den _Text Editor_ wie schon beschrieben in <<Einfügen eines Text Objekts>>.
 Wähle entweder SansSerif oder Monospaced als Schriftart, _Größe 16_, weder _kursiv_ noch _fett_ gedruckt. +
-Gib den ersten Text ("1. Erstes Listenelement erzeugen") in das _Text_-Feld ein.
+Gib den ersten Text (_1. Erstes Listenelement erzeugen_) in das `Text`-Feld ein.
 Jetzt markiere mit der Maus das Gitter *8* Zeilen unterhalb von dem Rechteck mit der Überschrift, um den Text dort zu platzieren.
 Ein zweiter Klick rastet den Text dort ein. +
 _Bitte lass das Text Editor Fenster geöffnet und klicke *weder OK* noch *Apply*!_ +
@@ -205,11 +205,11 @@ Jetzt gib den zweiten Text im Editor in das Feld `Text` ein, indem du den vorher
 So fügst du nun nacheinander alle Textzeilen ein. +
 Falls du dich verschrieben hast, kannst du das ganz einfach korrigieren:
 
-* _bevor_ du den nächsten Text platziert hast: korrigiere einfach den Text im `Text Feld` und klicke *Apply*
+* _bevor_ du den nächsten Text platziert hast: korrigiere einfach den Text im `Text Feld` und klicke `Apply`
 * _nachdem_ du den nächsten Text bereits korrekt platziert hast: _schließe_ das _Text Options_ Fenster und klicke dann den falschen Text an.
-Das _Text Options_ Fenster sollte sich nun eigentlich wieder öffnen und du kannst den Text darin bearbeiten und mit *Apply* übernehmen.
+Das _Text Options_ Fenster sollte sich nun eigentlich wieder öffnen und du kannst den Text darin bearbeiten und mit `Apply` übernehmen.
 Falls das Bearbeitungsfenster sich nicht geöffnet hat, klick bitte einmal auf den _Editor Button_ an der linken Seite: image:useEditors.png[] +
-Am Ende sollte dein aktueller Stand so aussehen und du kannst den _Text Editor_ mit *OK* schließen:
+Am Ende sollte dein aktueller Stand so aussehen und du kannst den _Text Editor_ mit `OK` schließen:
 
 image::Animationsfenster_Rechteck_Textzeilen.PNG[align="center", width = 600]
 
@@ -252,7 +252,7 @@ Ein Klick darauf öffnet die _ColorChanger Optionen_ für den aktuellen Animatio
 Als erstes müssen wir jetzt das `Objekt wählen`, indem wir diesen Button anklicken (ist dann dunkel hinterlegt) und danach im _Zeichenfenster_ die erste Zeile unseres Texts anklicken.
 Bei Bedarf können auch mehrere Objekte nacheinander markiert und gemeinsam bearbeitet werden, aber wir benötigen jetzt nur die erste Zeile. +
 Nachdem diese ausgewählt ist, klicke bitte erneut auf den `Objekt wählen` Button, um die Auswahl zu bestätigen.
-Hier steht jetzt sowas wie *Ausgewähltes Objekt: 7*. +
+Hier steht jetzt sowas wie `Ausgewähltes Objekt: 7`. +
 Je nachdem, welche Art von Objekt man auswählt, gibt es sehr unterschiedliche `Methoden`, wie man das Objekt bearbeiten kann.
 Für einen _Text_ gibt es allerdings ausschließlich die Methode _color_, weswegen diese nun bereits ausgewählt ist, so dass wir hier nichts weiter machen müssen. +
 Wir können jedoch noch auswählen, ob wir eine `Verzögerung` vor dem Farbwechsel haben wollen.
@@ -265,7 +265,7 @@ Wie du siehst, erscheint unser Listenelement jetzt im gleichen Momemt, in dem di
 Wenn wir _erst_ die rote Schrift und _dann_ das Listenelement sehen wollen, können wir unsere Animation entsprechend anpassen: +
 Durch einen _Doppelklick_ auf die Zeile mit dem _ColorChanger_ in der _Animationsübersicht_ öffnet sich der Editor.
 Sollte das nicht funktionieren, kannst du ihn manuell öffnen, indem du unten auf den _Editor Button_ image:useEditors.png[] klickst (während die _ColorChanger_ Zeile markiert ist).
-Nun kannst du die `Verzögerung` auf einen passenden Wert einstellen und das Fenster am Ende mit *OK* schließen.
+Nun kannst du die `Verzögerung` auf einen passenden Wert einstellen und das Fenster am Ende mit `OK` schließen.
 
 Abschließend wollen wir noch weitere Effekte hinzufügen.
 Dazu müssen wir einen _neuen Schritt einfügen_, da pro Schritt nur *ein Effekt pro Objekt* angelegt werden kann.

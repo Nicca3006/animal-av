@@ -1,0 +1,25 @@
+:imagesdir: images
+
+== Introduction
+ANIMAL is a compact, efficient and easy to use animation tool developed at the University of Siegen starting in 1998.
+The motivation for developing ANIMAL came from a lack of satisfying tools for animations that are both easy to generate and edit and helpful in lectures. +
+ANIMAL is an acronym for A NEW INTERACTIVE MODELLER FOR ANIMATIONS IN LECTURES, which already shows the main area of usage for ANIMAL. +
+ANIMAL’s strengths lie mainly in the following areas:
+
+* very easy to use graphic interface incorporating _drag and drop_,
+* animations can be automatically generated using either the scripting language ANIMALSCRIPT or the ANIMALGENERATOR API,
+* platform neutral implementation in `Java`,
+* high flexibility.
+
+On first using ANIMAL, the program might appear somewhat limited in the animation effects as well as the primitive graphic types offered.
+Other programs seem to offer a far more operations at first glance. +
+However, a closer look will quick reveal that this impression is not necessarily accurate.
+Some other programs tend to offer the same basic effect not as a configurable effect, but rather as a collection of effects.
+ANIMAL offers highly flexible, adaptable effects that can usually perform the same other animation programs also offer - although the list of “supported effects” at first seems much shorter.
+Check out section <<Generating A New Animation>> for an in-depth description of the basic effects available and what operations can be done by using them wisely. +
+Finally, the high flexibility mentioned above comes from the simple fact that practically all operations and objects ANIMAL uses are easy to edit and adapt to specific needs.
+Furthermore, the available object or animation effect types are not coded directly into the implementation.
+Thus, developers should find it very easy to add extensions to ANIMAL without having to touch much existing code. +
+Using the new additions to ANIMAL, it is very easy to generate interesting animations to enhance viewers’ motivation and understanding of the topics presented. +
+ANIMAL is freely available on the _World Wide Web_, complete with a extensive collection of animations including screen shots and description.
+Check out the official ANIMAL Home page at http://www.informatik.uni-siegen.de/˜roesslin/Animal/index.html for more information.
