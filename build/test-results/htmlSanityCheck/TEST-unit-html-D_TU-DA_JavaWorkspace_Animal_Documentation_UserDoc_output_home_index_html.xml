@@ -1,0 +1,14 @@
+<testsuite tests="30" failures="4" errors="0" time="0" name="D:\TU-DA\JavaWorkspace\Animal\Documentation\UserDoc\output\home\index.html">
+  <testcase assertions="3" time="0" name="Duplicate Definition of id Check" />
+  <testcase assertions="14" time="0" name="Broken Internal Links Check" />
+  <testcase assertions="0" time="0" name="Consistency of ImageMaps" />
+  <testcase assertions="0" time="0" name="Missing Local Images Check" />
+  <testcase assertions="0" time="0" name="External Links Check" />
+  <testcase assertions="0" time="0" name="Missing alt-attribute declaration in image tags" />
+  <testcase assertions="13" time="0" name="Missing Local Resources Check">
+    <failure type="anchor tag href attribute - missing local resources" message="local resource &quot;schnellstart.html#_schnellstart&quot; missing"></failure>
+    <failure type="anchor tag href attribute - missing local resources" message="local resource &quot;vols.html#_vols&quot; missing"></failure>
+    <failure type="anchor tag href attribute - missing local resources" message="local resource &quot;installation.html#_installation&quot; missing"></failure>
+    <failure type="anchor tag href attribute - missing local resources" message="local resource &quot;tutorials.html#_tutorials&quot; missing"></failure>
+  </testcase>
+</testsuite>

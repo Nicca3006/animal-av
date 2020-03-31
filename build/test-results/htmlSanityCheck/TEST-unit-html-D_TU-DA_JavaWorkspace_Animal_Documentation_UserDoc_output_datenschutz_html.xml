@@ -1,0 +1,12 @@
+<testsuite tests="37" failures="2" errors="0" time="0" name="D:\TU-DA\JavaWorkspace\Animal\Documentation\UserDoc\output\datenschutz.html">
+  <testcase assertions="13" time="0" name="Duplicate Definition of id Check" />
+  <testcase assertions="13" time="0" name="Broken Internal Links Check" />
+  <testcase assertions="0" time="0" name="Consistency of ImageMaps" />
+  <testcase assertions="0" time="0" name="Missing Local Images Check" />
+  <testcase assertions="2" time="0" name="External Links Check">
+    <failure type="anchor href attribute - broken external link" message="Warning: http://www.aboutads.info/choices/ returned statuscode 302, new location: https://optout.aboutads.info"></failure>
+    <failure type="anchor href attribute - broken external link" message="Warning: http://www.youronlinechoices.com/uk/your-ad-choices/ returned statuscode 301, new location: https://www.youronlinechoices.com/uk/your-ad-choices/"></failure>
+  </testcase>
+  <testcase assertions="0" time="0" name="Missing alt-attribute declaration in image tags" />
+  <testcase assertions="9" time="0" name="Missing Local Resources Check" />
+</testsuite>

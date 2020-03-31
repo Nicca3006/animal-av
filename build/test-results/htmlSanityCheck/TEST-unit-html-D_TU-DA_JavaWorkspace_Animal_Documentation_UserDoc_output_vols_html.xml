@@ -1,0 +1,9 @@
+<testsuite tests="44" failures="0" errors="0" time="0" name="D:\TU-DA\JavaWorkspace\Animal\Documentation\UserDoc\output\vols.html">
+  <testcase assertions="9" time="0" name="Duplicate Definition of id Check" />
+  <testcase assertions="12" time="0" name="Broken Internal Links Check" />
+  <testcase assertions="0" time="0" name="Consistency of ImageMaps" />
+  <testcase assertions="6" time="0" name="Missing Local Images Check" />
+  <testcase assertions="1" time="0" name="External Links Check" />
+  <testcase assertions="6" time="0" name="Missing alt-attribute declaration in image tags" />
+  <testcase assertions="10" time="0" name="Missing Local Resources Check" />
+</testsuite>
